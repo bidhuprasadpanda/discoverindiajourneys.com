@@ -1,0 +1,87 @@
+<div class="main" role="main">
+    <div id="content" class="content full" style="padding-top:10px;">
+        <div class="container">
+            <div class="row">
+                {{!--
+                <div class="col-md-12 provider_heading">
+                    <h2>All Package Providers</h2>
+                </div>--}}
+                <h2 class="decorated"><span>Add Corporate Tour</span></h2>
+
+            </div>
+        </div>
+        
+        {{!--{{Offers}}--}}
+        <div class="container">
+                 {{!-- Creating New Corporate tour--}}
+            <div class="row">
+                {{!-- Create Form--}}
+                <div class="col-md-12">
+                    
+                     {{#if errors}}
+                        <div class="alert alert-danger">
+                            {{# each errors}}
+                                <p><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>&nbsp;{{this}}</p>
+                            {{/each}}
+                        </div>
+                    {{/if}}
+                    {{#if error}}
+                        <div class="alert alert-danger">
+                                <p><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>&nbsp;Tour Already Present!!</p>
+                        </div>
+                    {{/if}}
+                    <form id="corporatetour_new_create" action="/admin/admin_home/corporate-tour-new" method="post">
+                        <div class="form-group">
+                             <label for="name">Tour Name</label>
+                             <input type="text" id="corporatetour_name" name="tourname" class="form-control corporatetour_name" >
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div id="images"></div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-6 img_upload_btn">
+                                                <form name="fileUpload" id="fileUpload" action="/admin/admin_home/fileUpload" enctype="multipart/form-data" method="post" role="form" class="form-inline">
+                                                     <div class="form-group">
+                                                        <label>Choose image to upload: </label>
+                                                        <input name="uploadfile" type="file" id="myFile">
+                                                        <span style="color:red">Upload only image file (PNG, JPEG, GIF)</span>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input value="UPLOAD" type="button" class="btn btn-primary btn-upload">
+                                                        <span>(Click Here To Upload The Image)</span>
+                                                    </div>
+                                                        <div style="display:none;margin-top:10px;" class="progress">
+                                                            <div role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-striped active">0% </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div>
+                                                        <h3>List all uploaded files</h3>
+                                                    </div>
+                                                        <p id="msg"></p>
+                                                        <div id="files"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                            </div>
+                        </div>
+                         <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-12 submit_button_group">
+                                    <input type="hidden" name="_csrf" value="{{ csrfToken }}" >
+                                    <input type="submit" value="Submit" form="corporatetour_new_create" class="btn btn-info">
+                                </div>
+                            </div>
+                         </div>
+                    </form>
+                </div>
+               {{!-- Edit Form--}}
+              
+            </div>
+           
+        </div>
+    </div>
+</div>
+

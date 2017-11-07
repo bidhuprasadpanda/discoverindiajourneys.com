@@ -1,0 +1,79 @@
+{
+   "destination":[
+      {
+         "_id":"59c0b07e6296181ff2fc88b9",
+         "continentId":"59a6a3f1d60bc46ae099710a",
+         "packagename":"Amazing Himachal",
+         "packagedescription":"In Dharamshala, visit Tsuglagkhang Complex (Museum and Home of Dalai Lama), Tour of Norbulingka Institute, Monasteries and Yoga/Meditation programs (optional).\r\nExcursion to Khajjiar and Dalhousie sightseeing.\r\nIn Amritsar, visit Harminder Sahib –The Golden Temple and Wagah (India-Pakistan border).\r\nAssistance at airport and sightseeing tours by private air-conditioned vehicle.\r\nStart and End in Amritsar.",
+         "packageinclude":"5 night accommodation in well-appointed rooms as mentioned above hotels or equivalent.\r\nAssistance at the airport .\r\nSightseeing as per itinerary by private tourist vehicle(Air conditioner in vehicles will not work in hilly areas).\r\nDrivers allowances, toll taxes and Govt. Service Tax.",
+         "packageexclude":"Air tickets and airport taxes.\r\nGuide service as per the itinerary. \r\nEntrance fee at Monuments as per the itinerary. \r\nSpecial activities as per the itinerary .\r\nItems of personal nature like laundry, phone calls, tips to guides / drivers etc.\r\nCamera / Video camera fees applicable at monuments.",
+         "childrenpolicy":"",
+         "cancelpolicy":"",
+         "terms":"Monuments closed on Dharamshala - Tibetan Institutes remain closed on Sunday & Second Saturday of Month, 2 Oct, 15 Aug, All Tibetan Holidays. Tibetan School Office is closed on all Saturdays Medium vehicle will be provided for 1-3 travelers and Innova will be provided for 4-5 travelers. Hotel Check in 1400hrs and check out 1200hrs.",
+         "user_id":"58f9faecab0de71b4a784e45",
+         "updated_at":"2017-09-19T05:53:02.352Z",
+         "created_at":"2017-09-19T05:51:58.843Z",
+         "promote":true,
+         "published":true,
+         "images":[
+            "/files/amritsar2.jpg",
+            "/files/darmashala4.jpg",
+            "/files/shimla1.jpg"
+         ],
+         "itinerary":[
+            {
+               "description":"Meet our representative upon arrival in Amritsar and proceed to Dharamshala–Perhaps one of the best holiday destinations since the time of the British. Situated amid coniferous forests, this place is renowned as the holy abode of The Dalai Lama- the leader of Tibetan Buddhism. Explore His home in this picturesque territory and the Centre of Tibetan culture to gain an insight into the place's origin and history. Head to the hub of Buddhist culture in Dharamshala- McLeod Ganj and explore its myriad attractions, including the exotic Kangra valley. Check-in at the hotel upon arrival, for dinner and overnight stay.",
+               "title":"Arrival in Amritsar | Drive to Dharamshala (200 kms / approx. 4.5 hours)"
+            },
+            {
+               "description":"After breakfast, visit Tsuglagkhang Complex - Centre of Tibetan culture, which includes a museum and the residence of His Holiness Dalai Lama – the spiritual leader of Tibetan Buddhism. Later, visit popular monasteries, Tibetan medicalcenter and the Church of St. John. Also, you may rejuvenate yourself with yoga and meditation retreats available in Dharamshala (optional). Dinner and overnight stay in Dharamshala.",
+               "title":"Sightseeing in Dharamshala"
+            },
+            {
+               "description":"After breakfast, check-out from the hotel and drive to Dalhousie. Upon arrival, check-in to the hotel. Later, visit Bhulwani Mata Mandir at Bara Pathar and hike up the Bakrota Hills to see an impressive view of snow-clad peaks. Also, see St. John’s Church. It was the first to be built after the town of Dalhousie was founded. Dinner and overnight stay at the hotel.",
+               "title":"Drive from Dharamshala – Dalhousie (115 kms / approx. 3.5 hours)"
+            },
+            {
+               "description":"After breakfast, drive to Khajjiar to spend the day in what is called India’s ‘mini-Switzerland’. Khajjiar is among the 160 places in the world that was officially given the title because of its resemblance to the lovely landscapes in Switzerland. The lush green meadows are a photographer’s delight. Khajjiar Lake is situated at the centre of the plains. Return to Dalhousie for dinner and overnight stay at the hotel.",
+               "title":"Trip to Khajjiar"
+            },
+            {
+               "description":"After early breakfast, drive to Amritsar - colloquially known as Ambarsar, is a spiritually significant city for the followers of Sikhism. The city derives its name from the sacred pool, which was founded in 1574 by Guru Ram Das - the 4th Sikh guru. This holy pond circumscribes Harmandir Sahib, which is popularly known as the Golden Temple amongst devotees. After check-in at the hotel, proceed to India-Pakistan border at Wagah. Watch the ‘Beating the Retreat’ ceremony where soldiers of both countries bring down their respective national flags in their unique styles. After returning, visit the iconic Golden Temple. Overnight stay in hotel. ",
+               "title":"Drive from Dalhousie – Amritsar (200 kms / approx. 4.5 hours)"
+            },
+            {
+               "description":"After breakfast, you will be transferred to Amritsarrailway station / airport for return journey back home.",
+               "title":"Departure from Amritsar"
+            }
+         ],
+         "categories":[
+            "Indian Package"
+         ],
+         "countryId":[
+            "59bf6d47fa4e7a13d691c5a9"
+         ],
+         "__v":0,
+         "mixWithDestination":[
+            {
+               "_id":"59bf6d47fa4e7a13d691c5a9",
+               "name":"Himachal",
+               "continentId":"59a6a3f1d60bc46ae099710a",
+               "quote":"Himachal Pradesh is a state of India located in Northern India.",
+               "about":"Himachal Pradesh is a northern Indian state in the Himalayas. It's home to scenic mountain towns and resorts such as Dalhousie. Host to the Dalai Lama, Himachal Pradesh has a strong Tibetan presence.",
+               "user_id":"58f9faecab0de71b4a784e45",
+               "updated_at":"2017-09-18T06:52:55.663Z",
+               "created_at":"2017-09-18T06:52:55.663Z",
+               "map":[
+
+               ],
+               "images":[
+                  "/files/darmashala4.jpg",
+                  "/files/shimla1.jpg",
+                  "/files/amritsar2.jpg"
+               ],
+               "__v":0
+            }
+         ]
+      }
+   ]
+}

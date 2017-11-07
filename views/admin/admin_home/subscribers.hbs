@@ -1,0 +1,38 @@
+<div class="main" role="main">
+    <div id="content" class="content full" style="padding-top:10px;">
+        <div class="container">
+            <div class="row">
+                {{!--
+                <div class="col-md-12 provider_heading">
+                    <h2>All Package Providers</h2>
+                </div>--}}
+                <h2 class="decorated"><span>Accommodations</span></h2>
+
+            </div>
+        </div>
+        <div class="container">
+            
+            <div class="row">
+                
+                 {{!-- Edit Form--}}
+               
+                <section class="get">
+                    {{!--<a href="/admin/admin_home/subscribers"><button type="button" class="btn btn-success">LOAD DATA&nbsp;<i class="fa fa-refresh" aria-hidden="true"></i></button></a>--}}
+                               
+                         <div> 
+                             {{#each items }}
+                                <article class="item subscriber_form">  
+                                    <div>Email Id:<span class="subscriber_email_id"  data-id="{{this._id}}"> {{ this.email }}</span></div>
+                                    <form>
+                                        <a href="mailto:{{ this.email }}"><button type="button" class="btn btn-warning send_email" >Email &nbsp;<i class="fa fa-envelope-o" aria-hidden="true"></i></button></a>
+                                        <button type="button" class="btn btn-danger deleteSubscriber" data-id="{{this._id}}">Delete&nbsp;<i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                                     </form>   
+                                </article>
+                             {{/each}}
+                                    
+                        </div>
+                     </section>
+            </div>
+        </div>
+    </div>
+</div>

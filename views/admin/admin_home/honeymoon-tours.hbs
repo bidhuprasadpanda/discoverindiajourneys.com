@@ -1,0 +1,129 @@
+<div class="row main">
+    <h4 class="decorated"><span>Honeymoon Tours</span></h4>
+</div>
+
+
+<section id="main">
+    <div class="container">
+      <div class="row">
+        {{!-- Create Form--}} {{!-- Edit Form--}}
+                <div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body corporatetour_form_update">
+
+                                <form id="updateCorporateTour">
+                                    <div class="form-group">
+                                        <label for="name">Tour name</label>
+                                        <input type="text" id="honeymoonTour_name_edit" name="tourname"  class="form-control honeymoonTour_name_edit" >
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <div id="images"></div>
+                                            <div class="form-group">
+                                                <div class="col-md-12">
+                                                    <div class="col-md-6 img_upload_btn">
+                                                        <form name="fileUpload" id="fileUpload" enctype="multipart/form-data" method="post"
+                                                            role="form" class="form-inline">
+                                                            <div class="form-group">
+                                                                <label>Choose image to upload: </label>
+                                                                <input name="uploadfile" type="file" id="myFile">
+                                                                <span style="color:red">Upload only image file (PNG, JPEG, GIF)</span>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input value="UPLOAD" type="button" class="btn btn-primary btn-upload">
+                                                                <span>(Click Here To Upload The Image)</span>
+                                                            </div>
+                                                            <div style="display:none;margin-top:10px;" class="progress">
+                                                                <div role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-striped active">0% </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div>
+                                                            <h3>List all uploaded files</h3>
+                                                        </div>
+                                                        <p id="msg"></p>
+                                                        <div id="files"  class="corporatetour_Present_Images" style="display: grid;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" name="_csrf" value="{{ csrfToken }}">
+                                    <button type="button" form="updateCorporateTour" value="Submit" class="btn btn-primary updateCorporateTourBtn" data-id=""><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;SAVE CHANGES</button>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default btn-place-close" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <!-- /.modal -->
+      </div>
+    </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="list-group">
+              <a href="/admin" class="list-group-item active main-color-bg">
+                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> DASHBOARD
+              </a>
+              <a href="/admin" class="list-group-item"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> CORPORATE TOURS </a>
+              <a href="/admin/admin_home/honeymoon-tours" class="list-group-item"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> HONEYMOON TOURS </a>
+              <a href="/admin/admin_home/cruise-tours" class="list-group-item"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> CRUISE HOLIDAYS</a>
+            </div>
+
+            <div class="well list__of__subscribers">
+             
+              <h4>List Of Subscribers</h4>
+               <a href="/admin/admin_home/subscribers"><input name="subscribers" type="button" id="subscribers" class="btn btn-success" value="List Of Subscribers"></a>
+           
+            </div>
+          </div>
+          <div class="col-md-9">
+            <!-- Website Overview -->
+            <div class="panel panel-default">
+              <div class="panel-heading main-color-bg">
+                <h3 class="panel-title">HONEYMOON TOURS</h3>
+                
+              </div>
+              <div class="panel-body">
+                <div class="row">
+                      <div class="col-md-12">
+                          <a href="/admin/admin_home/honeymoon-tours-new"> <button type="button" class="btn btn-warning"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;New Honeymoon Tour</button></a>
+                      </div>
+                </div>
+                <br>
+               {{!--  {{items}} --}}
+                <table class="table table-striped table-hover">
+                      <tbody>
+                        <tr>
+                            <th>Tour name</th>
+                            <th>Created</th>
+                            <th></th>
+                          </tr>
+                          {{#each items}}
+                          <tr class="honeymoon__tour__results">
+                            <td class="honeymoontour__name">{{this.name}}</td>
+                            <td>{{this.created_at}}</td>
+                             {{#each this.images as |img|}}
+                                 <td style="display: none;" class="honeymoon_images_edit">{{img}}</td>
+                              {{/each}}
+                            <td><a class="btn btn-default edit__honeymoon__tour" data-id="{{this._id}}" data-toggle="modal" data-target="#myModal" data-backdrop="static" data-keyboard="false">Edit</a> 
+                            <a class="btn btn-danger delete__honeymoon__tour"  data-id="{{this._id}}">Delete</a></td>
+                          </tr>
+                          {{/each}}
+                      </tbody>
+                    </table>
+              </div>
+              </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+

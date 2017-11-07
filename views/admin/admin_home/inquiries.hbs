@@ -1,0 +1,160 @@
+<div class="main" role="main">
+    <div id="content" class="content full" style="padding-top:10px;">
+        <div class="container">
+            <div class="row">
+                {{!--
+                <div class="col-md-12 provider_heading">
+                    <h2>All Package Providers</h2>
+                </div>--}}
+                <h2 class="decorated"><span>All Inquiries</span></h2>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                
+                   {{!-- Edit Form--}}
+               <div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body subscription-body">
+                                <form  id="popForm" class="animated bounceInDown in">
+                                    <div class="form-group">
+                                        <label for="firstname">First Name</label>
+                                        <input type="text" id="firstname" name="firstname" class="form-control inquiry_firstname" readonly>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="lastname">Last Name</label>
+                                        <input type="text" id="lastname" name="lastname" class="form-control inquiry_lastname" readonly>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="bookingDate">Booking Date</label>
+                                        <input type="text" id="bookingdate" name="bookingdate" class="form-control inquiry_booking_date" readonly>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="bookingId">booking Id</label>
+                                        <input type="text" id="bookingId" name="bookingId" class="form-control inquiry_bookingId" readonly>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="packageName">Package Name</label>
+                                        <input type="text" id="packageName" name="packageName" class="form-control inquiry_packageName" readonly>
+                                    </div>
+                                     <div class="form-group">
+                                        <label for="fromDate">From Date</label>
+                                        <input type="text" id="fromDate" name="fromDate" class="form-control inquiry_packageFromDate" readonly>
+                                    </div>
+                                     <div class="form-group">
+                                        <label for="toDate">To Date</label>
+                                        <input type="text" id="toDate" name="toDate" class="form-control inquiry_packageToDate" readonly>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="totalRooms">Total Rooms</label>
+                                        <input type="text" id="totalRooms" name="totalRooms" class="form-control inquiry_total_rooms" readonly>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="roomDetails">Room Details</label>
+                                        <textarea type="text" id="roomDetails" rows="5" name="roomDetails" class="form-control inquiry_roomDetails" readonly></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">EMAIL ID</label>
+                                        <input type="text" id="email" name="email" class="form-control inquiry_email" readonly>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phonenumber">Phone Number</label>
+                                        <input type="text" id="phonenumber" name="phonenumber" class="form-control inquiry_phonenumber" readonly>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="countryname">Country Name</label>
+                                        <input type="text" id="countryname" name="countryname" class="form-control inquiry_countryname" readonly>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inquiryType">Inquiry Type</label>
+                                        <input type="text" id="inquiryType" name="inquiryType" class="form-control inquiry_Type" readonly>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="promoCode">Promo Code</label>
+                                        <input type="text" id="promoCode" name="promoCode" class="form-control inquiry_promoCode" readonly>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inquiryStatus">Inquiry Status</label>
+                                        <select id="inquiryStatus" name="inquiryStatus" class="form-control inquiry_inquiryStatus">
+                                            <option value="">Select Hotel Category</option>
+                                            <option value="New">New</option>
+                                            <option value="Pending">Pending</option>
+                                            <option value="Complete">Complete</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="hotelModificationRequest">Hotel Modification Request</label>
+                                        <input type="text" id="hotelModificationRequest" name="hotelModificationRequest" class="form-control inquiry_hotelModificationRequest" readonly>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="hotelModificationRequest">PackageDuration Modification Request</label>
+                                        <input type="text" id="hotelModificationRequest" name="hotelModificationRequest" class="form-control inquiry_packageDuration" readonly>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="extraServiceRequest">Extra Service Request</label>
+                                        <input type="text" id="extraServiceRequest" name="extraServiceRequest" class="form-control inquiry_extraServiceRequest" readonly>
+                                    </div>
+                                    <input type="hidden" name="_csrf" value="{{ csrfToken }}" >
+                                    <button type="button" value="Submit" class="btn btn-primary updateInquiry" data-id=""><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;SAVE CHANGES</button>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default inquiry_close_btn" data-dismiss="modal">Close</button>
+                            </div>
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+                     <section class="get">   
+                             <div class="inquiry_details">
+                                    <table class="table table-condensed table-hover table_inquiry_details">
+                                        <thead>
+                                            <th>Date</th>
+                                            <th>Booking ID</th>
+                                            <th>Inquiry Type</th>
+                                            <th>Country</th>
+                                            <th>Guest Name</th>
+                                            <th>Status</th>
+                                            <th></th>
+                                        </thead>
+                                        <tbody>
+                                            {{#each items}}
+                                                <tr class="inquery_details_row">   
+                                                    <td class="inquery_detilas_createddate">{{this.inquiryDate}}</td>
+                                                    <td class="inquery_detilas_bookingid">{{this.bookingId}}</td>
+                                                    <td class="inquery_detilas_inquerytype">{{this.inquiryType}}</td>
+                                                    <td class="inquery_details_countryname">{{this.countryName}}</td>
+                                                    <td>{{this.firstName}}&nbsp;{{this.lastName}}</td>
+                                                    <td class="inquery_details_firstname" style="display: none;">{{this.firstName}}</td>
+                                                    <td class="inquery_details_lastname" style="display: none;">{{this.lastName}}</td>
+                                                    <td class="inquery_details_totalroombooked" style="display: none;">{{this.totalRooms}}</td>
+                                                    <td class="inquery_details_user_phoneNumber" style="display: none;">{{this.phoneNumber}}</td>
+                                                    <td class="inquery_details_user_promoCode" style="display: none;">{{this.promoCode}}</td>
+                                                    <td class="inquery_details_user_emailId" style="display: none;">{{this.emailID}}</td>
+                                                    <td class="inquery_details_user_packageName" style="display: none;">{{this.packageName}}</td>
+                                                    <td class="inquery_details_user_inquiryStatus" style="display: none;">{{this.inquiryStatus}}</td>
+                                                    <td class="inquery_details_user_accomodationDetails" style="display: none;">{{json this.accomodationDetails}}</td>
+                                                   <td class="inquery_details_user_fromDate" style="display: none;">{{this.fromDate}}</td>
+                                                   <td class="inquery_details_user_toDate" style="display: none;">{{this.toDate}}</td>
+                                                    <td>
+                                                        <span class="label label-{{this.inquiryStatus}}">{{this.inquiryStatus}}</span>
+                                                    </td> 
+                                                    <td class="inquery_details_hotelModificationRequest" style="display: none;">{{this.hotelModificationRequest}}</td>
+                                                    <td class="inquery_details_packageDurationModificationRequest" style="display: none;">{{this.packageDurationModificationRequest}}</td>
+                                                    <td class="inquery_details_extraServiceRequest" style="display: none;">{{this.extraServiceRequest}}</td>
+                                                    <td class="table_inquiry_btn_group">
+                                                        <a  class="btn btn-success inquiry_details_show" data-id="{{this._id}}" data-toggle="modal" data-target="#myModal" data-backdrop="static" data-keyboard="false">Open</a>
+                                                        <a  class="btn btn-info" data-id="{{this._id}}" href="mailto:{{this.emailID}}">Reply</a>
+                                                        <a  class="btn btn-warning deleteInquiry" data-id="{{this._id}}">Delete</a>
+                                                    </td>
+                                                </tr>
+                                            {{/each}}
+                                        </tbody>
+                                    </table>
+                             </div>
+                     </section>
+            </div>
+        </div>
+    </div>
+</div>

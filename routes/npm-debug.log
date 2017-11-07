@@ -1,0 +1,3184 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'connect-multiparty',
+1 verbose cli   '--save' ]
+2 info using npm@3.5.2
+3 info using node@v4.2.6
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData connect-multiparty
+8 silly fetchNamedPackageData connect-multiparty
+9 silly mapToRegistry name connect-multiparty
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/connect-multiparty
+13 verbose request uri https://registry.npmjs.org/connect-multiparty
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 7:21:41 AM
+16 verbose request id 8ad105607d86ad7a
+17 verbose etag W/"5805bfc2-5390"
+18 verbose lastModified Tue, 18 Oct 2016 06:22:58 GMT
+19 http request GET https://registry.npmjs.org/connect-multiparty
+20 http 304 https://registry.npmjs.org/connect-multiparty
+21 verbose headers { date: 'Thu, 09 Mar 2017 07:21:41 GMT',
+21 verbose headers   via: '1.1 varnish',
+21 verbose headers   'cache-control': 'max-age=300',
+21 verbose headers   etag: 'W/"5805bfc2-5390"',
+21 verbose headers   age: '79',
+21 verbose headers   connection: 'keep-alive',
+21 verbose headers   'x-served-by': 'cache-sin6927-SIN',
+21 verbose headers   'x-cache': 'HIT',
+21 verbose headers   'x-cache-hits': '1',
+21 verbose headers   'x-timer': 'S1489044101.117458,VS0,VE0',
+21 verbose headers   vary: 'Accept-Encoding' }
+22 silly get cb [ 304,
+22 silly get   { date: 'Thu, 09 Mar 2017 07:21:41 GMT',
+22 silly get     via: '1.1 varnish',
+22 silly get     'cache-control': 'max-age=300',
+22 silly get     etag: 'W/"5805bfc2-5390"',
+22 silly get     age: '79',
+22 silly get     connection: 'keep-alive',
+22 silly get     'x-served-by': 'cache-sin6927-SIN',
+22 silly get     'x-cache': 'HIT',
+22 silly get     'x-cache-hits': '1',
+22 silly get     'x-timer': 'S1489044101.117458,VS0,VE0',
+22 silly get     vary: 'Accept-Encoding' } ]
+23 verbose etag https://registry.npmjs.org/connect-multiparty from cache
+24 verbose get saving connect-multiparty to /home/ubuntu/.npm/registry.npmjs.org/connect-multiparty/.cache.json
+25 silly install normalizeTree
+26 silly loadCurrentTree Finishing
+27 silly loadIdealTree Starting
+28 silly install loadIdealTree
+29 silly cloneCurrentTree Starting
+30 silly install cloneCurrentTreeToIdealTree
+31 silly cloneCurrentTree Finishing
+32 silly loadShrinkwrap Starting
+33 silly install loadShrinkwrap
+34 silly loadShrinkwrap Finishing
+35 silly loadAllDepsIntoIdealTree Starting
+36 silly install loadAllDepsIntoIdealTree
+37 silly resolveWithNewModule connect-multiparty@2.0.0 checking installable status
+38 silly cache add args [ 'connect-multiparty', null ]
+39 verbose cache add spec connect-multiparty
+40 silly cache add parsed spec Result {
+40 silly cache add   raw: 'connect-multiparty',
+40 silly cache add   scope: null,
+40 silly cache add   name: 'connect-multiparty',
+40 silly cache add   rawSpec: '',
+40 silly cache add   spec: 'latest',
+40 silly cache add   type: 'tag' }
+41 silly addNamed connect-multiparty@latest
+42 verbose addNamed "latest" is being treated as a dist-tag for connect-multiparty
+43 info addNameTag [ 'connect-multiparty', 'latest' ]
+44 silly mapToRegistry name connect-multiparty
+45 silly mapToRegistry using default registry
+46 silly mapToRegistry registry https://registry.npmjs.org/
+47 silly mapToRegistry uri https://registry.npmjs.org/connect-multiparty
+48 verbose addNameTag registry:https://registry.npmjs.org/connect-multiparty not in flight; fetching
+49 verbose get https://registry.npmjs.org/connect-multiparty not expired, no request
+50 silly addNameTag next cb for connect-multiparty with tag latest
+51 silly addNamed connect-multiparty@2.0.0
+52 verbose addNamed "2.0.0" is a plain semver version for connect-multiparty
+53 silly cache afterAdd connect-multiparty@2.0.0
+54 verbose afterAdd /home/ubuntu/.npm/connect-multiparty/2.0.0/package/package.json not in flight; writing
+55 verbose afterAdd /home/ubuntu/.npm/connect-multiparty/2.0.0/package/package.json written
+56 silly fetchNamedPackageData qs
+57 silly mapToRegistry name qs
+58 silly mapToRegistry using default registry
+59 silly mapToRegistry registry https://registry.npmjs.org/
+60 silly mapToRegistry uri https://registry.npmjs.org/qs
+61 verbose request uri https://registry.npmjs.org/qs
+62 verbose request no auth needed
+63 info attempt registry request try #1 at 7:21:41 AM
+64 verbose etag W/"58bd94a6-17893"
+65 verbose lastModified Mon, 06 Mar 2017 16:56:06 GMT
+66 http request GET https://registry.npmjs.org/qs
+67 http 304 https://registry.npmjs.org/qs
+68 verbose headers { date: 'Thu, 09 Mar 2017 07:21:41 GMT',
+68 verbose headers   via: '1.1 varnish',
+68 verbose headers   'cache-control': 'max-age=300',
+68 verbose headers   etag: 'W/"58bd94a6-17893"',
+68 verbose headers   age: '251',
+68 verbose headers   connection: 'keep-alive',
+68 verbose headers   'x-served-by': 'cache-sin6927-SIN',
+68 verbose headers   'x-cache': 'HIT',
+68 verbose headers   'x-cache-hits': '33',
+68 verbose headers   'x-timer': 'S1489044101.470422,VS0,VE0',
+68 verbose headers   vary: 'Accept-Encoding' }
+69 silly get cb [ 304,
+69 silly get   { date: 'Thu, 09 Mar 2017 07:21:41 GMT',
+69 silly get     via: '1.1 varnish',
+69 silly get     'cache-control': 'max-age=300',
+69 silly get     etag: 'W/"58bd94a6-17893"',
+69 silly get     age: '251',
+69 silly get     connection: 'keep-alive',
+69 silly get     'x-served-by': 'cache-sin6927-SIN',
+69 silly get     'x-cache': 'HIT',
+69 silly get     'x-cache-hits': '33',
+69 silly get     'x-timer': 'S1489044101.470422,VS0,VE0',
+69 silly get     vary: 'Accept-Encoding' } ]
+70 verbose etag https://registry.npmjs.org/qs from cache
+71 verbose get saving qs to /home/ubuntu/.npm/registry.npmjs.org/qs/.cache.json
+72 silly resolveWithNewModule qs@4.0.0 checking installable status
+73 silly cache add args [ 'qs@~4.0.0', null ]
+74 verbose cache add spec qs@~4.0.0
+75 silly cache add parsed spec Result {
+75 silly cache add   raw: 'qs@~4.0.0',
+75 silly cache add   scope: null,
+75 silly cache add   name: 'qs',
+75 silly cache add   rawSpec: '~4.0.0',
+75 silly cache add   spec: '>=4.0.0 <4.1.0',
+75 silly cache add   type: 'range' }
+76 silly addNamed qs@>=4.0.0 <4.1.0
+77 verbose addNamed ">=4.0.0 <4.1.0" is a valid semver range for qs
+78 silly addNameRange { name: 'qs', range: '>=4.0.0 <4.1.0', hasData: false }
+79 silly mapToRegistry name qs
+80 silly mapToRegistry using default registry
+81 silly mapToRegistry registry https://registry.npmjs.org/
+82 silly mapToRegistry uri https://registry.npmjs.org/qs
+83 verbose addNameRange registry:https://registry.npmjs.org/qs not in flight; fetching
+84 verbose get https://registry.npmjs.org/qs not expired, no request
+85 silly addNameRange number 2 { name: 'qs', range: '>=4.0.0 <4.1.0', hasData: true }
+86 silly addNameRange versions [ 'qs',
+86 silly addNameRange   [ '0.0.1',
+86 silly addNameRange     '0.0.2',
+86 silly addNameRange     '0.0.3',
+86 silly addNameRange     '0.0.4',
+86 silly addNameRange     '0.0.5',
+86 silly addNameRange     '0.0.6',
+86 silly addNameRange     '0.0.7',
+86 silly addNameRange     '0.1.0',
+86 silly addNameRange     '0.2.0',
+86 silly addNameRange     '0.3.0',
+86 silly addNameRange     '0.3.1',
+86 silly addNameRange     '0.3.2',
+86 silly addNameRange     '0.4.0',
+86 silly addNameRange     '0.4.1',
+86 silly addNameRange     '0.4.2',
+86 silly addNameRange     '0.5.0',
+86 silly addNameRange     '0.5.1',
+86 silly addNameRange     '0.5.2',
+86 silly addNameRange     '0.5.3',
+86 silly addNameRange     '0.5.4',
+86 silly addNameRange     '0.5.5',
+86 silly addNameRange     '0.5.6',
+86 silly addNameRange     '0.6.0',
+86 silly addNameRange     '0.6.1',
+86 silly addNameRange     '0.6.2',
+86 silly addNameRange     '0.6.3',
+86 silly addNameRange     '0.6.4',
+86 silly addNameRange     '0.6.5',
+86 silly addNameRange     '0.6.6',
+86 silly addNameRange     '1.0.0',
+86 silly addNameRange     '1.0.1',
+86 silly addNameRange     '1.0.2',
+86 silly addNameRange     '1.1.0',
+86 silly addNameRange     '1.2.0',
+86 silly addNameRange     '1.2.1',
+86 silly addNameRange     '1.2.2',
+86 silly addNameRange     '2.0.0',
+86 silly addNameRange     '2.1.0',
+86 silly addNameRange     '2.2.0',
+86 silly addNameRange     '2.2.1',
+86 silly addNameRange     '2.2.2',
+86 silly addNameRange     '2.2.3',
+86 silly addNameRange     '2.2.4',
+86 silly addNameRange     '2.2.5',
+86 silly addNameRange     '2.3.0',
+86 silly addNameRange     '2.3.1',
+86 silly addNameRange     '2.3.2',
+86 silly addNameRange     '2.3.3',
+86 silly addNameRange     '2.4.0',
+86 silly addNameRange     '2.4.1',
+86 silly addNameRange     '2.4.2',
+86 silly addNameRange     '3.0.0',
+86 silly addNameRange     '3.1.0',
+86 silly addNameRange     '4.0.0',
+86 silly addNameRange     '5.0.0',
+86 silly addNameRange     '5.1.0',
+86 silly addNameRange     '5.2.0',
+86 silly addNameRange     '6.0.0',
+86 silly addNameRange     '6.0.1',
+86 silly addNameRange     '6.0.2',
+86 silly addNameRange     '6.1.0',
+86 silly addNameRange     '6.2.0',
+86 silly addNameRange     '5.2.1',
+86 silly addNameRange     '6.2.1',
+86 silly addNameRange     '6.3.0',
+86 silly addNameRange     '6.3.1',
+86 silly addNameRange     '6.1.1',
+86 silly addNameRange     '6.0.3',
+86 silly addNameRange     '6.2.2',
+86 silly addNameRange     '6.4.0',
+86 silly addNameRange     '6.3.2',
+86 silly addNameRange     '6.2.3',
+86 silly addNameRange     '6.1.2',
+86 silly addNameRange     '6.0.4' ] ]
+87 silly addNamed qs@4.0.0
+88 verbose addNamed "4.0.0" is a plain semver version for qs
+89 silly cache afterAdd qs@4.0.0
+90 verbose afterAdd /home/ubuntu/.npm/qs/4.0.0/package/package.json not in flight; writing
+91 verbose afterAdd /home/ubuntu/.npm/qs/4.0.0/package/package.json written
+92 silly fetchNamedPackageData fsevents
+93 silly mapToRegistry name fsevents
+94 silly mapToRegistry using default registry
+95 silly mapToRegistry registry https://registry.npmjs.org/
+96 silly mapToRegistry uri https://registry.npmjs.org/fsevents
+97 verbose request uri https://registry.npmjs.org/fsevents
+98 verbose request no auth needed
+99 info attempt registry request try #1 at 7:21:41 AM
+100 verbose etag W/"58bf83a2-d5d4"
+101 verbose lastModified Wed, 08 Mar 2017 04:08:02 GMT
+102 http request GET https://registry.npmjs.org/fsevents
+103 http 304 https://registry.npmjs.org/fsevents
+104 verbose headers { date: 'Thu, 09 Mar 2017 07:21:41 GMT',
+104 verbose headers   via: '1.1 varnish',
+104 verbose headers   'cache-control': 'max-age=300',
+104 verbose headers   etag: 'W/"58bf83a2-d5d4"',
+104 verbose headers   age: '271',
+104 verbose headers   connection: 'keep-alive',
+104 verbose headers   'x-served-by': 'cache-sin6927-SIN',
+104 verbose headers   'x-cache': 'HIT',
+104 verbose headers   'x-cache-hits': '33',
+104 verbose headers   'x-timer': 'S1489044101.661472,VS0,VE0',
+104 verbose headers   vary: 'Accept-Encoding' }
+105 silly get cb [ 304,
+105 silly get   { date: 'Thu, 09 Mar 2017 07:21:41 GMT',
+105 silly get     via: '1.1 varnish',
+105 silly get     'cache-control': 'max-age=300',
+105 silly get     etag: 'W/"58bf83a2-d5d4"',
+105 silly get     age: '271',
+105 silly get     connection: 'keep-alive',
+105 silly get     'x-served-by': 'cache-sin6927-SIN',
+105 silly get     'x-cache': 'HIT',
+105 silly get     'x-cache-hits': '33',
+105 silly get     'x-timer': 'S1489044101.661472,VS0,VE0',
+105 silly get     vary: 'Accept-Encoding' } ]
+106 verbose etag https://registry.npmjs.org/fsevents from cache
+107 verbose get saving fsevents to /home/ubuntu/.npm/registry.npmjs.org/fsevents/.cache.json
+108 silly resolveWithNewModule fsevents@1.1.1 checking installable status
+109 silly loadAllDepsIntoIdealTree Finishing
+110 silly idealTree:prePrune luxetripasia@0.0.0
+110 silly idealTree:prePrune ├── abbrev@1.1.0
+110 silly idealTree:prePrune ├── accepts@1.3.3
+110 silly idealTree:prePrune ├── align-text@0.1.4
+110 silly idealTree:prePrune ├── amdefine@1.0.1
+110 silly idealTree:prePrune ├── ansi-regex@2.1.1
+110 silly idealTree:prePrune ├── ansi-styles@2.2.1
+110 silly idealTree:prePrune ├── anymatch@1.3.0
+110 silly idealTree:prePrune ├── arr-diff@2.0.0
+110 silly idealTree:prePrune ├── arr-flatten@1.0.1
+110 silly idealTree:prePrune ├── array-flatten@1.1.1
+110 silly idealTree:prePrune ├── array-unique@0.2.1
+110 silly idealTree:prePrune ├── arrify@1.0.1
+110 silly idealTree:prePrune ├── asap@2.0.5
+110 silly idealTree:prePrune ├── async-each@1.0.1
+110 silly idealTree:prePrune ├── async@2.1.4
+110 silly idealTree:prePrune ├── balanced-match@0.4.2
+110 silly idealTree:prePrune ├── base64-url@1.3.3
+110 silly idealTree:prePrune ├── basic-auth@1.0.4
+110 silly idealTree:prePrune ├── bcrypt-nodejs@0.0.3
+110 silly idealTree:prePrune ├── binary-extensions@1.8.0
+110 silly idealTree:prePrune ├── bluebird@2.10.2
+110 silly idealTree:prePrune ├── body-parser@1.15.2
+110 silly idealTree:prePrune ├─┬ body@5.1.0
+110 silly idealTree:prePrune │ ├── bytes@1.0.0
+110 silly idealTree:prePrune │ └── raw-body@1.1.7
+110 silly idealTree:prePrune ├── bootstrap-datepicker@1.6.4
+110 silly idealTree:prePrune ├── brace-expansion@1.1.6
+110 silly idealTree:prePrune ├── braces@1.8.5
+110 silly idealTree:prePrune ├── bson@0.5.7
+110 silly idealTree:prePrune ├── buffer-shims@1.0.0
+110 silly idealTree:prePrune ├─┬ busboy@0.2.14
+110 silly idealTree:prePrune │ ├── isarray@0.0.1
+110 silly idealTree:prePrune │ └── readable-stream@1.1.14
+110 silly idealTree:prePrune ├── bytes@2.4.0
+110 silly idealTree:prePrune ├── camelcase@1.2.1
+110 silly idealTree:prePrune ├── center-align@0.1.3
+110 silly idealTree:prePrune ├── chalk@1.1.3
+110 silly idealTree:prePrune ├── chokidar@1.6.1
+110 silly idealTree:prePrune ├─┬ cliui@2.1.0
+110 silly idealTree:prePrune │ └── wordwrap@0.0.2
+110 silly idealTree:prePrune ├── concat-map@0.0.1
+110 silly idealTree:prePrune ├─┬ configstore@1.4.0
+110 silly idealTree:prePrune │ └── uuid@2.0.3
+110 silly idealTree:prePrune ├── connect-busboy@0.0.2
+110 silly idealTree:prePrune ├── connect-flash@0.1.1
+110 silly idealTree:prePrune ├─┬ connect-multiparty@2.0.0
+110 silly idealTree:prePrune │ └── qs@4.0.0
+110 silly idealTree:prePrune ├── content-disposition@0.5.1
+110 silly idealTree:prePrune ├── content-type@1.0.2
+110 silly idealTree:prePrune ├── continuable-cache@0.3.1
+110 silly idealTree:prePrune ├── cookie-parser@1.4.3
+110 silly idealTree:prePrune ├── cookie-signature@1.0.6
+110 silly idealTree:prePrune ├── cookie@0.3.1
+110 silly idealTree:prePrune ├── core-util-is@1.0.2
+110 silly idealTree:prePrune ├── crc@3.4.1
+110 silly idealTree:prePrune ├── csrf@3.0.4
+110 silly idealTree:prePrune ├── csurf@1.9.0
+110 silly idealTree:prePrune ├── custombox@4.0.0
+110 silly idealTree:prePrune ├── debug@2.2.0
+110 silly idealTree:prePrune ├── decamelize@1.2.0
+110 silly idealTree:prePrune ├── deep-extend@0.4.1
+110 silly idealTree:prePrune ├── define-properties@1.1.2
+110 silly idealTree:prePrune ├── depd@1.1.0
+110 silly idealTree:prePrune ├── destroy@1.0.4
+110 silly idealTree:prePrune ├─┬ dicer@0.2.5
+110 silly idealTree:prePrune │ ├── isarray@0.0.1
+110 silly idealTree:prePrune │ └── readable-stream@1.1.14
+110 silly idealTree:prePrune ├── duplexer@0.1.1
+110 silly idealTree:prePrune ├── duplexify@3.5.0
+110 silly idealTree:prePrune ├── ee-first@1.1.1
+110 silly idealTree:prePrune ├── encodeurl@1.0.1
+110 silly idealTree:prePrune ├─┬ end-of-stream@1.0.0
+110 silly idealTree:prePrune │ └── once@1.3.3
+110 silly idealTree:prePrune ├── error@7.0.2
+110 silly idealTree:prePrune ├── es6-promise@3.2.1
+110 silly idealTree:prePrune ├── escape-html@1.0.3
+110 silly idealTree:prePrune ├── escape-string-regexp@1.0.5
+110 silly idealTree:prePrune ├── etag@1.7.0
+110 silly idealTree:prePrune ├── event-stream@3.3.4
+110 silly idealTree:prePrune ├── expand-brackets@0.1.5
+110 silly idealTree:prePrune ├── expand-range@1.8.2
+110 silly idealTree:prePrune ├─┬ express-busboy@5.0.0
+110 silly idealTree:prePrune │ └── qs@5.2.1
+110 silly idealTree:prePrune ├── express-handlebars@3.0.0
+110 silly idealTree:prePrune ├── express-session@1.14.2
+110 silly idealTree:prePrune ├─┬ express-validator@3.0.0
+110 silly idealTree:prePrune │ └── bluebird@3.4.6
+110 silly idealTree:prePrune ├── express@4.14.0
+110 silly idealTree:prePrune ├── extglob@0.3.2
+110 silly idealTree:prePrune ├── fd-slicer@1.0.1
+110 silly idealTree:prePrune ├── filename-regex@2.0.0
+110 silly idealTree:prePrune ├── fill-range@2.2.3
+110 silly idealTree:prePrune ├── finalhandler@0.5.0
+110 silly idealTree:prePrune ├── for-in@1.0.2
+110 silly idealTree:prePrune ├── for-own@0.1.5
+110 silly idealTree:prePrune ├── foreach@2.0.5
+110 silly idealTree:prePrune ├── foreachasync@3.0.0
+110 silly idealTree:prePrune ├── forwarded@0.1.0
+110 silly idealTree:prePrune ├── fresh@0.3.0
+110 silly idealTree:prePrune ├── from@0.1.3
+110 silly idealTree:prePrune ├── function-bind@1.1.0
+110 silly idealTree:prePrune ├── glob-base@0.3.0
+110 silly idealTree:prePrune ├── glob-parent@2.0.0
+110 silly idealTree:prePrune ├── glob@6.0.4
+110 silly idealTree:prePrune ├─┬ got@3.3.1
+110 silly idealTree:prePrune │ └── object-assign@3.0.0
+110 silly idealTree:prePrune ├── graceful-fs@4.1.11
+110 silly idealTree:prePrune ├─┬ handlebars@4.0.5
+110 silly idealTree:prePrune │ └── async@1.5.2
+110 silly idealTree:prePrune ├── has-ansi@2.0.0
+110 silly idealTree:prePrune ├── hbs@4.0.1
+110 silly idealTree:prePrune ├── hooks-fixed@1.2.0
+110 silly idealTree:prePrune ├── http-errors@1.5.1
+110 silly idealTree:prePrune ├── iconv-lite@0.4.13
+110 silly idealTree:prePrune ├── ignore-by-default@1.0.1
+110 silly idealTree:prePrune ├── imurmurhash@0.1.4
+110 silly idealTree:prePrune ├── infinity-agent@2.0.3
+110 silly idealTree:prePrune ├── inflight@1.0.6
+110 silly idealTree:prePrune ├── inherits@2.0.3
+110 silly idealTree:prePrune ├── ini@1.3.4
+110 silly idealTree:prePrune ├── ipaddr.js@1.1.1
+110 silly idealTree:prePrune ├── is-binary-path@1.0.1
+110 silly idealTree:prePrune ├── is-buffer@1.1.4
+110 silly idealTree:prePrune ├── is-dotfile@1.0.2
+110 silly idealTree:prePrune ├── is-equal-shallow@0.1.3
+110 silly idealTree:prePrune ├── is-extendable@0.1.1
+110 silly idealTree:prePrune ├── is-extglob@1.0.0
+110 silly idealTree:prePrune ├── is-finite@1.0.2
+110 silly idealTree:prePrune ├── is-glob@2.0.1
+110 silly idealTree:prePrune ├── is-npm@1.0.0
+110 silly idealTree:prePrune ├── is-number@2.1.0
+110 silly idealTree:prePrune ├── is-posix-bracket@0.1.1
+110 silly idealTree:prePrune ├── is-primitive@2.0.0
+110 silly idealTree:prePrune ├── is-redirect@1.0.0
+110 silly idealTree:prePrune ├── is-stream@1.1.0
+110 silly idealTree:prePrune ├── isarray@1.0.0
+110 silly idealTree:prePrune ├── isobject@2.1.0
+110 silly idealTree:prePrune ├── jquery@3.1.1
+110 silly idealTree:prePrune ├── kareem@1.1.3
+110 silly idealTree:prePrune ├── kind-of@3.0.4
+110 silly idealTree:prePrune ├── latest-version@1.0.1
+110 silly idealTree:prePrune ├── lazy-cache@1.0.4
+110 silly idealTree:prePrune ├── lodash._baseassign@3.2.0
+110 silly idealTree:prePrune ├── lodash._basecopy@3.0.1
+110 silly idealTree:prePrune ├── lodash._bindcallback@3.0.1
+110 silly idealTree:prePrune ├── lodash._createassigner@3.1.1
+110 silly idealTree:prePrune ├── lodash._getnative@3.9.1
+110 silly idealTree:prePrune ├── lodash._isiterateecall@3.0.9
+110 silly idealTree:prePrune ├── lodash.assign@3.2.0
+110 silly idealTree:prePrune ├── lodash.defaults@3.1.2
+110 silly idealTree:prePrune ├── lodash.isarguments@3.1.0
+110 silly idealTree:prePrune ├── lodash.isarray@3.0.4
+110 silly idealTree:prePrune ├── lodash.keys@3.1.2
+110 silly idealTree:prePrune ├── lodash.restparam@3.6.1
+110 silly idealTree:prePrune ├── lodash@4.17.2
+110 silly idealTree:prePrune ├── longest@1.0.1
+110 silly idealTree:prePrune ├── lowercase-keys@1.0.0
+110 silly idealTree:prePrune ├── map-stream@0.1.0
+110 silly idealTree:prePrune ├── media-typer@0.3.0
+110 silly idealTree:prePrune ├── merge-descriptors@1.0.1
+110 silly idealTree:prePrune ├─┬ method-override@2.3.7
+110 silly idealTree:prePrune │ ├── debug@2.3.3
+110 silly idealTree:prePrune │ └── ms@0.7.2
+110 silly idealTree:prePrune ├── methods@1.1.2
+110 silly idealTree:prePrune ├── micromatch@2.3.11
+110 silly idealTree:prePrune ├── mime-db@1.25.0
+110 silly idealTree:prePrune ├── mime-types@2.1.13
+110 silly idealTree:prePrune ├── mime@1.3.4
+110 silly idealTree:prePrune ├── minimatch@3.0.3
+110 silly idealTree:prePrune ├── minimist@0.0.10
+110 silly idealTree:prePrune ├─┬ mkdirp@0.5.1
+110 silly idealTree:prePrune │ └── minimist@0.0.8
+110 silly idealTree:prePrune ├── mongodb-core@2.0.13
+110 silly idealTree:prePrune ├── mongodb@2.2.11
+110 silly idealTree:prePrune ├─┬ mongoose@4.7.1
+110 silly idealTree:prePrune │ └── async@2.1.2
+110 silly idealTree:prePrune ├── morgan@1.7.0
+110 silly idealTree:prePrune ├── mpath@0.2.1
+110 silly idealTree:prePrune ├── mpromise@0.5.5
+110 silly idealTree:prePrune ├─┬ mquery@2.0.0
+110 silly idealTree:prePrune │ └── sliced@0.0.5
+110 silly idealTree:prePrune ├── ms@0.7.1
+110 silly idealTree:prePrune ├── multiparty@4.1.3
+110 silly idealTree:prePrune ├── muri@1.1.1
+110 silly idealTree:prePrune ├── negotiator@0.6.1
+110 silly idealTree:prePrune ├── nested-error-stacks@1.0.2
+110 silly idealTree:prePrune ├── nodemon@1.11.0
+110 silly idealTree:prePrune ├── nopt@1.0.10
+110 silly idealTree:prePrune ├── normalize-path@2.0.1
+110 silly idealTree:prePrune ├── npm-debug.log
+110 silly idealTree:prePrune ├── number-is-nan@1.0.1
+110 silly idealTree:prePrune ├── object-assign@4.1.1
+110 silly idealTree:prePrune ├── object-keys@1.0.11
+110 silly idealTree:prePrune ├── object.assign@4.0.4
+110 silly idealTree:prePrune ├── object.omit@2.0.1
+110 silly idealTree:prePrune ├── on-finished@2.3.0
+110 silly idealTree:prePrune ├── on-headers@1.0.1
+110 silly idealTree:prePrune ├── once@1.4.0
+110 silly idealTree:prePrune ├── optimist@0.6.1
+110 silly idealTree:prePrune ├── os-homedir@1.0.2
+110 silly idealTree:prePrune ├── os-tmpdir@1.0.2
+110 silly idealTree:prePrune ├── osenv@0.1.4
+110 silly idealTree:prePrune ├── package-json@1.2.0
+110 silly idealTree:prePrune ├── parse-glob@3.0.4
+110 silly idealTree:prePrune ├── parseurl@1.3.1
+110 silly idealTree:prePrune ├── passport-local@1.0.0
+110 silly idealTree:prePrune ├── passport-strategy@1.0.0
+110 silly idealTree:prePrune ├── passport@0.3.2
+110 silly idealTree:prePrune ├── path-is-absolute@1.0.1
+110 silly idealTree:prePrune ├── path-to-regexp@0.1.7
+110 silly idealTree:prePrune ├── pause-stream@0.0.11
+110 silly idealTree:prePrune ├── pause@0.0.1
+110 silly idealTree:prePrune ├── pend@1.2.0
+110 silly idealTree:prePrune ├── pinkie-promise@2.0.1
+110 silly idealTree:prePrune ├── pinkie@2.0.4
+110 silly idealTree:prePrune ├── prepend-http@1.0.4
+110 silly idealTree:prePrune ├── preserve@0.2.0
+110 silly idealTree:prePrune ├── process-nextick-args@1.0.7
+110 silly idealTree:prePrune ├── promise@7.1.1
+110 silly idealTree:prePrune ├── proxy-addr@1.1.2
+110 silly idealTree:prePrune ├── ps-tree@1.1.0
+110 silly idealTree:prePrune ├── qs@6.2.0
+110 silly idealTree:prePrune ├── random-bytes@1.0.0
+110 silly idealTree:prePrune ├── randomatic@1.1.6
+110 silly idealTree:prePrune ├── range-parser@1.2.0
+110 silly idealTree:prePrune ├── raw-body@2.1.7
+110 silly idealTree:prePrune ├─┬ rc@1.1.7
+110 silly idealTree:prePrune │ └── minimist@1.2.0
+110 silly idealTree:prePrune ├── read-all-stream@3.1.0
+110 silly idealTree:prePrune ├── readable-stream@2.1.5
+110 silly idealTree:prePrune ├── readdirp@2.1.0
+110 silly idealTree:prePrune ├── regex-cache@0.4.3
+110 silly idealTree:prePrune ├── regexp-clone@0.0.1
+110 silly idealTree:prePrune ├── registry-url@3.1.0
+110 silly idealTree:prePrune ├── repeat-element@1.1.2
+110 silly idealTree:prePrune ├── repeat-string@1.6.1
+110 silly idealTree:prePrune ├── repeating@1.1.3
+110 silly idealTree:prePrune ├── require_optional@1.0.0
+110 silly idealTree:prePrune ├── resolve-from@2.0.0
+110 silly idealTree:prePrune ├── right-align@0.1.3
+110 silly idealTree:prePrune ├── rndm@1.2.0
+110 silly idealTree:prePrune ├── safe-json-parse@1.0.1
+110 silly idealTree:prePrune ├── semver-diff@2.1.0
+110 silly idealTree:prePrune ├── semver@5.3.0
+110 silly idealTree:prePrune ├── send@0.14.1
+110 silly idealTree:prePrune ├─┬ serve-favicon@2.3.2
+110 silly idealTree:prePrune │ └── ms@0.7.2
+110 silly idealTree:prePrune ├── serve-static@1.11.1
+110 silly idealTree:prePrune ├── set-immediate-shim@1.0.1
+110 silly idealTree:prePrune ├── setprototypeof@1.0.2
+110 silly idealTree:prePrune ├── sliced@1.0.1
+110 silly idealTree:prePrune ├── slide@1.1.6
+110 silly idealTree:prePrune ├── source-map@0.4.4
+110 silly idealTree:prePrune ├── split@0.3.3
+110 silly idealTree:prePrune ├── statuses@1.3.1
+110 silly idealTree:prePrune ├── stream-combiner@0.0.4
+110 silly idealTree:prePrune ├── stream-shift@1.0.0
+110 silly idealTree:prePrune ├── streamsearch@0.1.2
+110 silly idealTree:prePrune ├── string_decoder@0.10.31
+110 silly idealTree:prePrune ├── string-length@1.0.1
+110 silly idealTree:prePrune ├── string-template@0.2.1
+110 silly idealTree:prePrune ├── strip-ansi@3.0.1
+110 silly idealTree:prePrune ├── strip-json-comments@2.0.1
+110 silly idealTree:prePrune ├── supports-color@2.0.0
+110 silly idealTree:prePrune ├── through@2.3.8
+110 silly idealTree:prePrune ├── timed-out@2.0.0
+110 silly idealTree:prePrune ├── touch@1.0.0
+110 silly idealTree:prePrune ├── tsscmp@1.0.5
+110 silly idealTree:prePrune ├── type-is@1.6.14
+110 silly idealTree:prePrune ├─┬ uglify-js@2.7.5
+110 silly idealTree:prePrune │ ├── async@0.2.10
+110 silly idealTree:prePrune │ └── source-map@0.5.6
+110 silly idealTree:prePrune ├── uglify-to-browserify@1.0.2
+110 silly idealTree:prePrune ├── uid-safe@2.1.3
+110 silly idealTree:prePrune ├── undefsafe@0.0.3
+110 silly idealTree:prePrune ├── unpipe@1.0.0
+110 silly idealTree:prePrune ├── update-notifier@0.5.0
+110 silly idealTree:prePrune ├── util-deprecate@1.0.2
+110 silly idealTree:prePrune ├── utils-merge@1.0.0
+110 silly idealTree:prePrune ├── uuid@1.4.2
+110 silly idealTree:prePrune ├── validator@6.1.0
+110 silly idealTree:prePrune ├── vary@1.1.0
+110 silly idealTree:prePrune ├── walk@2.3.9
+110 silly idealTree:prePrune ├── window-size@0.1.0
+110 silly idealTree:prePrune ├── wordwrap@0.0.3
+110 silly idealTree:prePrune ├── wrappy@1.0.2
+110 silly idealTree:prePrune ├── write-file-atomic@1.3.1
+110 silly idealTree:prePrune ├── xdg-basedir@2.0.0
+110 silly idealTree:prePrune ├── xtend@4.0.1
+110 silly idealTree:prePrune └── yargs@3.10.0
+111 silly loadIdealTree Finishing
+112 silly currentTree luxetripasia@0.0.0
+112 silly currentTree ├── abbrev@1.1.0
+112 silly currentTree ├── accepts@1.3.3
+112 silly currentTree ├── align-text@0.1.4
+112 silly currentTree ├── amdefine@1.0.1
+112 silly currentTree ├── ansi-regex@2.1.1
+112 silly currentTree ├── ansi-styles@2.2.1
+112 silly currentTree ├── anymatch@1.3.0
+112 silly currentTree ├── arr-diff@2.0.0
+112 silly currentTree ├── arr-flatten@1.0.1
+112 silly currentTree ├── array-flatten@1.1.1
+112 silly currentTree ├── array-unique@0.2.1
+112 silly currentTree ├── arrify@1.0.1
+112 silly currentTree ├── asap@2.0.5
+112 silly currentTree ├── async-each@1.0.1
+112 silly currentTree ├── async@2.1.4
+112 silly currentTree ├── balanced-match@0.4.2
+112 silly currentTree ├── base64-url@1.3.3
+112 silly currentTree ├── basic-auth@1.0.4
+112 silly currentTree ├── bcrypt-nodejs@0.0.3
+112 silly currentTree ├── binary-extensions@1.8.0
+112 silly currentTree ├── bluebird@2.10.2
+112 silly currentTree ├── body-parser@1.15.2
+112 silly currentTree ├─┬ body@5.1.0
+112 silly currentTree │ ├── bytes@1.0.0
+112 silly currentTree │ └── raw-body@1.1.7
+112 silly currentTree ├── bootstrap-datepicker@1.6.4
+112 silly currentTree ├── brace-expansion@1.1.6
+112 silly currentTree ├── braces@1.8.5
+112 silly currentTree ├── bson@0.5.7
+112 silly currentTree ├── buffer-shims@1.0.0
+112 silly currentTree ├─┬ busboy@0.2.14
+112 silly currentTree │ ├── isarray@0.0.1
+112 silly currentTree │ └── readable-stream@1.1.14
+112 silly currentTree ├── bytes@2.4.0
+112 silly currentTree ├── camelcase@1.2.1
+112 silly currentTree ├── center-align@0.1.3
+112 silly currentTree ├── chalk@1.1.3
+112 silly currentTree ├── chokidar@1.6.1
+112 silly currentTree ├─┬ cliui@2.1.0
+112 silly currentTree │ └── wordwrap@0.0.2
+112 silly currentTree ├── concat-map@0.0.1
+112 silly currentTree ├─┬ configstore@1.4.0
+112 silly currentTree │ └── uuid@2.0.3
+112 silly currentTree ├── connect-busboy@0.0.2
+112 silly currentTree ├── connect-flash@0.1.1
+112 silly currentTree ├── content-disposition@0.5.1
+112 silly currentTree ├── content-type@1.0.2
+112 silly currentTree ├── continuable-cache@0.3.1
+112 silly currentTree ├── cookie-parser@1.4.3
+112 silly currentTree ├── cookie-signature@1.0.6
+112 silly currentTree ├── cookie@0.3.1
+112 silly currentTree ├── core-util-is@1.0.2
+112 silly currentTree ├── crc@3.4.1
+112 silly currentTree ├── csrf@3.0.4
+112 silly currentTree ├── csurf@1.9.0
+112 silly currentTree ├── custombox@4.0.0
+112 silly currentTree ├── debug@2.2.0
+112 silly currentTree ├── decamelize@1.2.0
+112 silly currentTree ├── deep-extend@0.4.1
+112 silly currentTree ├── define-properties@1.1.2
+112 silly currentTree ├── depd@1.1.0
+112 silly currentTree ├── destroy@1.0.4
+112 silly currentTree ├─┬ dicer@0.2.5
+112 silly currentTree │ ├── isarray@0.0.1
+112 silly currentTree │ └── readable-stream@1.1.14
+112 silly currentTree ├── duplexer@0.1.1
+112 silly currentTree ├── duplexify@3.5.0
+112 silly currentTree ├── ee-first@1.1.1
+112 silly currentTree ├── encodeurl@1.0.1
+112 silly currentTree ├─┬ end-of-stream@1.0.0
+112 silly currentTree │ └── once@1.3.3
+112 silly currentTree ├── error@7.0.2
+112 silly currentTree ├── es6-promise@3.2.1
+112 silly currentTree ├── escape-html@1.0.3
+112 silly currentTree ├── escape-string-regexp@1.0.5
+112 silly currentTree ├── etag@1.7.0
+112 silly currentTree ├── event-stream@3.3.4
+112 silly currentTree ├── expand-brackets@0.1.5
+112 silly currentTree ├── expand-range@1.8.2
+112 silly currentTree ├─┬ express-busboy@5.0.0
+112 silly currentTree │ └── qs@5.2.1
+112 silly currentTree ├── express-handlebars@3.0.0
+112 silly currentTree ├── express-session@1.14.2
+112 silly currentTree ├─┬ express-validator@3.0.0
+112 silly currentTree │ └── bluebird@3.4.6
+112 silly currentTree ├── express@4.14.0
+112 silly currentTree ├── extglob@0.3.2
+112 silly currentTree ├── fd-slicer@1.0.1
+112 silly currentTree ├── filename-regex@2.0.0
+112 silly currentTree ├── fill-range@2.2.3
+112 silly currentTree ├── finalhandler@0.5.0
+112 silly currentTree ├── for-in@1.0.2
+112 silly currentTree ├── for-own@0.1.5
+112 silly currentTree ├── foreach@2.0.5
+112 silly currentTree ├── foreachasync@3.0.0
+112 silly currentTree ├── forwarded@0.1.0
+112 silly currentTree ├── fresh@0.3.0
+112 silly currentTree ├── from@0.1.3
+112 silly currentTree ├── function-bind@1.1.0
+112 silly currentTree ├── glob-base@0.3.0
+112 silly currentTree ├── glob-parent@2.0.0
+112 silly currentTree ├── glob@6.0.4
+112 silly currentTree ├─┬ got@3.3.1
+112 silly currentTree │ └── object-assign@3.0.0
+112 silly currentTree ├── graceful-fs@4.1.11
+112 silly currentTree ├─┬ handlebars@4.0.5
+112 silly currentTree │ └── async@1.5.2
+112 silly currentTree ├── has-ansi@2.0.0
+112 silly currentTree ├── hbs@4.0.1
+112 silly currentTree ├── hooks-fixed@1.2.0
+112 silly currentTree ├── http-errors@1.5.1
+112 silly currentTree ├── iconv-lite@0.4.13
+112 silly currentTree ├── ignore-by-default@1.0.1
+112 silly currentTree ├── imurmurhash@0.1.4
+112 silly currentTree ├── infinity-agent@2.0.3
+112 silly currentTree ├── inflight@1.0.6
+112 silly currentTree ├── inherits@2.0.3
+112 silly currentTree ├── ini@1.3.4
+112 silly currentTree ├── ipaddr.js@1.1.1
+112 silly currentTree ├── is-binary-path@1.0.1
+112 silly currentTree ├── is-buffer@1.1.4
+112 silly currentTree ├── is-dotfile@1.0.2
+112 silly currentTree ├── is-equal-shallow@0.1.3
+112 silly currentTree ├── is-extendable@0.1.1
+112 silly currentTree ├── is-extglob@1.0.0
+112 silly currentTree ├── is-finite@1.0.2
+112 silly currentTree ├── is-glob@2.0.1
+112 silly currentTree ├── is-npm@1.0.0
+112 silly currentTree ├── is-number@2.1.0
+112 silly currentTree ├── is-posix-bracket@0.1.1
+112 silly currentTree ├── is-primitive@2.0.0
+112 silly currentTree ├── is-redirect@1.0.0
+112 silly currentTree ├── is-stream@1.1.0
+112 silly currentTree ├── isarray@1.0.0
+112 silly currentTree ├── isobject@2.1.0
+112 silly currentTree ├── jquery@3.1.1
+112 silly currentTree ├── kareem@1.1.3
+112 silly currentTree ├── kind-of@3.0.4
+112 silly currentTree ├── latest-version@1.0.1
+112 silly currentTree ├── lazy-cache@1.0.4
+112 silly currentTree ├── lodash._baseassign@3.2.0
+112 silly currentTree ├── lodash._basecopy@3.0.1
+112 silly currentTree ├── lodash._bindcallback@3.0.1
+112 silly currentTree ├── lodash._createassigner@3.1.1
+112 silly currentTree ├── lodash._getnative@3.9.1
+112 silly currentTree ├── lodash._isiterateecall@3.0.9
+112 silly currentTree ├── lodash.assign@3.2.0
+112 silly currentTree ├── lodash.defaults@3.1.2
+112 silly currentTree ├── lodash.isarguments@3.1.0
+112 silly currentTree ├── lodash.isarray@3.0.4
+112 silly currentTree ├── lodash.keys@3.1.2
+112 silly currentTree ├── lodash.restparam@3.6.1
+112 silly currentTree ├── lodash@4.17.2
+112 silly currentTree ├── longest@1.0.1
+112 silly currentTree ├── lowercase-keys@1.0.0
+112 silly currentTree ├── map-stream@0.1.0
+112 silly currentTree ├── media-typer@0.3.0
+112 silly currentTree ├── merge-descriptors@1.0.1
+112 silly currentTree ├─┬ method-override@2.3.7
+112 silly currentTree │ ├── debug@2.3.3
+112 silly currentTree │ └── ms@0.7.2
+112 silly currentTree ├── methods@1.1.2
+112 silly currentTree ├── micromatch@2.3.11
+112 silly currentTree ├── mime-db@1.25.0
+112 silly currentTree ├── mime-types@2.1.13
+112 silly currentTree ├── mime@1.3.4
+112 silly currentTree ├── minimatch@3.0.3
+112 silly currentTree ├── minimist@0.0.10
+112 silly currentTree ├─┬ mkdirp@0.5.1
+112 silly currentTree │ └── minimist@0.0.8
+112 silly currentTree ├── mongodb-core@2.0.13
+112 silly currentTree ├── mongodb@2.2.11
+112 silly currentTree ├─┬ mongoose@4.7.1
+112 silly currentTree │ └── async@2.1.2
+112 silly currentTree ├── morgan@1.7.0
+112 silly currentTree ├── mpath@0.2.1
+112 silly currentTree ├── mpromise@0.5.5
+112 silly currentTree ├─┬ mquery@2.0.0
+112 silly currentTree │ └── sliced@0.0.5
+112 silly currentTree ├── ms@0.7.1
+112 silly currentTree ├── multiparty@4.1.3
+112 silly currentTree ├── muri@1.1.1
+112 silly currentTree ├── negotiator@0.6.1
+112 silly currentTree ├── nested-error-stacks@1.0.2
+112 silly currentTree ├── nodemon@1.11.0
+112 silly currentTree ├── nopt@1.0.10
+112 silly currentTree ├── normalize-path@2.0.1
+112 silly currentTree ├── npm-debug.log
+112 silly currentTree ├── number-is-nan@1.0.1
+112 silly currentTree ├── object-assign@4.1.1
+112 silly currentTree ├── object-keys@1.0.11
+112 silly currentTree ├── object.assign@4.0.4
+112 silly currentTree ├── object.omit@2.0.1
+112 silly currentTree ├── on-finished@2.3.0
+112 silly currentTree ├── on-headers@1.0.1
+112 silly currentTree ├── once@1.4.0
+112 silly currentTree ├── optimist@0.6.1
+112 silly currentTree ├── os-homedir@1.0.2
+112 silly currentTree ├── os-tmpdir@1.0.2
+112 silly currentTree ├── osenv@0.1.4
+112 silly currentTree ├── package-json@1.2.0
+112 silly currentTree ├── parse-glob@3.0.4
+112 silly currentTree ├── parseurl@1.3.1
+112 silly currentTree ├── passport-local@1.0.0
+112 silly currentTree ├── passport-strategy@1.0.0
+112 silly currentTree ├── passport@0.3.2
+112 silly currentTree ├── path-is-absolute@1.0.1
+112 silly currentTree ├── path-to-regexp@0.1.7
+112 silly currentTree ├── pause-stream@0.0.11
+112 silly currentTree ├── pause@0.0.1
+112 silly currentTree ├── pend@1.2.0
+112 silly currentTree ├── pinkie-promise@2.0.1
+112 silly currentTree ├── pinkie@2.0.4
+112 silly currentTree ├── prepend-http@1.0.4
+112 silly currentTree ├── preserve@0.2.0
+112 silly currentTree ├── process-nextick-args@1.0.7
+112 silly currentTree ├── promise@7.1.1
+112 silly currentTree ├── proxy-addr@1.1.2
+112 silly currentTree ├── ps-tree@1.1.0
+112 silly currentTree ├── qs@6.2.0
+112 silly currentTree ├── random-bytes@1.0.0
+112 silly currentTree ├── randomatic@1.1.6
+112 silly currentTree ├── range-parser@1.2.0
+112 silly currentTree ├── raw-body@2.1.7
+112 silly currentTree ├─┬ rc@1.1.7
+112 silly currentTree │ └── minimist@1.2.0
+112 silly currentTree ├── read-all-stream@3.1.0
+112 silly currentTree ├── readable-stream@2.1.5
+112 silly currentTree ├── readdirp@2.1.0
+112 silly currentTree ├── regex-cache@0.4.3
+112 silly currentTree ├── regexp-clone@0.0.1
+112 silly currentTree ├── registry-url@3.1.0
+112 silly currentTree ├── repeat-element@1.1.2
+112 silly currentTree ├── repeat-string@1.6.1
+112 silly currentTree ├── repeating@1.1.3
+112 silly currentTree ├── require_optional@1.0.0
+112 silly currentTree ├── resolve-from@2.0.0
+112 silly currentTree ├── right-align@0.1.3
+112 silly currentTree ├── rndm@1.2.0
+112 silly currentTree ├── safe-json-parse@1.0.1
+112 silly currentTree ├── semver-diff@2.1.0
+112 silly currentTree ├── semver@5.3.0
+112 silly currentTree ├── send@0.14.1
+112 silly currentTree ├─┬ serve-favicon@2.3.2
+112 silly currentTree │ └── ms@0.7.2
+112 silly currentTree ├── serve-static@1.11.1
+112 silly currentTree ├── set-immediate-shim@1.0.1
+112 silly currentTree ├── setprototypeof@1.0.2
+112 silly currentTree ├── sliced@1.0.1
+112 silly currentTree ├── slide@1.1.6
+112 silly currentTree ├── source-map@0.4.4
+112 silly currentTree ├── split@0.3.3
+112 silly currentTree ├── statuses@1.3.1
+112 silly currentTree ├── stream-combiner@0.0.4
+112 silly currentTree ├── stream-shift@1.0.0
+112 silly currentTree ├── streamsearch@0.1.2
+112 silly currentTree ├── string_decoder@0.10.31
+112 silly currentTree ├── string-length@1.0.1
+112 silly currentTree ├── string-template@0.2.1
+112 silly currentTree ├── strip-ansi@3.0.1
+112 silly currentTree ├── strip-json-comments@2.0.1
+112 silly currentTree ├── supports-color@2.0.0
+112 silly currentTree ├── through@2.3.8
+112 silly currentTree ├── timed-out@2.0.0
+112 silly currentTree ├── touch@1.0.0
+112 silly currentTree ├── tsscmp@1.0.5
+112 silly currentTree ├── type-is@1.6.14
+112 silly currentTree ├─┬ uglify-js@2.7.5
+112 silly currentTree │ ├── async@0.2.10
+112 silly currentTree │ └── source-map@0.5.6
+112 silly currentTree ├── uglify-to-browserify@1.0.2
+112 silly currentTree ├── uid-safe@2.1.3
+112 silly currentTree ├── undefsafe@0.0.3
+112 silly currentTree ├── unpipe@1.0.0
+112 silly currentTree ├── update-notifier@0.5.0
+112 silly currentTree ├── util-deprecate@1.0.2
+112 silly currentTree ├── utils-merge@1.0.0
+112 silly currentTree ├── uuid@1.4.2
+112 silly currentTree ├── validator@6.1.0
+112 silly currentTree ├── vary@1.1.0
+112 silly currentTree ├── walk@2.3.9
+112 silly currentTree ├── window-size@0.1.0
+112 silly currentTree ├── wordwrap@0.0.3
+112 silly currentTree ├── wrappy@1.0.2
+112 silly currentTree ├── write-file-atomic@1.3.1
+112 silly currentTree ├── xdg-basedir@2.0.0
+112 silly currentTree ├── xtend@4.0.1
+112 silly currentTree └── yargs@3.10.0
+113 silly idealTree luxetripasia@0.0.0
+113 silly idealTree ├── abbrev@1.1.0
+113 silly idealTree ├── accepts@1.3.3
+113 silly idealTree ├── align-text@0.1.4
+113 silly idealTree ├── amdefine@1.0.1
+113 silly idealTree ├── ansi-regex@2.1.1
+113 silly idealTree ├── ansi-styles@2.2.1
+113 silly idealTree ├── anymatch@1.3.0
+113 silly idealTree ├── arr-diff@2.0.0
+113 silly idealTree ├── arr-flatten@1.0.1
+113 silly idealTree ├── array-flatten@1.1.1
+113 silly idealTree ├── array-unique@0.2.1
+113 silly idealTree ├── arrify@1.0.1
+113 silly idealTree ├── asap@2.0.5
+113 silly idealTree ├── async-each@1.0.1
+113 silly idealTree ├── async@2.1.4
+113 silly idealTree ├── balanced-match@0.4.2
+113 silly idealTree ├── base64-url@1.3.3
+113 silly idealTree ├── basic-auth@1.0.4
+113 silly idealTree ├── bcrypt-nodejs@0.0.3
+113 silly idealTree ├── binary-extensions@1.8.0
+113 silly idealTree ├── bluebird@2.10.2
+113 silly idealTree ├── body-parser@1.15.2
+113 silly idealTree ├─┬ body@5.1.0
+113 silly idealTree │ ├── bytes@1.0.0
+113 silly idealTree │ └── raw-body@1.1.7
+113 silly idealTree ├── bootstrap-datepicker@1.6.4
+113 silly idealTree ├── brace-expansion@1.1.6
+113 silly idealTree ├── braces@1.8.5
+113 silly idealTree ├── bson@0.5.7
+113 silly idealTree ├── buffer-shims@1.0.0
+113 silly idealTree ├─┬ busboy@0.2.14
+113 silly idealTree │ ├── isarray@0.0.1
+113 silly idealTree │ └── readable-stream@1.1.14
+113 silly idealTree ├── bytes@2.4.0
+113 silly idealTree ├── camelcase@1.2.1
+113 silly idealTree ├── center-align@0.1.3
+113 silly idealTree ├── chalk@1.1.3
+113 silly idealTree ├── chokidar@1.6.1
+113 silly idealTree ├─┬ cliui@2.1.0
+113 silly idealTree │ └── wordwrap@0.0.2
+113 silly idealTree ├── concat-map@0.0.1
+113 silly idealTree ├─┬ configstore@1.4.0
+113 silly idealTree │ └── uuid@2.0.3
+113 silly idealTree ├── connect-busboy@0.0.2
+113 silly idealTree ├── connect-flash@0.1.1
+113 silly idealTree ├─┬ connect-multiparty@2.0.0
+113 silly idealTree │ └── qs@4.0.0
+113 silly idealTree ├── content-disposition@0.5.1
+113 silly idealTree ├── content-type@1.0.2
+113 silly idealTree ├── continuable-cache@0.3.1
+113 silly idealTree ├── cookie-parser@1.4.3
+113 silly idealTree ├── cookie-signature@1.0.6
+113 silly idealTree ├── cookie@0.3.1
+113 silly idealTree ├── core-util-is@1.0.2
+113 silly idealTree ├── crc@3.4.1
+113 silly idealTree ├── csrf@3.0.4
+113 silly idealTree ├── csurf@1.9.0
+113 silly idealTree ├── custombox@4.0.0
+113 silly idealTree ├── debug@2.2.0
+113 silly idealTree ├── decamelize@1.2.0
+113 silly idealTree ├── deep-extend@0.4.1
+113 silly idealTree ├── define-properties@1.1.2
+113 silly idealTree ├── depd@1.1.0
+113 silly idealTree ├── destroy@1.0.4
+113 silly idealTree ├─┬ dicer@0.2.5
+113 silly idealTree │ ├── isarray@0.0.1
+113 silly idealTree │ └── readable-stream@1.1.14
+113 silly idealTree ├── duplexer@0.1.1
+113 silly idealTree ├── duplexify@3.5.0
+113 silly idealTree ├── ee-first@1.1.1
+113 silly idealTree ├── encodeurl@1.0.1
+113 silly idealTree ├─┬ end-of-stream@1.0.0
+113 silly idealTree │ └── once@1.3.3
+113 silly idealTree ├── error@7.0.2
+113 silly idealTree ├── es6-promise@3.2.1
+113 silly idealTree ├── escape-html@1.0.3
+113 silly idealTree ├── escape-string-regexp@1.0.5
+113 silly idealTree ├── etag@1.7.0
+113 silly idealTree ├── event-stream@3.3.4
+113 silly idealTree ├── expand-brackets@0.1.5
+113 silly idealTree ├── expand-range@1.8.2
+113 silly idealTree ├─┬ express-busboy@5.0.0
+113 silly idealTree │ └── qs@5.2.1
+113 silly idealTree ├── express-handlebars@3.0.0
+113 silly idealTree ├── express-session@1.14.2
+113 silly idealTree ├─┬ express-validator@3.0.0
+113 silly idealTree │ └── bluebird@3.4.6
+113 silly idealTree ├── express@4.14.0
+113 silly idealTree ├── extglob@0.3.2
+113 silly idealTree ├── fd-slicer@1.0.1
+113 silly idealTree ├── filename-regex@2.0.0
+113 silly idealTree ├── fill-range@2.2.3
+113 silly idealTree ├── finalhandler@0.5.0
+113 silly idealTree ├── for-in@1.0.2
+113 silly idealTree ├── for-own@0.1.5
+113 silly idealTree ├── foreach@2.0.5
+113 silly idealTree ├── foreachasync@3.0.0
+113 silly idealTree ├── forwarded@0.1.0
+113 silly idealTree ├── fresh@0.3.0
+113 silly idealTree ├── from@0.1.3
+113 silly idealTree ├── function-bind@1.1.0
+113 silly idealTree ├── glob-base@0.3.0
+113 silly idealTree ├── glob-parent@2.0.0
+113 silly idealTree ├── glob@6.0.4
+113 silly idealTree ├─┬ got@3.3.1
+113 silly idealTree │ └── object-assign@3.0.0
+113 silly idealTree ├── graceful-fs@4.1.11
+113 silly idealTree ├─┬ handlebars@4.0.5
+113 silly idealTree │ └── async@1.5.2
+113 silly idealTree ├── has-ansi@2.0.0
+113 silly idealTree ├── hbs@4.0.1
+113 silly idealTree ├── hooks-fixed@1.2.0
+113 silly idealTree ├── http-errors@1.5.1
+113 silly idealTree ├── iconv-lite@0.4.13
+113 silly idealTree ├── ignore-by-default@1.0.1
+113 silly idealTree ├── imurmurhash@0.1.4
+113 silly idealTree ├── infinity-agent@2.0.3
+113 silly idealTree ├── inflight@1.0.6
+113 silly idealTree ├── inherits@2.0.3
+113 silly idealTree ├── ini@1.3.4
+113 silly idealTree ├── ipaddr.js@1.1.1
+113 silly idealTree ├── is-binary-path@1.0.1
+113 silly idealTree ├── is-buffer@1.1.4
+113 silly idealTree ├── is-dotfile@1.0.2
+113 silly idealTree ├── is-equal-shallow@0.1.3
+113 silly idealTree ├── is-extendable@0.1.1
+113 silly idealTree ├── is-extglob@1.0.0
+113 silly idealTree ├── is-finite@1.0.2
+113 silly idealTree ├── is-glob@2.0.1
+113 silly idealTree ├── is-npm@1.0.0
+113 silly idealTree ├── is-number@2.1.0
+113 silly idealTree ├── is-posix-bracket@0.1.1
+113 silly idealTree ├── is-primitive@2.0.0
+113 silly idealTree ├── is-redirect@1.0.0
+113 silly idealTree ├── is-stream@1.1.0
+113 silly idealTree ├── isarray@1.0.0
+113 silly idealTree ├── isobject@2.1.0
+113 silly idealTree ├── jquery@3.1.1
+113 silly idealTree ├── kareem@1.1.3
+113 silly idealTree ├── kind-of@3.0.4
+113 silly idealTree ├── latest-version@1.0.1
+113 silly idealTree ├── lazy-cache@1.0.4
+113 silly idealTree ├── lodash._baseassign@3.2.0
+113 silly idealTree ├── lodash._basecopy@3.0.1
+113 silly idealTree ├── lodash._bindcallback@3.0.1
+113 silly idealTree ├── lodash._createassigner@3.1.1
+113 silly idealTree ├── lodash._getnative@3.9.1
+113 silly idealTree ├── lodash._isiterateecall@3.0.9
+113 silly idealTree ├── lodash.assign@3.2.0
+113 silly idealTree ├── lodash.defaults@3.1.2
+113 silly idealTree ├── lodash.isarguments@3.1.0
+113 silly idealTree ├── lodash.isarray@3.0.4
+113 silly idealTree ├── lodash.keys@3.1.2
+113 silly idealTree ├── lodash.restparam@3.6.1
+113 silly idealTree ├── lodash@4.17.2
+113 silly idealTree ├── longest@1.0.1
+113 silly idealTree ├── lowercase-keys@1.0.0
+113 silly idealTree ├── map-stream@0.1.0
+113 silly idealTree ├── media-typer@0.3.0
+113 silly idealTree ├── merge-descriptors@1.0.1
+113 silly idealTree ├─┬ method-override@2.3.7
+113 silly idealTree │ ├── debug@2.3.3
+113 silly idealTree │ └── ms@0.7.2
+113 silly idealTree ├── methods@1.1.2
+113 silly idealTree ├── micromatch@2.3.11
+113 silly idealTree ├── mime-db@1.25.0
+113 silly idealTree ├── mime-types@2.1.13
+113 silly idealTree ├── mime@1.3.4
+113 silly idealTree ├── minimatch@3.0.3
+113 silly idealTree ├── minimist@0.0.10
+113 silly idealTree ├─┬ mkdirp@0.5.1
+113 silly idealTree │ └── minimist@0.0.8
+113 silly idealTree ├── mongodb-core@2.0.13
+113 silly idealTree ├── mongodb@2.2.11
+113 silly idealTree ├─┬ mongoose@4.7.1
+113 silly idealTree │ └── async@2.1.2
+113 silly idealTree ├── morgan@1.7.0
+113 silly idealTree ├── mpath@0.2.1
+113 silly idealTree ├── mpromise@0.5.5
+113 silly idealTree ├─┬ mquery@2.0.0
+113 silly idealTree │ └── sliced@0.0.5
+113 silly idealTree ├── ms@0.7.1
+113 silly idealTree ├── multiparty@4.1.3
+113 silly idealTree ├── muri@1.1.1
+113 silly idealTree ├── negotiator@0.6.1
+113 silly idealTree ├── nested-error-stacks@1.0.2
+113 silly idealTree ├── nodemon@1.11.0
+113 silly idealTree ├── nopt@1.0.10
+113 silly idealTree ├── normalize-path@2.0.1
+113 silly idealTree ├── npm-debug.log
+113 silly idealTree ├── number-is-nan@1.0.1
+113 silly idealTree ├── object-assign@4.1.1
+113 silly idealTree ├── object-keys@1.0.11
+113 silly idealTree ├── object.assign@4.0.4
+113 silly idealTree ├── object.omit@2.0.1
+113 silly idealTree ├── on-finished@2.3.0
+113 silly idealTree ├── on-headers@1.0.1
+113 silly idealTree ├── once@1.4.0
+113 silly idealTree ├── optimist@0.6.1
+113 silly idealTree ├── os-homedir@1.0.2
+113 silly idealTree ├── os-tmpdir@1.0.2
+113 silly idealTree ├── osenv@0.1.4
+113 silly idealTree ├── package-json@1.2.0
+113 silly idealTree ├── parse-glob@3.0.4
+113 silly idealTree ├── parseurl@1.3.1
+113 silly idealTree ├── passport-local@1.0.0
+113 silly idealTree ├── passport-strategy@1.0.0
+113 silly idealTree ├── passport@0.3.2
+113 silly idealTree ├── path-is-absolute@1.0.1
+113 silly idealTree ├── path-to-regexp@0.1.7
+113 silly idealTree ├── pause-stream@0.0.11
+113 silly idealTree ├── pause@0.0.1
+113 silly idealTree ├── pend@1.2.0
+113 silly idealTree ├── pinkie-promise@2.0.1
+113 silly idealTree ├── pinkie@2.0.4
+113 silly idealTree ├── prepend-http@1.0.4
+113 silly idealTree ├── preserve@0.2.0
+113 silly idealTree ├── process-nextick-args@1.0.7
+113 silly idealTree ├── promise@7.1.1
+113 silly idealTree ├── proxy-addr@1.1.2
+113 silly idealTree ├── ps-tree@1.1.0
+113 silly idealTree ├── qs@6.2.0
+113 silly idealTree ├── random-bytes@1.0.0
+113 silly idealTree ├── randomatic@1.1.6
+113 silly idealTree ├── range-parser@1.2.0
+113 silly idealTree ├── raw-body@2.1.7
+113 silly idealTree ├─┬ rc@1.1.7
+113 silly idealTree │ └── minimist@1.2.0
+113 silly idealTree ├── read-all-stream@3.1.0
+113 silly idealTree ├── readable-stream@2.1.5
+113 silly idealTree ├── readdirp@2.1.0
+113 silly idealTree ├── regex-cache@0.4.3
+113 silly idealTree ├── regexp-clone@0.0.1
+113 silly idealTree ├── registry-url@3.1.0
+113 silly idealTree ├── repeat-element@1.1.2
+113 silly idealTree ├── repeat-string@1.6.1
+113 silly idealTree ├── repeating@1.1.3
+113 silly idealTree ├── require_optional@1.0.0
+113 silly idealTree ├── resolve-from@2.0.0
+113 silly idealTree ├── right-align@0.1.3
+113 silly idealTree ├── rndm@1.2.0
+113 silly idealTree ├── safe-json-parse@1.0.1
+113 silly idealTree ├── semver-diff@2.1.0
+113 silly idealTree ├── semver@5.3.0
+113 silly idealTree ├── send@0.14.1
+113 silly idealTree ├─┬ serve-favicon@2.3.2
+113 silly idealTree │ └── ms@0.7.2
+113 silly idealTree ├── serve-static@1.11.1
+113 silly idealTree ├── set-immediate-shim@1.0.1
+113 silly idealTree ├── setprototypeof@1.0.2
+113 silly idealTree ├── sliced@1.0.1
+113 silly idealTree ├── slide@1.1.6
+113 silly idealTree ├── source-map@0.4.4
+113 silly idealTree ├── split@0.3.3
+113 silly idealTree ├── statuses@1.3.1
+113 silly idealTree ├── stream-combiner@0.0.4
+113 silly idealTree ├── stream-shift@1.0.0
+113 silly idealTree ├── streamsearch@0.1.2
+113 silly idealTree ├── string_decoder@0.10.31
+113 silly idealTree ├── string-length@1.0.1
+113 silly idealTree ├── string-template@0.2.1
+113 silly idealTree ├── strip-ansi@3.0.1
+113 silly idealTree ├── strip-json-comments@2.0.1
+113 silly idealTree ├── supports-color@2.0.0
+113 silly idealTree ├── through@2.3.8
+113 silly idealTree ├── timed-out@2.0.0
+113 silly idealTree ├── touch@1.0.0
+113 silly idealTree ├── tsscmp@1.0.5
+113 silly idealTree ├── type-is@1.6.14
+113 silly idealTree ├─┬ uglify-js@2.7.5
+113 silly idealTree │ ├── async@0.2.10
+113 silly idealTree │ └── source-map@0.5.6
+113 silly idealTree ├── uglify-to-browserify@1.0.2
+113 silly idealTree ├── uid-safe@2.1.3
+113 silly idealTree ├── undefsafe@0.0.3
+113 silly idealTree ├── unpipe@1.0.0
+113 silly idealTree ├── update-notifier@0.5.0
+113 silly idealTree ├── util-deprecate@1.0.2
+113 silly idealTree ├── utils-merge@1.0.0
+113 silly idealTree ├── uuid@1.4.2
+113 silly idealTree ├── validator@6.1.0
+113 silly idealTree ├── vary@1.1.0
+113 silly idealTree ├── walk@2.3.9
+113 silly idealTree ├── window-size@0.1.0
+113 silly idealTree ├── wordwrap@0.0.3
+113 silly idealTree ├── wrappy@1.0.2
+113 silly idealTree ├── write-file-atomic@1.3.1
+113 silly idealTree ├── xdg-basedir@2.0.0
+113 silly idealTree ├── xtend@4.0.1
+113 silly idealTree └── yargs@3.10.0
+114 silly generateActionsToTake Starting
+115 silly install generateActionsToTake
+116 silly generateActionsToTake Finishing
+117 silly diffTrees action count 17
+118 silly diffTrees add qs@4.0.0
+119 silly diffTrees update multiparty@4.1.3
+120 silly diffTrees update async@2.1.4
+121 silly diffTrees update bcrypt-nodejs@0.0.3
+122 silly diffTrees update bootstrap-datepicker@1.6.4
+123 silly diffTrees update connect-flash@0.1.1
+124 silly diffTrees add connect-multiparty@2.0.0
+125 silly diffTrees update csurf@1.9.0
+126 silly diffTrees update custombox@4.0.0
+127 silly diffTrees update express-busboy@5.0.0
+128 silly diffTrees update express-handlebars@3.0.0
+129 silly diffTrees update express-session@1.14.2
+130 silly diffTrees update express-validator@3.0.0
+131 silly diffTrees update method-override@2.3.7
+132 silly diffTrees update mongoose@4.7.1
+133 silly diffTrees update passport@0.3.2
+134 silly diffTrees update passport-local@1.0.0
+135 silly decomposeActions action count 136
+136 silly decomposeActions fetch qs@4.0.0
+137 silly decomposeActions extract qs@4.0.0
+138 silly decomposeActions test qs@4.0.0
+139 silly decomposeActions preinstall qs@4.0.0
+140 silly decomposeActions build qs@4.0.0
+141 silly decomposeActions install qs@4.0.0
+142 silly decomposeActions postinstall qs@4.0.0
+143 silly decomposeActions finalize qs@4.0.0
+144 silly decomposeActions fetch multiparty@4.1.3
+145 silly decomposeActions extract multiparty@4.1.3
+146 silly decomposeActions test multiparty@4.1.3
+147 silly decomposeActions preinstall multiparty@4.1.3
+148 silly decomposeActions build multiparty@4.1.3
+149 silly decomposeActions install multiparty@4.1.3
+150 silly decomposeActions postinstall multiparty@4.1.3
+151 silly decomposeActions finalize multiparty@4.1.3
+152 silly decomposeActions fetch async@2.1.4
+153 silly decomposeActions extract async@2.1.4
+154 silly decomposeActions test async@2.1.4
+155 silly decomposeActions preinstall async@2.1.4
+156 silly decomposeActions build async@2.1.4
+157 silly decomposeActions install async@2.1.4
+158 silly decomposeActions postinstall async@2.1.4
+159 silly decomposeActions finalize async@2.1.4
+160 silly decomposeActions fetch bcrypt-nodejs@0.0.3
+161 silly decomposeActions extract bcrypt-nodejs@0.0.3
+162 silly decomposeActions test bcrypt-nodejs@0.0.3
+163 silly decomposeActions preinstall bcrypt-nodejs@0.0.3
+164 silly decomposeActions build bcrypt-nodejs@0.0.3
+165 silly decomposeActions install bcrypt-nodejs@0.0.3
+166 silly decomposeActions postinstall bcrypt-nodejs@0.0.3
+167 silly decomposeActions finalize bcrypt-nodejs@0.0.3
+168 silly decomposeActions fetch bootstrap-datepicker@1.6.4
+169 silly decomposeActions extract bootstrap-datepicker@1.6.4
+170 silly decomposeActions test bootstrap-datepicker@1.6.4
+171 silly decomposeActions preinstall bootstrap-datepicker@1.6.4
+172 silly decomposeActions build bootstrap-datepicker@1.6.4
+173 silly decomposeActions install bootstrap-datepicker@1.6.4
+174 silly decomposeActions postinstall bootstrap-datepicker@1.6.4
+175 silly decomposeActions finalize bootstrap-datepicker@1.6.4
+176 silly decomposeActions fetch connect-flash@0.1.1
+177 silly decomposeActions extract connect-flash@0.1.1
+178 silly decomposeActions test connect-flash@0.1.1
+179 silly decomposeActions preinstall connect-flash@0.1.1
+180 silly decomposeActions build connect-flash@0.1.1
+181 silly decomposeActions install connect-flash@0.1.1
+182 silly decomposeActions postinstall connect-flash@0.1.1
+183 silly decomposeActions finalize connect-flash@0.1.1
+184 silly decomposeActions fetch connect-multiparty@2.0.0
+185 silly decomposeActions extract connect-multiparty@2.0.0
+186 silly decomposeActions test connect-multiparty@2.0.0
+187 silly decomposeActions preinstall connect-multiparty@2.0.0
+188 silly decomposeActions build connect-multiparty@2.0.0
+189 silly decomposeActions install connect-multiparty@2.0.0
+190 silly decomposeActions postinstall connect-multiparty@2.0.0
+191 silly decomposeActions finalize connect-multiparty@2.0.0
+192 silly decomposeActions fetch csurf@1.9.0
+193 silly decomposeActions extract csurf@1.9.0
+194 silly decomposeActions test csurf@1.9.0
+195 silly decomposeActions preinstall csurf@1.9.0
+196 silly decomposeActions build csurf@1.9.0
+197 silly decomposeActions install csurf@1.9.0
+198 silly decomposeActions postinstall csurf@1.9.0
+199 silly decomposeActions finalize csurf@1.9.0
+200 silly decomposeActions fetch custombox@4.0.0
+201 silly decomposeActions extract custombox@4.0.0
+202 silly decomposeActions test custombox@4.0.0
+203 silly decomposeActions preinstall custombox@4.0.0
+204 silly decomposeActions build custombox@4.0.0
+205 silly decomposeActions install custombox@4.0.0
+206 silly decomposeActions postinstall custombox@4.0.0
+207 silly decomposeActions finalize custombox@4.0.0
+208 silly decomposeActions fetch express-busboy@5.0.0
+209 silly decomposeActions extract express-busboy@5.0.0
+210 silly decomposeActions test express-busboy@5.0.0
+211 silly decomposeActions preinstall express-busboy@5.0.0
+212 silly decomposeActions build express-busboy@5.0.0
+213 silly decomposeActions install express-busboy@5.0.0
+214 silly decomposeActions postinstall express-busboy@5.0.0
+215 silly decomposeActions finalize express-busboy@5.0.0
+216 silly decomposeActions fetch express-handlebars@3.0.0
+217 silly decomposeActions extract express-handlebars@3.0.0
+218 silly decomposeActions test express-handlebars@3.0.0
+219 silly decomposeActions preinstall express-handlebars@3.0.0
+220 silly decomposeActions build express-handlebars@3.0.0
+221 silly decomposeActions install express-handlebars@3.0.0
+222 silly decomposeActions postinstall express-handlebars@3.0.0
+223 silly decomposeActions finalize express-handlebars@3.0.0
+224 silly decomposeActions fetch express-session@1.14.2
+225 silly decomposeActions extract express-session@1.14.2
+226 silly decomposeActions test express-session@1.14.2
+227 silly decomposeActions preinstall express-session@1.14.2
+228 silly decomposeActions build express-session@1.14.2
+229 silly decomposeActions install express-session@1.14.2
+230 silly decomposeActions postinstall express-session@1.14.2
+231 silly decomposeActions finalize express-session@1.14.2
+232 silly decomposeActions fetch express-validator@3.0.0
+233 silly decomposeActions extract express-validator@3.0.0
+234 silly decomposeActions test express-validator@3.0.0
+235 silly decomposeActions preinstall express-validator@3.0.0
+236 silly decomposeActions build express-validator@3.0.0
+237 silly decomposeActions install express-validator@3.0.0
+238 silly decomposeActions postinstall express-validator@3.0.0
+239 silly decomposeActions finalize express-validator@3.0.0
+240 silly decomposeActions fetch method-override@2.3.7
+241 silly decomposeActions extract method-override@2.3.7
+242 silly decomposeActions test method-override@2.3.7
+243 silly decomposeActions preinstall method-override@2.3.7
+244 silly decomposeActions build method-override@2.3.7
+245 silly decomposeActions install method-override@2.3.7
+246 silly decomposeActions postinstall method-override@2.3.7
+247 silly decomposeActions finalize method-override@2.3.7
+248 silly decomposeActions fetch mongoose@4.7.1
+249 silly decomposeActions extract mongoose@4.7.1
+250 silly decomposeActions test mongoose@4.7.1
+251 silly decomposeActions preinstall mongoose@4.7.1
+252 silly decomposeActions build mongoose@4.7.1
+253 silly decomposeActions install mongoose@4.7.1
+254 silly decomposeActions postinstall mongoose@4.7.1
+255 silly decomposeActions finalize mongoose@4.7.1
+256 silly decomposeActions fetch passport@0.3.2
+257 silly decomposeActions extract passport@0.3.2
+258 silly decomposeActions test passport@0.3.2
+259 silly decomposeActions preinstall passport@0.3.2
+260 silly decomposeActions build passport@0.3.2
+261 silly decomposeActions install passport@0.3.2
+262 silly decomposeActions postinstall passport@0.3.2
+263 silly decomposeActions finalize passport@0.3.2
+264 silly decomposeActions fetch passport-local@1.0.0
+265 silly decomposeActions extract passport-local@1.0.0
+266 silly decomposeActions test passport-local@1.0.0
+267 silly decomposeActions preinstall passport-local@1.0.0
+268 silly decomposeActions build passport-local@1.0.0
+269 silly decomposeActions install passport-local@1.0.0
+270 silly decomposeActions postinstall passport-local@1.0.0
+271 silly decomposeActions finalize passport-local@1.0.0
+272 silly executeActions Starting
+273 silly install executeActions
+274 silly doSerial global-install 0
+275 silly doParallel fetch 17
+276 verbose lock using /home/ubuntu/.npm/_locks/staging-e6564ebbf212e898.lock for /home/ubuntu/aluxtrip/node_modules/.staging
+277 silly doParallel extract 17
+278 silly extract qs@4.0.0
+279 silly extract multiparty@4.1.3
+280 silly extract async@2.1.4
+281 silly extract bcrypt-nodejs@0.0.3
+282 silly extract bootstrap-datepicker@1.6.4
+283 silly extract connect-flash@0.1.1
+284 silly extract connect-multiparty@2.0.0
+285 silly extract csurf@1.9.0
+286 silly extract custombox@4.0.0
+287 silly extract express-busboy@5.0.0
+288 silly extract express-handlebars@3.0.0
+289 silly extract express-session@1.14.2
+290 silly extract express-validator@3.0.0
+291 silly extract method-override@2.3.7
+292 silly extract mongoose@4.7.1
+293 silly extract passport@0.3.2
+294 silly extract passport-local@1.0.0
+295 silly addNamed async@2.1.4
+296 verbose addNamed "2.1.4" is a plain semver version for async
+297 silly mapToRegistry name async
+298 silly mapToRegistry using default registry
+299 silly mapToRegistry registry https://registry.npmjs.org/
+300 silly mapToRegistry uri https://registry.npmjs.org/async
+301 verbose addNameVersion registry:https://registry.npmjs.org/async not in flight; fetching
+302 silly addNamed bcrypt-nodejs@0.0.3
+303 verbose addNamed "0.0.3" is a plain semver version for bcrypt-nodejs
+304 silly mapToRegistry name bcrypt-nodejs
+305 silly mapToRegistry using default registry
+306 silly mapToRegistry registry https://registry.npmjs.org/
+307 silly mapToRegistry uri https://registry.npmjs.org/bcrypt-nodejs
+308 verbose addNameVersion registry:https://registry.npmjs.org/bcrypt-nodejs not in flight; fetching
+309 silly addNamed bootstrap-datepicker@1.6.4
+310 verbose addNamed "1.6.4" is a plain semver version for bootstrap-datepicker
+311 silly mapToRegistry name bootstrap-datepicker
+312 silly mapToRegistry using default registry
+313 silly mapToRegistry registry https://registry.npmjs.org/
+314 silly mapToRegistry uri https://registry.npmjs.org/bootstrap-datepicker
+315 verbose addNameVersion registry:https://registry.npmjs.org/bootstrap-datepicker not in flight; fetching
+316 silly addNamed connect-flash@0.1.1
+317 verbose addNamed "0.1.1" is a plain semver version for connect-flash
+318 silly mapToRegistry name connect-flash
+319 silly mapToRegistry using default registry
+320 silly mapToRegistry registry https://registry.npmjs.org/
+321 silly mapToRegistry uri https://registry.npmjs.org/connect-flash
+322 verbose addNameVersion registry:https://registry.npmjs.org/connect-flash not in flight; fetching
+323 silly addNamed csurf@1.9.0
+324 verbose addNamed "1.9.0" is a plain semver version for csurf
+325 silly mapToRegistry name csurf
+326 silly mapToRegistry using default registry
+327 silly mapToRegistry registry https://registry.npmjs.org/
+328 silly mapToRegistry uri https://registry.npmjs.org/csurf
+329 verbose addNameVersion registry:https://registry.npmjs.org/csurf not in flight; fetching
+330 silly addNamed custombox@4.0.0
+331 verbose addNamed "4.0.0" is a plain semver version for custombox
+332 silly mapToRegistry name custombox
+333 silly mapToRegistry using default registry
+334 silly mapToRegistry registry https://registry.npmjs.org/
+335 silly mapToRegistry uri https://registry.npmjs.org/custombox
+336 verbose addNameVersion registry:https://registry.npmjs.org/custombox not in flight; fetching
+337 silly addNamed express-busboy@5.0.0
+338 verbose addNamed "5.0.0" is a plain semver version for express-busboy
+339 silly mapToRegistry name express-busboy
+340 silly mapToRegistry using default registry
+341 silly mapToRegistry registry https://registry.npmjs.org/
+342 silly mapToRegistry uri https://registry.npmjs.org/express-busboy
+343 verbose addNameVersion registry:https://registry.npmjs.org/express-busboy not in flight; fetching
+344 silly addNamed express-handlebars@3.0.0
+345 verbose addNamed "3.0.0" is a plain semver version for express-handlebars
+346 silly mapToRegistry name express-handlebars
+347 silly mapToRegistry using default registry
+348 silly mapToRegistry registry https://registry.npmjs.org/
+349 silly mapToRegistry uri https://registry.npmjs.org/express-handlebars
+350 verbose addNameVersion registry:https://registry.npmjs.org/express-handlebars not in flight; fetching
+351 silly addNamed express-session@1.14.2
+352 verbose addNamed "1.14.2" is a plain semver version for express-session
+353 silly mapToRegistry name express-session
+354 silly mapToRegistry using default registry
+355 silly mapToRegistry registry https://registry.npmjs.org/
+356 silly mapToRegistry uri https://registry.npmjs.org/express-session
+357 verbose addNameVersion registry:https://registry.npmjs.org/express-session not in flight; fetching
+358 silly addNamed express-validator@3.0.0
+359 verbose addNamed "3.0.0" is a plain semver version for express-validator
+360 silly mapToRegistry name express-validator
+361 silly mapToRegistry using default registry
+362 silly mapToRegistry registry https://registry.npmjs.org/
+363 silly mapToRegistry uri https://registry.npmjs.org/express-validator
+364 verbose addNameVersion registry:https://registry.npmjs.org/express-validator not in flight; fetching
+365 silly addNamed method-override@2.3.7
+366 verbose addNamed "2.3.7" is a plain semver version for method-override
+367 silly mapToRegistry name method-override
+368 silly mapToRegistry using default registry
+369 silly mapToRegistry registry https://registry.npmjs.org/
+370 silly mapToRegistry uri https://registry.npmjs.org/method-override
+371 verbose addNameVersion registry:https://registry.npmjs.org/method-override not in flight; fetching
+372 silly addNamed mongoose@4.7.1
+373 verbose addNamed "4.7.1" is a plain semver version for mongoose
+374 silly mapToRegistry name mongoose
+375 silly mapToRegistry using default registry
+376 silly mapToRegistry registry https://registry.npmjs.org/
+377 silly mapToRegistry uri https://registry.npmjs.org/mongoose
+378 verbose addNameVersion registry:https://registry.npmjs.org/mongoose not in flight; fetching
+379 silly addNamed passport@0.3.2
+380 verbose addNamed "0.3.2" is a plain semver version for passport
+381 silly mapToRegistry name passport
+382 silly mapToRegistry using default registry
+383 silly mapToRegistry registry https://registry.npmjs.org/
+384 silly mapToRegistry uri https://registry.npmjs.org/passport
+385 verbose addNameVersion registry:https://registry.npmjs.org/passport not in flight; fetching
+386 silly addNamed passport-local@1.0.0
+387 verbose addNamed "1.0.0" is a plain semver version for passport-local
+388 silly mapToRegistry name passport-local
+389 silly mapToRegistry using default registry
+390 silly mapToRegistry registry https://registry.npmjs.org/
+391 silly mapToRegistry uri https://registry.npmjs.org/passport-local
+392 verbose addNameVersion registry:https://registry.npmjs.org/passport-local not in flight; fetching
+393 verbose unbuild node_modules/.staging/qs-b89b942d
+394 verbose unbuild node_modules/.staging/multiparty-1892b4c5
+395 verbose unbuild node_modules/.staging/connect-multiparty-c9a8b49c
+396 silly gentlyRm /home/ubuntu/aluxtrip/node_modules/.staging/qs-b89b942d is being purged from base /home/ubuntu/aluxtrip
+397 verbose gentlyRm don't care about contents; nuking /home/ubuntu/aluxtrip/node_modules/.staging/qs-b89b942d
+398 silly gentlyRm /home/ubuntu/aluxtrip/node_modules/.staging/multiparty-1892b4c5 is being purged from base /home/ubuntu/aluxtrip
+399 verbose gentlyRm don't care about contents; nuking /home/ubuntu/aluxtrip/node_modules/.staging/multiparty-1892b4c5
+400 verbose request uri https://registry.npmjs.org/async
+401 verbose request no auth needed
+402 info attempt registry request try #1 at 7:21:42 AM
+403 verbose etag W/"58bed533-1e0da"
+404 verbose lastModified Tue, 07 Mar 2017 15:43:47 GMT
+405 http request GET https://registry.npmjs.org/async
+406 silly gentlyRm /home/ubuntu/aluxtrip/node_modules/.staging/connect-multiparty-c9a8b49c is being purged from base /home/ubuntu/aluxtrip
+407 verbose gentlyRm don't care about contents; nuking /home/ubuntu/aluxtrip/node_modules/.staging/connect-multiparty-c9a8b49c
+408 verbose request uri https://registry.npmjs.org/bcrypt-nodejs
+409 verbose request no auth needed
+410 info attempt registry request try #1 at 7:21:42 AM
+411 verbose etag W/"58ad5765-2487"
+412 verbose lastModified Wed, 22 Feb 2017 09:18:29 GMT
+413 http request GET https://registry.npmjs.org/bcrypt-nodejs
+414 verbose request uri https://registry.npmjs.org/bootstrap-datepicker
+415 verbose request no auth needed
+416 info attempt registry request try #1 at 7:21:42 AM
+417 verbose etag W/"58853c4a-5b43"
+418 verbose lastModified Sun, 22 Jan 2017 23:12:10 GMT
+419 http request GET https://registry.npmjs.org/bootstrap-datepicker
+420 verbose request uri https://registry.npmjs.org/connect-flash
+421 verbose request no auth needed
+422 info attempt registry request try #1 at 7:21:42 AM
+423 verbose etag W/"58b69ef9-1865"
+424 verbose lastModified Wed, 01 Mar 2017 10:14:17 GMT
+425 http request GET https://registry.npmjs.org/connect-flash
+426 verbose request uri https://registry.npmjs.org/custombox
+427 verbose request no auth needed
+428 info attempt registry request try #1 at 7:21:42 AM
+429 verbose etag W/"58abd00f-6041"
+430 verbose lastModified Tue, 21 Feb 2017 05:28:47 GMT
+431 http request GET https://registry.npmjs.org/custombox
+432 verbose request uri https://registry.npmjs.org/csurf
+433 verbose request no auth needed
+434 info attempt registry request try #1 at 7:21:42 AM
+435 verbose etag W/"58bf7582-c9d2"
+436 verbose lastModified Wed, 08 Mar 2017 03:07:46 GMT
+437 http request GET https://registry.npmjs.org/csurf
+438 verbose request uri https://registry.npmjs.org/express-busboy
+439 verbose request no auth needed
+440 info attempt registry request try #1 at 7:21:42 AM
+441 verbose etag W/"585c070a-6e7a"
+442 verbose lastModified Thu, 22 Dec 2016 17:02:02 GMT
+443 http request GET https://registry.npmjs.org/express-busboy
+444 verbose request uri https://registry.npmjs.org/express-handlebars
+445 verbose request no auth needed
+446 info attempt registry request try #1 at 7:21:42 AM
+447 verbose etag W/"58bcdd7a-b16c"
+448 verbose lastModified Mon, 06 Mar 2017 03:54:34 GMT
+449 http request GET https://registry.npmjs.org/express-handlebars
+450 verbose request uri https://registry.npmjs.org/express-session
+451 verbose request no auth needed
+452 info attempt registry request try #1 at 7:21:42 AM
+453 verbose etag W/"58be61d8-1e128"
+454 verbose lastModified Tue, 07 Mar 2017 07:31:36 GMT
+455 http request GET https://registry.npmjs.org/express-session
+456 verbose request uri https://registry.npmjs.org/express-validator
+457 verbose request no auth needed
+458 info attempt registry request try #1 at 7:21:42 AM
+459 verbose etag W/"58bfda5a-1db48"
+460 verbose lastModified Wed, 08 Mar 2017 10:18:02 GMT
+461 http request GET https://registry.npmjs.org/express-validator
+462 verbose request uri https://registry.npmjs.org/method-override
+463 verbose request no auth needed
+464 info attempt registry request try #1 at 7:21:42 AM
+465 verbose etag W/"58bb02a4-9f70"
+466 verbose lastModified Sat, 04 Mar 2017 18:08:36 GMT
+467 http request GET https://registry.npmjs.org/method-override
+468 verbose tar unpack /home/ubuntu/.npm/qs/4.0.0/package.tgz
+469 verbose tar unpacking to /home/ubuntu/aluxtrip/node_modules/.staging/qs-b89b942d
+470 silly gentlyRm /home/ubuntu/aluxtrip/node_modules/.staging/qs-b89b942d is being purged
+471 verbose gentlyRm don't care about contents; nuking /home/ubuntu/aluxtrip/node_modules/.staging/qs-b89b942d
+472 verbose tar unpack /home/ubuntu/.npm/multiparty/4.1.3/package.tgz
+473 verbose tar unpacking to /home/ubuntu/aluxtrip/node_modules/.staging/multiparty-1892b4c5
+474 silly gentlyRm /home/ubuntu/aluxtrip/node_modules/.staging/multiparty-1892b4c5 is being purged
+475 verbose gentlyRm don't care about contents; nuking /home/ubuntu/aluxtrip/node_modules/.staging/multiparty-1892b4c5
+476 verbose tar unpack /home/ubuntu/.npm/connect-multiparty/2.0.0/package.tgz
+477 verbose tar unpacking to /home/ubuntu/aluxtrip/node_modules/.staging/connect-multiparty-c9a8b49c
+478 silly gentlyRm /home/ubuntu/aluxtrip/node_modules/.staging/connect-multiparty-c9a8b49c is being purged
+479 verbose gentlyRm don't care about contents; nuking /home/ubuntu/aluxtrip/node_modules/.staging/connect-multiparty-c9a8b49c
+480 verbose request uri https://registry.npmjs.org/passport
+481 verbose request no auth needed
+482 info attempt registry request try #1 at 7:21:42 AM
+483 verbose etag W/"58b265fa-ad43"
+484 verbose lastModified Sun, 26 Feb 2017 05:22:02 GMT
+485 http request GET https://registry.npmjs.org/passport
+486 verbose request uri https://registry.npmjs.org/passport-local
+487 verbose request no auth needed
+488 info attempt registry request try #1 at 7:21:42 AM
+489 verbose etag W/"58bd1e4a-37f9"
+490 verbose lastModified Mon, 06 Mar 2017 08:31:06 GMT
+491 http request GET https://registry.npmjs.org/passport-local
+492 silly gunzTarPerm modes [ '775', '664' ]
+493 silly gunzTarPerm modes [ '775', '664' ]
+494 verbose request uri https://registry.npmjs.org/mongoose
+495 verbose request no auth needed
+496 info attempt registry request try #1 at 7:21:42 AM
+497 verbose etag W/"58bf420c-8be83"
+498 verbose lastModified Tue, 07 Mar 2017 23:28:12 GMT
+499 http request GET https://registry.npmjs.org/mongoose
+500 silly gunzTarPerm modes [ '775', '664' ]
+501 http 304 https://registry.npmjs.org/async
+502 verbose headers { date: 'Thu, 09 Mar 2017 07:21:42 GMT',
+502 verbose headers   via: '1.1 varnish',
+502 verbose headers   'cache-control': 'max-age=300',
+502 verbose headers   etag: 'W/"58bed533-1e0da"',
+502 verbose headers   age: '257',
+502 verbose headers   connection: 'keep-alive',
+502 verbose headers   'x-served-by': 'cache-sin6924-SIN',
+502 verbose headers   'x-cache': 'HIT',
+502 verbose headers   'x-cache-hits': '38',
+502 verbose headers   'x-timer': 'S1489044102.485767,VS0,VE0',
+502 verbose headers   vary: 'Accept-Encoding' }
+503 silly get cb [ 304,
+503 silly get   { date: 'Thu, 09 Mar 2017 07:21:42 GMT',
+503 silly get     via: '1.1 varnish',
+503 silly get     'cache-control': 'max-age=300',
+503 silly get     etag: 'W/"58bed533-1e0da"',
+503 silly get     age: '257',
+503 silly get     connection: 'keep-alive',
+503 silly get     'x-served-by': 'cache-sin6924-SIN',
+503 silly get     'x-cache': 'HIT',
+503 silly get     'x-cache-hits': '38',
+503 silly get     'x-timer': 'S1489044102.485767,VS0,VE0',
+503 silly get     vary: 'Accept-Encoding' } ]
+504 verbose etag https://registry.npmjs.org/async from cache
+505 verbose get saving async to /home/ubuntu/.npm/registry.npmjs.org/async/.cache.json
+506 http 304 https://registry.npmjs.org/connect-flash
+507 verbose headers { date: 'Thu, 09 Mar 2017 07:21:42 GMT',
+507 verbose headers   via: '1.1 varnish',
+507 verbose headers   'cache-control': 'max-age=300',
+507 verbose headers   etag: 'W/"58b69ef9-1865"',
+507 verbose headers   age: '263',
+507 verbose headers   connection: 'keep-alive',
+507 verbose headers   'x-served-by': 'cache-sin6923-SIN',
+507 verbose headers   'x-cache': 'HIT',
+507 verbose headers   'x-cache-hits': '11',
+507 verbose headers   'x-timer': 'S1489044102.487817,VS0,VE0',
+507 verbose headers   vary: 'Accept-Encoding' }
+508 silly get cb [ 304,
+508 silly get   { date: 'Thu, 09 Mar 2017 07:21:42 GMT',
+508 silly get     via: '1.1 varnish',
+508 silly get     'cache-control': 'max-age=300',
+508 silly get     etag: 'W/"58b69ef9-1865"',
+508 silly get     age: '263',
+508 silly get     connection: 'keep-alive',
+508 silly get     'x-served-by': 'cache-sin6923-SIN',
+508 silly get     'x-cache': 'HIT',
+508 silly get     'x-cache-hits': '11',
+508 silly get     'x-timer': 'S1489044102.487817,VS0,VE0',
+508 silly get     vary: 'Accept-Encoding' } ]
+509 verbose etag https://registry.npmjs.org/connect-flash from cache
+510 verbose get saving connect-flash to /home/ubuntu/.npm/registry.npmjs.org/connect-flash/.cache.json
+511 http 304 https://registry.npmjs.org/express-handlebars
+512 verbose headers { date: 'Thu, 09 Mar 2017 07:21:42 GMT',
+512 verbose headers   via: '1.1 varnish',
+512 verbose headers   'cache-control': 'max-age=300',
+512 verbose headers   etag: 'W/"58bcdd7a-b16c"',
+512 verbose headers   age: '79',
+512 verbose headers   connection: 'keep-alive',
+512 verbose headers   'x-served-by': 'cache-sin6924-SIN',
+512 verbose headers   'x-cache': 'HIT',
+512 verbose headers   'x-cache-hits': '1',
+512 verbose headers   'x-timer': 'S1489044102.486280,VS0,VE0',
+512 verbose headers   vary: 'Accept-Encoding' }
+513 silly get cb [ 304,
+513 silly get   { date: 'Thu, 09 Mar 2017 07:21:42 GMT',
+513 silly get     via: '1.1 varnish',
+513 silly get     'cache-control': 'max-age=300',
+513 silly get     etag: 'W/"58bcdd7a-b16c"',
+513 silly get     age: '79',
+513 silly get     connection: 'keep-alive',
+513 silly get     'x-served-by': 'cache-sin6924-SIN',
+513 silly get     'x-cache': 'HIT',
+513 silly get     'x-cache-hits': '1',
+513 silly get     'x-timer': 'S1489044102.486280,VS0,VE0',
+513 silly get     vary: 'Accept-Encoding' } ]
+514 verbose etag https://registry.npmjs.org/express-handlebars from cache
+515 verbose get saving express-handlebars to /home/ubuntu/.npm/registry.npmjs.org/express-handlebars/.cache.json
+516 http 304 https://registry.npmjs.org/express-busboy
+517 verbose headers { date: 'Thu, 09 Mar 2017 07:21:42 GMT',
+517 verbose headers   via: '1.1 varnish',
+517 verbose headers   'cache-control': 'max-age=300',
+517 verbose headers   etag: 'W/"585c070a-6e7a"',
+517 verbose headers   age: '79',
+517 verbose headers   connection: 'keep-alive',
+517 verbose headers   'x-served-by': 'cache-sin6920-SIN',
+517 verbose headers   'x-cache': 'HIT',
+517 verbose headers   'x-cache-hits': '1',
+517 verbose headers   'x-timer': 'S1489044102.489409,VS0,VE0',
+517 verbose headers   vary: 'Accept-Encoding' }
+518 silly get cb [ 304,
+518 silly get   { date: 'Thu, 09 Mar 2017 07:21:42 GMT',
+518 silly get     via: '1.1 varnish',
+518 silly get     'cache-control': 'max-age=300',
+518 silly get     etag: 'W/"585c070a-6e7a"',
+518 silly get     age: '79',
+518 silly get     connection: 'keep-alive',
+518 silly get     'x-served-by': 'cache-sin6920-SIN',
+518 silly get     'x-cache': 'HIT',
+518 silly get     'x-cache-hits': '1',
+518 silly get     'x-timer': 'S1489044102.489409,VS0,VE0',
+518 silly get     vary: 'Accept-Encoding' } ]
+519 verbose etag https://registry.npmjs.org/express-busboy from cache
+520 verbose get saving express-busboy to /home/ubuntu/.npm/registry.npmjs.org/express-busboy/.cache.json
+521 http 304 https://registry.npmjs.org/custombox
+522 verbose headers { date: 'Thu, 09 Mar 2017 07:21:42 GMT',
+522 verbose headers   via: '1.1 varnish',
+522 verbose headers   'cache-control': 'max-age=300',
+522 verbose headers   etag: 'W/"58abd00f-6041"',
+522 verbose headers   age: '79',
+522 verbose headers   connection: 'keep-alive',
+522 verbose headers   'x-served-by': 'cache-sin6927-SIN',
+522 verbose headers   'x-cache': 'HIT',
+522 verbose headers   'x-cache-hits': '1',
+522 verbose headers   'x-timer': 'S1489044102.488419,VS0,VE0',
+522 verbose headers   vary: 'Accept-Encoding' }
+523 silly get cb [ 304,
+523 silly get   { date: 'Thu, 09 Mar 2017 07:21:42 GMT',
+523 silly get     via: '1.1 varnish',
+523 silly get     'cache-control': 'max-age=300',
+523 silly get     etag: 'W/"58abd00f-6041"',
+523 silly get     age: '79',
+523 silly get     connection: 'keep-alive',
+523 silly get     'x-served-by': 'cache-sin6927-SIN',
+523 silly get     'x-cache': 'HIT',
+523 silly get     'x-cache-hits': '1',
+523 silly get     'x-timer': 'S1489044102.488419,VS0,VE0',
+523 silly get     vary: 'Accept-Encoding' } ]
+524 verbose etag https://registry.npmjs.org/custombox from cache
+525 verbose get saving custombox to /home/ubuntu/.npm/registry.npmjs.org/custombox/.cache.json
+526 http 304 https://registry.npmjs.org/express-validator
+527 verbose headers { date: 'Thu, 09 Mar 2017 07:21:42 GMT',
+527 verbose headers   via: '1.1 varnish',
+527 verbose headers   'cache-control': 'max-age=300',
+527 verbose headers   etag: 'W/"58bfda5a-1db48"',
+527 verbose headers   age: '78',
+527 verbose headers   connection: 'keep-alive',
+527 verbose headers   'x-served-by': 'cache-sin6921-SIN',
+527 verbose headers   'x-cache': 'HIT',
+527 verbose headers   'x-cache-hits': '1',
+527 verbose headers   'x-timer': 'S1489044102.494929,VS0,VE0',
+527 verbose headers   vary: 'Accept-Encoding' }
+528 silly get cb [ 304,
+528 silly get   { date: 'Thu, 09 Mar 2017 07:21:42 GMT',
+528 silly get     via: '1.1 varnish',
+528 silly get     'cache-control': 'max-age=300',
+528 silly get     etag: 'W/"58bfda5a-1db48"',
+528 silly get     age: '78',
+528 silly get     connection: 'keep-alive',
+528 silly get     'x-served-by': 'cache-sin6921-SIN',
+528 silly get     'x-cache': 'HIT',
+528 silly get     'x-cache-hits': '1',
+528 silly get     'x-timer': 'S1489044102.494929,VS0,VE0',
+528 silly get     vary: 'Accept-Encoding' } ]
+529 verbose etag https://registry.npmjs.org/express-validator from cache
+530 verbose get saving express-validator to /home/ubuntu/.npm/registry.npmjs.org/express-validator/.cache.json
+531 http 304 https://registry.npmjs.org/bootstrap-datepicker
+532 verbose headers { date: 'Thu, 09 Mar 2017 07:21:42 GMT',
+532 verbose headers   via: '1.1 varnish',
+532 verbose headers   'cache-control': 'max-age=300',
+532 verbose headers   etag: 'W/"58853c4a-5b43"',
+532 verbose headers   age: '79',
+532 verbose headers   connection: 'keep-alive',
+532 verbose headers   'x-served-by': 'cache-sin6921-SIN',
+532 verbose headers   'x-cache': 'HIT',
+532 verbose headers   'x-cache-hits': '1',
+532 verbose headers   'x-timer': 'S1489044102.489354,VS0,VE0',
+532 verbose headers   vary: 'Accept-Encoding' }
+533 silly get cb [ 304,
+533 silly get   { date: 'Thu, 09 Mar 2017 07:21:42 GMT',
+533 silly get     via: '1.1 varnish',
+533 silly get     'cache-control': 'max-age=300',
+533 silly get     etag: 'W/"58853c4a-5b43"',
+533 silly get     age: '79',
+533 silly get     connection: 'keep-alive',
+533 silly get     'x-served-by': 'cache-sin6921-SIN',
+533 silly get     'x-cache': 'HIT',
+533 silly get     'x-cache-hits': '1',
+533 silly get     'x-timer': 'S1489044102.489354,VS0,VE0',
+533 silly get     vary: 'Accept-Encoding' } ]
+534 verbose etag https://registry.npmjs.org/bootstrap-datepicker from cache
+535 verbose get saving bootstrap-datepicker to /home/ubuntu/.npm/registry.npmjs.org/bootstrap-datepicker/.cache.json
+536 http 304 https://registry.npmjs.org/express-session
+537 verbose headers { date: 'Thu, 09 Mar 2017 07:21:42 GMT',
+537 verbose headers   via: '1.1 varnish',
+537 verbose headers   'cache-control': 'max-age=300',
+537 verbose headers   etag: 'W/"58be61d8-1e128"',
+537 verbose headers   age: '198',
+537 verbose headers   connection: 'keep-alive',
+537 verbose headers   'x-served-by': 'cache-sin6921-SIN',
+537 verbose headers   'x-cache': 'HIT',
+537 verbose headers   'x-cache-hits': '3',
+537 verbose headers   'x-timer': 'S1489044102.489405,VS0,VE0',
+537 verbose headers   vary: 'Accept-Encoding' }
+538 silly get cb [ 304,
+538 silly get   { date: 'Thu, 09 Mar 2017 07:21:42 GMT',
+538 silly get     via: '1.1 varnish',
+538 silly get     'cache-control': 'max-age=300',
+538 silly get     etag: 'W/"58be61d8-1e128"',
+538 silly get     age: '198',
+538 silly get     connection: 'keep-alive',
+538 silly get     'x-served-by': 'cache-sin6921-SIN',
+538 silly get     'x-cache': 'HIT',
+538 silly get     'x-cache-hits': '3',
+538 silly get     'x-timer': 'S1489044102.489405,VS0,VE0',
+538 silly get     vary: 'Accept-Encoding' } ]
+539 verbose etag https://registry.npmjs.org/express-session from cache
+540 verbose get saving express-session to /home/ubuntu/.npm/registry.npmjs.org/express-session/.cache.json
+541 http 304 https://registry.npmjs.org/passport-local
+542 verbose headers { date: 'Thu, 09 Mar 2017 07:21:42 GMT',
+542 verbose headers   via: '1.1 varnish',
+542 verbose headers   'cache-control': 'max-age=300',
+542 verbose headers   etag: 'W/"58bd1e4a-37f9"',
+542 verbose headers   age: '79',
+542 verbose headers   connection: 'keep-alive',
+542 verbose headers   'x-served-by': 'cache-sin6923-SIN',
+542 verbose headers   'x-cache': 'HIT',
+542 verbose headers   'x-cache-hits': '2',
+542 verbose headers   'x-timer': 'S1489044102.500375,VS0,VE0',
+542 verbose headers   vary: 'Accept-Encoding' }
+543 silly get cb [ 304,
+543 silly get   { date: 'Thu, 09 Mar 2017 07:21:42 GMT',
+543 silly get     via: '1.1 varnish',
+543 silly get     'cache-control': 'max-age=300',
+543 silly get     etag: 'W/"58bd1e4a-37f9"',
+543 silly get     age: '79',
+543 silly get     connection: 'keep-alive',
+543 silly get     'x-served-by': 'cache-sin6923-SIN',
+543 silly get     'x-cache': 'HIT',
+543 silly get     'x-cache-hits': '2',
+543 silly get     'x-timer': 'S1489044102.500375,VS0,VE0',
+543 silly get     vary: 'Accept-Encoding' } ]
+544 verbose etag https://registry.npmjs.org/passport-local from cache
+545 verbose get saving passport-local to /home/ubuntu/.npm/registry.npmjs.org/passport-local/.cache.json
+546 http 304 https://registry.npmjs.org/mongoose
+547 verbose headers { date: 'Thu, 09 Mar 2017 07:21:42 GMT',
+547 verbose headers   via: '1.1 varnish',
+547 verbose headers   'cache-control': 'max-age=300',
+547 verbose headers   etag: 'W/"58bf420c-8be83"',
+547 verbose headers   age: '222',
+547 verbose headers   connection: 'keep-alive',
+547 verbose headers   'x-served-by': 'cache-sin6924-SIN',
+547 verbose headers   'x-cache': 'HIT',
+547 verbose headers   'x-cache-hits': '4',
+547 verbose headers   'x-timer': 'S1489044102.499051,VS0,VE0',
+547 verbose headers   vary: 'Accept-Encoding' }
+548 silly get cb [ 304,
+548 silly get   { date: 'Thu, 09 Mar 2017 07:21:42 GMT',
+548 silly get     via: '1.1 varnish',
+548 silly get     'cache-control': 'max-age=300',
+548 silly get     etag: 'W/"58bf420c-8be83"',
+548 silly get     age: '222',
+548 silly get     connection: 'keep-alive',
+548 silly get     'x-served-by': 'cache-sin6924-SIN',
+548 silly get     'x-cache': 'HIT',
+548 silly get     'x-cache-hits': '4',
+548 silly get     'x-timer': 'S1489044102.499051,VS0,VE0',
+548 silly get     vary: 'Accept-Encoding' } ]
+549 verbose etag https://registry.npmjs.org/mongoose from cache
+550 verbose get saving mongoose to /home/ubuntu/.npm/registry.npmjs.org/mongoose/.cache.json
+551 http 304 https://registry.npmjs.org/passport
+552 verbose headers { date: 'Thu, 09 Mar 2017 07:21:42 GMT',
+552 verbose headers   via: '1.1 varnish',
+552 verbose headers   'cache-control': 'max-age=300',
+552 verbose headers   etag: 'W/"58b265fa-ad43"',
+552 verbose headers   age: '263',
+552 verbose headers   connection: 'keep-alive',
+552 verbose headers   'x-served-by': 'cache-sin6922-SIN',
+552 verbose headers   'x-cache': 'HIT',
+552 verbose headers   'x-cache-hits': '1',
+552 verbose headers   'x-timer': 'S1489044102.498203,VS0,VE0',
+552 verbose headers   vary: 'Accept-Encoding' }
+553 silly get cb [ 304,
+553 silly get   { date: 'Thu, 09 Mar 2017 07:21:42 GMT',
+553 silly get     via: '1.1 varnish',
+553 silly get     'cache-control': 'max-age=300',
+553 silly get     etag: 'W/"58b265fa-ad43"',
+553 silly get     age: '263',
+553 silly get     connection: 'keep-alive',
+553 silly get     'x-served-by': 'cache-sin6922-SIN',
+553 silly get     'x-cache': 'HIT',
+553 silly get     'x-cache-hits': '1',
+553 silly get     'x-timer': 'S1489044102.498203,VS0,VE0',
+553 silly get     vary: 'Accept-Encoding' } ]
+554 verbose etag https://registry.npmjs.org/passport from cache
+555 verbose get saving passport to /home/ubuntu/.npm/registry.npmjs.org/passport/.cache.json
+556 http 304 https://registry.npmjs.org/method-override
+557 verbose headers { date: 'Thu, 09 Mar 2017 07:21:42 GMT',
+557 verbose headers   via: '1.1 varnish',
+557 verbose headers   'cache-control': 'max-age=300',
+557 verbose headers   etag: 'W/"58bb02a4-9f70"',
+557 verbose headers   age: '224',
+557 verbose headers   connection: 'keep-alive',
+557 verbose headers   'x-served-by': 'cache-sin6925-SIN',
+557 verbose headers   'x-cache': 'HIT',
+557 verbose headers   'x-cache-hits': '5',
+557 verbose headers   'x-timer': 'S1489044102.497491,VS0,VE0',
+557 verbose headers   vary: 'Accept-Encoding' }
+558 silly get cb [ 304,
+558 silly get   { date: 'Thu, 09 Mar 2017 07:21:42 GMT',
+558 silly get     via: '1.1 varnish',
+558 silly get     'cache-control': 'max-age=300',
+558 silly get     etag: 'W/"58bb02a4-9f70"',
+558 silly get     age: '224',
+558 silly get     connection: 'keep-alive',
+558 silly get     'x-served-by': 'cache-sin6925-SIN',
+558 silly get     'x-cache': 'HIT',
+558 silly get     'x-cache-hits': '5',
+558 silly get     'x-timer': 'S1489044102.497491,VS0,VE0',
+558 silly get     vary: 'Accept-Encoding' } ]
+559 verbose etag https://registry.npmjs.org/method-override from cache
+560 verbose get saving method-override to /home/ubuntu/.npm/registry.npmjs.org/method-override/.cache.json
+561 http 304 https://registry.npmjs.org/csurf
+562 verbose headers { date: 'Thu, 09 Mar 2017 07:21:42 GMT',
+562 verbose headers   via: '1.1 varnish',
+562 verbose headers   'cache-control': 'max-age=300',
+562 verbose headers   etag: 'W/"58bf7582-c9d2"',
+562 verbose headers   age: '79',
+562 verbose headers   connection: 'keep-alive',
+562 verbose headers   'x-served-by': 'cache-sin6924-SIN',
+562 verbose headers   'x-cache': 'HIT',
+562 verbose headers   'x-cache-hits': '1',
+562 verbose headers   'x-timer': 'S1489044102.497869,VS0,VE0',
+562 verbose headers   vary: 'Accept-Encoding' }
+563 silly get cb [ 304,
+563 silly get   { date: 'Thu, 09 Mar 2017 07:21:42 GMT',
+563 silly get     via: '1.1 varnish',
+563 silly get     'cache-control': 'max-age=300',
+563 silly get     etag: 'W/"58bf7582-c9d2"',
+563 silly get     age: '79',
+563 silly get     connection: 'keep-alive',
+563 silly get     'x-served-by': 'cache-sin6924-SIN',
+563 silly get     'x-cache': 'HIT',
+563 silly get     'x-cache-hits': '1',
+563 silly get     'x-timer': 'S1489044102.497869,VS0,VE0',
+563 silly get     vary: 'Accept-Encoding' } ]
+564 verbose etag https://registry.npmjs.org/csurf from cache
+565 verbose get saving csurf to /home/ubuntu/.npm/registry.npmjs.org/csurf/.cache.json
+566 http 304 https://registry.npmjs.org/bcrypt-nodejs
+567 verbose headers { date: 'Thu, 09 Mar 2017 07:21:42 GMT',
+567 verbose headers   via: '1.1 varnish',
+567 verbose headers   'cache-control': 'max-age=300',
+567 verbose headers   etag: 'W/"58ad5765-2487"',
+567 verbose headers   age: '78',
+567 verbose headers   connection: 'keep-alive',
+567 verbose headers   'x-served-by': 'cache-sin6927-SIN',
+567 verbose headers   'x-cache': 'HIT',
+567 verbose headers   'x-cache-hits': '1',
+567 verbose headers   'x-timer': 'S1489044102.498347,VS0,VE0',
+567 verbose headers   vary: 'Accept-Encoding' }
+568 silly get cb [ 304,
+568 silly get   { date: 'Thu, 09 Mar 2017 07:21:42 GMT',
+568 silly get     via: '1.1 varnish',
+568 silly get     'cache-control': 'max-age=300',
+568 silly get     etag: 'W/"58ad5765-2487"',
+568 silly get     age: '78',
+568 silly get     connection: 'keep-alive',
+568 silly get     'x-served-by': 'cache-sin6927-SIN',
+568 silly get     'x-cache': 'HIT',
+568 silly get     'x-cache-hits': '1',
+568 silly get     'x-timer': 'S1489044102.498347,VS0,VE0',
+568 silly get     vary: 'Accept-Encoding' } ]
+569 verbose etag https://registry.npmjs.org/bcrypt-nodejs from cache
+570 verbose get saving bcrypt-nodejs to /home/ubuntu/.npm/registry.npmjs.org/bcrypt-nodejs/.cache.json
+571 silly gunzTarPerm extractEntry package.json
+572 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+573 silly gunzTarPerm extractEntry package.json
+574 silly gunzTarPerm modified mode [ 'package.json', 438, 436 ]
+575 silly gunzTarPerm extractEntry package.json
+576 silly gunzTarPerm modified mode [ 'package.json', 438, 436 ]
+577 silly gunzTarPerm extractEntry .npmignore
+578 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+579 silly gunzTarPerm extractEntry README.md
+580 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+581 silly gunzTarPerm extractEntry .npmignore
+582 silly gunzTarPerm modified mode [ '.npmignore', 438, 436 ]
+583 silly gunzTarPerm extractEntry README.md
+584 silly gunzTarPerm modified mode [ 'README.md', 438, 436 ]
+585 silly gunzTarPerm extractEntry .npmignore
+586 silly gunzTarPerm modified mode [ '.npmignore', 438, 436 ]
+587 silly gunzTarPerm extractEntry README.md
+588 silly gunzTarPerm modified mode [ 'README.md', 438, 436 ]
+589 silly mapToRegistry name async
+590 silly mapToRegistry using default registry
+591 silly mapToRegistry registry https://registry.npmjs.org/
+592 silly mapToRegistry uri https://registry.npmjs.org/async
+593 verbose addRemoteTarball https://registry.npmjs.org/async/-/async-2.1.4.tgz not in flight; adding
+594 verbose addRemoteTarball [ 'https://registry.npmjs.org/async/-/async-2.1.4.tgz',
+594 verbose addRemoteTarball   '2d2160c7788032e4dd6cbe2502f1f9a2c8f6cde4' ]
+595 silly mapToRegistry name connect-flash
+596 silly mapToRegistry using default registry
+597 silly mapToRegistry registry https://registry.npmjs.org/
+598 silly mapToRegistry uri https://registry.npmjs.org/connect-flash
+599 verbose addRemoteTarball https://registry.npmjs.org/connect-flash/-/connect-flash-0.1.1.tgz not in flight; adding
+600 verbose addRemoteTarball [ 'https://registry.npmjs.org/connect-flash/-/connect-flash-0.1.1.tgz',
+600 verbose addRemoteTarball   'd8630f26d95a7f851f9956b1e8cc6732f3b6aa30' ]
+601 silly mapToRegistry name express-handlebars
+602 silly mapToRegistry using default registry
+603 silly mapToRegistry registry https://registry.npmjs.org/
+604 silly mapToRegistry uri https://registry.npmjs.org/express-handlebars
+605 verbose addRemoteTarball https://registry.npmjs.org/express-handlebars/-/express-handlebars-3.0.0.tgz not in flight; adding
+606 verbose addRemoteTarball [ 'https://registry.npmjs.org/express-handlebars/-/express-handlebars-3.0.0.tgz',
+606 verbose addRemoteTarball   '80a070bb819b09e4af2ca6d0780f75ce05e75c2f' ]
+607 silly mapToRegistry name express-busboy
+608 silly mapToRegistry using default registry
+609 silly mapToRegistry registry https://registry.npmjs.org/
+610 silly mapToRegistry uri https://registry.npmjs.org/express-busboy
+611 verbose addRemoteTarball https://registry.npmjs.org/express-busboy/-/express-busboy-5.0.0.tgz not in flight; adding
+612 verbose addRemoteTarball [ 'https://registry.npmjs.org/express-busboy/-/express-busboy-5.0.0.tgz',
+612 verbose addRemoteTarball   '38d063998c158a9960963b118cb2c107f2e130d3' ]
+613 silly mapToRegistry name custombox
+614 silly mapToRegistry using default registry
+615 silly mapToRegistry registry https://registry.npmjs.org/
+616 silly mapToRegistry uri https://registry.npmjs.org/custombox
+617 verbose addRemoteTarball https://registry.npmjs.org/custombox/-/custombox-4.0.0.tgz not in flight; adding
+618 verbose addRemoteTarball [ 'https://registry.npmjs.org/custombox/-/custombox-4.0.0.tgz',
+618 verbose addRemoteTarball   'bc53da03c609169f5048e5af8ae5dc14590fab6e' ]
+619 silly mapToRegistry name express-validator
+620 silly mapToRegistry using default registry
+621 silly mapToRegistry registry https://registry.npmjs.org/
+622 silly mapToRegistry uri https://registry.npmjs.org/express-validator
+623 verbose addRemoteTarball https://registry.npmjs.org/express-validator/-/express-validator-3.0.0.tgz not in flight; adding
+624 verbose addRemoteTarball [ 'https://registry.npmjs.org/express-validator/-/express-validator-3.0.0.tgz',
+624 verbose addRemoteTarball   '592ebab63e77db0dff8e1906e445b6b25d6ba308' ]
+625 silly mapToRegistry name bootstrap-datepicker
+626 silly mapToRegistry using default registry
+627 silly mapToRegistry registry https://registry.npmjs.org/
+628 silly mapToRegistry uri https://registry.npmjs.org/bootstrap-datepicker
+629 verbose addRemoteTarball https://registry.npmjs.org/bootstrap-datepicker/-/bootstrap-datepicker-1.6.4.tgz not in flight; adding
+630 verbose addRemoteTarball [ 'https://registry.npmjs.org/bootstrap-datepicker/-/bootstrap-datepicker-1.6.4.tgz',
+630 verbose addRemoteTarball   '889ebeced8eaa2ff15ec1f273e4b07531cc43da0' ]
+631 silly mapToRegistry name express-session
+632 silly mapToRegistry using default registry
+633 silly mapToRegistry registry https://registry.npmjs.org/
+634 silly mapToRegistry uri https://registry.npmjs.org/express-session
+635 verbose addRemoteTarball https://registry.npmjs.org/express-session/-/express-session-1.14.2.tgz not in flight; adding
+636 verbose addRemoteTarball [ 'https://registry.npmjs.org/express-session/-/express-session-1.14.2.tgz',
+636 verbose addRemoteTarball   '6bcf586ed6d1dc37b02570087756c9de7b80b275' ]
+637 silly mapToRegistry name passport-local
+638 silly mapToRegistry using default registry
+639 silly mapToRegistry registry https://registry.npmjs.org/
+640 silly mapToRegistry uri https://registry.npmjs.org/passport-local
+641 verbose addRemoteTarball https://registry.npmjs.org/passport-local/-/passport-local-1.0.0.tgz not in flight; adding
+642 verbose addRemoteTarball [ 'https://registry.npmjs.org/passport-local/-/passport-local-1.0.0.tgz',
+642 verbose addRemoteTarball   '1fe63268c92e75606626437e3b906662c15ba6ee' ]
+643 silly mapToRegistry name mongoose
+644 silly mapToRegistry using default registry
+645 silly mapToRegistry registry https://registry.npmjs.org/
+646 silly mapToRegistry uri https://registry.npmjs.org/mongoose
+647 verbose addRemoteTarball https://registry.npmjs.org/mongoose/-/mongoose-4.7.1.tgz not in flight; adding
+648 verbose addRemoteTarball [ 'https://registry.npmjs.org/mongoose/-/mongoose-4.7.1.tgz',
+648 verbose addRemoteTarball   '3842df23f5eb5db31d27311d2a3fb4cca2b5cd9e' ]
+649 silly mapToRegistry name passport
+650 silly mapToRegistry using default registry
+651 silly mapToRegistry registry https://registry.npmjs.org/
+652 silly mapToRegistry uri https://registry.npmjs.org/passport
+653 verbose addRemoteTarball https://registry.npmjs.org/passport/-/passport-0.3.2.tgz not in flight; adding
+654 verbose addRemoteTarball [ 'https://registry.npmjs.org/passport/-/passport-0.3.2.tgz',
+654 verbose addRemoteTarball   '9dd009f915e8fe095b0124a01b8f82da07510102' ]
+655 silly mapToRegistry name method-override
+656 silly mapToRegistry using default registry
+657 silly mapToRegistry registry https://registry.npmjs.org/
+658 silly mapToRegistry uri https://registry.npmjs.org/method-override
+659 verbose addRemoteTarball https://registry.npmjs.org/method-override/-/method-override-2.3.7.tgz not in flight; adding
+660 verbose addRemoteTarball [ 'https://registry.npmjs.org/method-override/-/method-override-2.3.7.tgz',
+660 verbose addRemoteTarball   '8e1d47ac480fb0cd8777083f11c896901166b2e5' ]
+661 silly mapToRegistry name csurf
+662 silly mapToRegistry using default registry
+663 silly mapToRegistry registry https://registry.npmjs.org/
+664 silly mapToRegistry uri https://registry.npmjs.org/csurf
+665 verbose addRemoteTarball https://registry.npmjs.org/csurf/-/csurf-1.9.0.tgz not in flight; adding
+666 verbose addRemoteTarball [ 'https://registry.npmjs.org/csurf/-/csurf-1.9.0.tgz',
+666 verbose addRemoteTarball   '49d2c6925ffcec7b7de559597c153fa533364133' ]
+667 silly mapToRegistry name bcrypt-nodejs
+668 silly mapToRegistry using default registry
+669 silly mapToRegistry registry https://registry.npmjs.org/
+670 silly mapToRegistry uri https://registry.npmjs.org/bcrypt-nodejs
+671 verbose addRemoteTarball https://registry.npmjs.org/bcrypt-nodejs/-/bcrypt-nodejs-0.0.3.tgz not in flight; adding
+672 verbose addRemoteTarball [ 'https://registry.npmjs.org/bcrypt-nodejs/-/bcrypt-nodejs-0.0.3.tgz',
+672 verbose addRemoteTarball   'c60917f26dc235661566c681061c303c2b28842b' ]
+673 silly gunzTarPerm extractEntry LICENSE
+674 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+675 silly gunzTarPerm extractEntry CHANGELOG.md
+676 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 436 ]
+677 silly gunzTarPerm extractEntry index.js
+678 silly gunzTarPerm modified mode [ 'index.js', 438, 436 ]
+679 silly gunzTarPerm extractEntry CHANGELOG.md
+680 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 438, 436 ]
+681 silly gunzTarPerm extractEntry LICENSE
+682 silly gunzTarPerm modified mode [ 'LICENSE', 438, 436 ]
+683 silly gunzTarPerm extractEntry index.js
+684 silly gunzTarPerm modified mode [ 'index.js', 438, 436 ]
+685 info retry fetch attempt 1 at 7:21:42 AM
+686 info attempt registry request try #1 at 7:21:42 AM
+687 http fetch GET https://registry.npmjs.org/passport-local/-/passport-local-1.0.0.tgz
+688 info retry fetch attempt 1 at 7:21:42 AM
+689 info attempt registry request try #1 at 7:21:42 AM
+690 http fetch GET https://registry.npmjs.org/mongoose/-/mongoose-4.7.1.tgz
+691 info retry fetch attempt 1 at 7:21:42 AM
+692 info attempt registry request try #1 at 7:21:42 AM
+693 http fetch GET https://registry.npmjs.org/passport/-/passport-0.3.2.tgz
+694 info retry fetch attempt 1 at 7:21:42 AM
+695 info attempt registry request try #1 at 7:21:42 AM
+696 http fetch GET https://registry.npmjs.org/method-override/-/method-override-2.3.7.tgz
+697 info retry fetch attempt 1 at 7:21:42 AM
+698 info attempt registry request try #1 at 7:21:42 AM
+699 http fetch GET https://registry.npmjs.org/csurf/-/csurf-1.9.0.tgz
+700 info retry fetch attempt 1 at 7:21:42 AM
+701 info attempt registry request try #1 at 7:21:42 AM
+702 http fetch GET https://registry.npmjs.org/bcrypt-nodejs/-/bcrypt-nodejs-0.0.3.tgz
+703 info retry fetch attempt 1 at 7:21:42 AM
+704 info attempt registry request try #1 at 7:21:42 AM
+705 http fetch GET https://registry.npmjs.org/express-validator/-/express-validator-3.0.0.tgz
+706 info retry fetch attempt 1 at 7:21:42 AM
+707 info attempt registry request try #1 at 7:21:42 AM
+708 http fetch GET https://registry.npmjs.org/bootstrap-datepicker/-/bootstrap-datepicker-1.6.4.tgz
+709 info retry fetch attempt 1 at 7:21:42 AM
+710 info attempt registry request try #1 at 7:21:42 AM
+711 http fetch GET https://registry.npmjs.org/express-session/-/express-session-1.14.2.tgz
+712 info retry fetch attempt 1 at 7:21:42 AM
+713 info attempt registry request try #1 at 7:21:42 AM
+714 http fetch GET https://registry.npmjs.org/async/-/async-2.1.4.tgz
+715 info retry fetch attempt 1 at 7:21:42 AM
+716 info attempt registry request try #1 at 7:21:42 AM
+717 http fetch GET https://registry.npmjs.org/connect-flash/-/connect-flash-0.1.1.tgz
+718 info retry fetch attempt 1 at 7:21:42 AM
+719 info attempt registry request try #1 at 7:21:42 AM
+720 http fetch GET https://registry.npmjs.org/express-handlebars/-/express-handlebars-3.0.0.tgz
+721 info retry fetch attempt 1 at 7:21:42 AM
+722 info attempt registry request try #1 at 7:21:42 AM
+723 http fetch GET https://registry.npmjs.org/express-busboy/-/express-busboy-5.0.0.tgz
+724 info retry fetch attempt 1 at 7:21:42 AM
+725 info attempt registry request try #1 at 7:21:42 AM
+726 http fetch GET https://registry.npmjs.org/custombox/-/custombox-4.0.0.tgz
+727 silly gunzTarPerm extractEntry CONTRIBUTING.md
+728 silly gunzTarPerm modified mode [ 'CONTRIBUTING.md', 420, 436 ]
+729 silly gunzTarPerm extractEntry CHANGELOG.md
+730 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 438, 436 ]
+731 http fetch 200 https://registry.npmjs.org/method-override/-/method-override-2.3.7.tgz
+732 http fetch 200 https://registry.npmjs.org/passport/-/passport-0.3.2.tgz
+733 http fetch 200 https://registry.npmjs.org/passport-local/-/passport-local-1.0.0.tgz
+734 http fetch 200 https://registry.npmjs.org/csurf/-/csurf-1.9.0.tgz
+735 http fetch 200 https://registry.npmjs.org/express-validator/-/express-validator-3.0.0.tgz
+736 http fetch 200 https://registry.npmjs.org/bcrypt-nodejs/-/bcrypt-nodejs-0.0.3.tgz
+737 http fetch 200 https://registry.npmjs.org/mongoose/-/mongoose-4.7.1.tgz
+738 http fetch 200 https://registry.npmjs.org/express-session/-/express-session-1.14.2.tgz
+739 http fetch 200 https://registry.npmjs.org/bootstrap-datepicker/-/bootstrap-datepicker-1.6.4.tgz
+740 http fetch 200 https://registry.npmjs.org/express-busboy/-/express-busboy-5.0.0.tgz
+741 http fetch 200 https://registry.npmjs.org/async/-/async-2.1.4.tgz
+742 http fetch 200 https://registry.npmjs.org/express-handlebars/-/express-handlebars-3.0.0.tgz
+743 http fetch 200 https://registry.npmjs.org/custombox/-/custombox-4.0.0.tgz
+744 http fetch 200 https://registry.npmjs.org/connect-flash/-/connect-flash-0.1.1.tgz
+745 silly fetchAndShaCheck shasum 8e1d47ac480fb0cd8777083f11c896901166b2e5
+746 silly fetchAndShaCheck shasum 9dd009f915e8fe095b0124a01b8f82da07510102
+747 silly fetchAndShaCheck shasum 1fe63268c92e75606626437e3b906662c15ba6ee
+748 silly fetchAndShaCheck shasum 49d2c6925ffcec7b7de559597c153fa533364133
+749 silly fetchAndShaCheck shasum c60917f26dc235661566c681061c303c2b28842b
+750 silly fetchAndShaCheck shasum 6bcf586ed6d1dc37b02570087756c9de7b80b275
+751 verbose addTmpTarball /tmp/npm-29914-6b59d1fb/registry.npmjs.org/method-override/-/method-override-2.3.7.tgz not in flight; adding
+752 verbose addTmpTarball already have metadata; skipping unpack for method-override@2.3.7
+753 verbose addTmpTarball /tmp/npm-29914-6b59d1fb/registry.npmjs.org/passport/-/passport-0.3.2.tgz not in flight; adding
+754 verbose addTmpTarball already have metadata; skipping unpack for passport@0.3.2
+755 verbose addTmpTarball /tmp/npm-29914-6b59d1fb/registry.npmjs.org/passport-local/-/passport-local-1.0.0.tgz not in flight; adding
+756 verbose addTmpTarball already have metadata; skipping unpack for passport-local@1.0.0
+757 verbose addTmpTarball /tmp/npm-29914-6b59d1fb/registry.npmjs.org/csurf/-/csurf-1.9.0.tgz not in flight; adding
+758 verbose addTmpTarball already have metadata; skipping unpack for csurf@1.9.0
+759 silly fetchAndShaCheck shasum 592ebab63e77db0dff8e1906e445b6b25d6ba308
+760 verbose addTmpTarball /tmp/npm-29914-6b59d1fb/registry.npmjs.org/bcrypt-nodejs/-/bcrypt-nodejs-0.0.3.tgz not in flight; adding
+761 verbose addTmpTarball already have metadata; skipping unpack for bcrypt-nodejs@0.0.3
+762 silly fetchAndShaCheck shasum 80a070bb819b09e4af2ca6d0780f75ce05e75c2f
+763 silly fetchAndShaCheck shasum d8630f26d95a7f851f9956b1e8cc6732f3b6aa30
+764 silly gunzTarPerm extractEntry .eslintignore
+765 silly gunzTarPerm modified mode [ '.eslintignore', 420, 436 ]
+766 silly gunzTarPerm extractEntry bower.json
+767 silly gunzTarPerm modified mode [ 'bower.json', 420, 436 ]
+768 verbose addTmpTarball /tmp/npm-29914-6b59d1fb/registry.npmjs.org/express-session/-/express-session-1.14.2.tgz not in flight; adding
+769 verbose addTmpTarball already have metadata; skipping unpack for express-session@1.14.2
+770 silly fetchAndShaCheck shasum 38d063998c158a9960963b118cb2c107f2e130d3
+771 verbose addTmpTarball /tmp/npm-29914-6b59d1fb/registry.npmjs.org/express-validator/-/express-validator-3.0.0.tgz not in flight; adding
+772 verbose addTmpTarball already have metadata; skipping unpack for express-validator@3.0.0
+773 verbose addTmpTarball /tmp/npm-29914-6b59d1fb/registry.npmjs.org/express-handlebars/-/express-handlebars-3.0.0.tgz not in flight; adding
+774 verbose addTmpTarball already have metadata; skipping unpack for express-handlebars@3.0.0
+775 verbose addTmpTarball /tmp/npm-29914-6b59d1fb/registry.npmjs.org/connect-flash/-/connect-flash-0.1.1.tgz not in flight; adding
+776 verbose addTmpTarball already have metadata; skipping unpack for connect-flash@0.1.1
+777 silly fetchAndShaCheck shasum 2d2160c7788032e4dd6cbe2502f1f9a2c8f6cde4
+778 verbose addTmpTarball /tmp/npm-29914-6b59d1fb/registry.npmjs.org/express-busboy/-/express-busboy-5.0.0.tgz not in flight; adding
+779 verbose addTmpTarball already have metadata; skipping unpack for express-busboy@5.0.0
+780 silly fetchAndShaCheck shasum bc53da03c609169f5048e5af8ae5dc14590fab6e
+781 verbose addTmpTarball /tmp/npm-29914-6b59d1fb/registry.npmjs.org/async/-/async-2.1.4.tgz not in flight; adding
+782 verbose addTmpTarball already have metadata; skipping unpack for async@2.1.4
+783 silly fetchAndShaCheck shasum 3842df23f5eb5db31d27311d2a3fb4cca2b5cd9e
+784 verbose addTmpTarball /tmp/npm-29914-6b59d1fb/registry.npmjs.org/custombox/-/custombox-4.0.0.tgz not in flight; adding
+785 verbose addTmpTarball already have metadata; skipping unpack for custombox@4.0.0
+786 silly gunzTarPerm extractEntry lib/index.js
+787 silly gunzTarPerm modified mode [ 'lib/index.js', 420, 436 ]
+788 silly gunzTarPerm extractEntry lib/parse.js
+789 silly gunzTarPerm modified mode [ 'lib/parse.js', 420, 436 ]
+790 verbose unbuild node_modules/.staging/method-override-232215ae
+791 verbose unbuild node_modules/.staging/passport-1ac24daa
+792 verbose unbuild node_modules/.staging/passport-local-19ef14b0
+793 verbose unbuild node_modules/.staging/csurf-567fa791
+794 verbose unbuild node_modules/.staging/bcrypt-nodejs-5459975a
+795 verbose unbuild node_modules/.staging/express-session-8eeab601
+796 silly gentlyRm /home/ubuntu/aluxtrip/node_modules/.staging/method-override-232215ae is being purged from base /home/ubuntu/aluxtrip
+797 verbose gentlyRm don't care about contents; nuking /home/ubuntu/aluxtrip/node_modules/.staging/method-override-232215ae
+798 silly gentlyRm /home/ubuntu/aluxtrip/node_modules/.staging/passport-1ac24daa is being purged from base /home/ubuntu/aluxtrip
+799 verbose gentlyRm don't care about contents; nuking /home/ubuntu/aluxtrip/node_modules/.staging/passport-1ac24daa
+800 silly gentlyRm /home/ubuntu/aluxtrip/node_modules/.staging/passport-local-19ef14b0 is being purged from base /home/ubuntu/aluxtrip
+801 verbose gentlyRm don't care about contents; nuking /home/ubuntu/aluxtrip/node_modules/.staging/passport-local-19ef14b0
+802 silly gentlyRm /home/ubuntu/aluxtrip/node_modules/.staging/csurf-567fa791 is being purged from base /home/ubuntu/aluxtrip
+803 verbose gentlyRm don't care about contents; nuking /home/ubuntu/aluxtrip/node_modules/.staging/csurf-567fa791
+804 silly gentlyRm /home/ubuntu/aluxtrip/node_modules/.staging/bcrypt-nodejs-5459975a is being purged from base /home/ubuntu/aluxtrip
+805 verbose gentlyRm don't care about contents; nuking /home/ubuntu/aluxtrip/node_modules/.staging/bcrypt-nodejs-5459975a
+806 verbose addTmpTarball /tmp/npm-29914-6b59d1fb/registry.npmjs.org/mongoose/-/mongoose-4.7.1.tgz not in flight; adding
+807 verbose addTmpTarball already have metadata; skipping unpack for mongoose@4.7.1
+808 verbose tar unpack /home/ubuntu/.npm/method-override/2.3.7/package.tgz
+809 verbose tar unpacking to /home/ubuntu/aluxtrip/node_modules/.staging/method-override-232215ae
+810 silly gentlyRm /home/ubuntu/aluxtrip/node_modules/.staging/method-override-232215ae is being purged
+811 verbose gentlyRm don't care about contents; nuking /home/ubuntu/aluxtrip/node_modules/.staging/method-override-232215ae
+812 verbose tar unpack /home/ubuntu/.npm/passport/0.3.2/package.tgz
+813 verbose tar unpacking to /home/ubuntu/aluxtrip/node_modules/.staging/passport-1ac24daa
+814 silly gentlyRm /home/ubuntu/aluxtrip/node_modules/.staging/passport-1ac24daa is being purged
+815 verbose gentlyRm don't care about contents; nuking /home/ubuntu/aluxtrip/node_modules/.staging/passport-1ac24daa
+816 verbose tar unpack /home/ubuntu/.npm/passport-local/1.0.0/package.tgz
+817 verbose tar unpacking to /home/ubuntu/aluxtrip/node_modules/.staging/passport-local-19ef14b0
+818 silly gentlyRm /home/ubuntu/aluxtrip/node_modules/.staging/passport-local-19ef14b0 is being purged
+819 verbose gentlyRm don't care about contents; nuking /home/ubuntu/aluxtrip/node_modules/.staging/passport-local-19ef14b0
+820 verbose tar unpack /home/ubuntu/.npm/csurf/1.9.0/package.tgz
+821 verbose tar unpacking to /home/ubuntu/aluxtrip/node_modules/.staging/csurf-567fa791
+822 silly gentlyRm /home/ubuntu/aluxtrip/node_modules/.staging/csurf-567fa791 is being purged
+823 verbose gentlyRm don't care about contents; nuking /home/ubuntu/aluxtrip/node_modules/.staging/csurf-567fa791
+824 verbose unbuild node_modules/.staging/express-validator-ea953fd8
+825 verbose tar unpack /home/ubuntu/.npm/bcrypt-nodejs/0.0.3/package.tgz
+826 verbose tar unpacking to /home/ubuntu/aluxtrip/node_modules/.staging/bcrypt-nodejs-5459975a
+827 silly gentlyRm /home/ubuntu/aluxtrip/node_modules/.staging/bcrypt-nodejs-5459975a is being purged
+828 verbose gentlyRm don't care about contents; nuking /home/ubuntu/aluxtrip/node_modules/.staging/bcrypt-nodejs-5459975a
+829 silly gentlyRm /home/ubuntu/aluxtrip/node_modules/.staging/express-session-8eeab601 is being purged from base /home/ubuntu/aluxtrip
+830 verbose gentlyRm don't care about contents; nuking /home/ubuntu/aluxtrip/node_modules/.staging/express-session-8eeab601
+831 verbose unbuild node_modules/.staging/express-handlebars-7452577e
+832 verbose unbuild node_modules/.staging/connect-flash-951a23e8
+833 silly gunzTarPerm modes [ '775', '664' ]
+834 silly gunzTarPerm modes [ '775', '664' ]
+835 silly gunzTarPerm modes [ '775', '664' ]
+836 silly gunzTarPerm modes [ '775', '664' ]
+837 silly gunzTarPerm modes [ '775', '664' ]
+838 verbose tar unpack /home/ubuntu/.npm/express-session/1.14.2/package.tgz
+839 verbose tar unpacking to /home/ubuntu/aluxtrip/node_modules/.staging/express-session-8eeab601
+840 silly gentlyRm /home/ubuntu/aluxtrip/node_modules/.staging/express-session-8eeab601 is being purged
+841 verbose gentlyRm don't care about contents; nuking /home/ubuntu/aluxtrip/node_modules/.staging/express-session-8eeab601
+842 silly gentlyRm /home/ubuntu/aluxtrip/node_modules/.staging/express-validator-ea953fd8 is being purged from base /home/ubuntu/aluxtrip
+843 verbose gentlyRm don't care about contents; nuking /home/ubuntu/aluxtrip/node_modules/.staging/express-validator-ea953fd8
+844 silly gunzTarPerm modes [ '775', '664' ]
+845 verbose unbuild node_modules/.staging/express-busboy-62585b05
+846 silly gentlyRm /home/ubuntu/aluxtrip/node_modules/.staging/express-handlebars-7452577e is being purged from base /home/ubuntu/aluxtrip
+847 verbose gentlyRm don't care about contents; nuking /home/ubuntu/aluxtrip/node_modules/.staging/express-handlebars-7452577e
+848 silly gentlyRm /home/ubuntu/aluxtrip/node_modules/.staging/connect-flash-951a23e8 is being purged from base /home/ubuntu/aluxtrip
+849 verbose gentlyRm don't care about contents; nuking /home/ubuntu/aluxtrip/node_modules/.staging/connect-flash-951a23e8
+850 silly gunzTarPerm extractEntry lib/stringify.js
+851 silly gunzTarPerm modified mode [ 'lib/stringify.js', 420, 436 ]
+852 silly gunzTarPerm extractEntry lib/utils.js
+853 silly gunzTarPerm modified mode [ 'lib/utils.js', 420, 436 ]
+854 verbose tar unpack /home/ubuntu/.npm/express-validator/3.0.0/package.tgz
+855 verbose tar unpacking to /home/ubuntu/aluxtrip/node_modules/.staging/express-validator-ea953fd8
+856 silly gentlyRm /home/ubuntu/aluxtrip/node_modules/.staging/express-validator-ea953fd8 is being purged
+857 verbose gentlyRm don't care about contents; nuking /home/ubuntu/aluxtrip/node_modules/.staging/express-validator-ea953fd8
+858 verbose tar unpack /home/ubuntu/.npm/express-handlebars/3.0.0/package.tgz
+859 verbose tar unpacking to /home/ubuntu/aluxtrip/node_modules/.staging/express-handlebars-7452577e
+860 silly gentlyRm /home/ubuntu/aluxtrip/node_modules/.staging/express-handlebars-7452577e is being purged
+861 verbose gentlyRm don't care about contents; nuking /home/ubuntu/aluxtrip/node_modules/.staging/express-handlebars-7452577e
+862 verbose tar unpack /home/ubuntu/.npm/connect-flash/0.1.1/package.tgz
+863 verbose tar unpacking to /home/ubuntu/aluxtrip/node_modules/.staging/connect-flash-951a23e8
+864 silly gentlyRm /home/ubuntu/aluxtrip/node_modules/.staging/connect-flash-951a23e8 is being purged
+865 verbose gentlyRm don't care about contents; nuking /home/ubuntu/aluxtrip/node_modules/.staging/connect-flash-951a23e8
+866 silly gunzTarPerm modes [ '775', '664' ]
+867 silly gentlyRm /home/ubuntu/aluxtrip/node_modules/.staging/express-busboy-62585b05 is being purged from base /home/ubuntu/aluxtrip
+868 verbose gentlyRm don't care about contents; nuking /home/ubuntu/aluxtrip/node_modules/.staging/express-busboy-62585b05
+869 silly gunzTarPerm modes [ '775', '664' ]
+870 silly gunzTarPerm modes [ '775', '664' ]
+871 verbose tar unpack /home/ubuntu/.npm/express-busboy/5.0.0/package.tgz
+872 verbose tar unpacking to /home/ubuntu/aluxtrip/node_modules/.staging/express-busboy-62585b05
+873 silly gentlyRm /home/ubuntu/aluxtrip/node_modules/.staging/express-busboy-62585b05 is being purged
+874 verbose gentlyRm don't care about contents; nuking /home/ubuntu/aluxtrip/node_modules/.staging/express-busboy-62585b05
+875 silly gunzTarPerm modes [ '775', '664' ]
+876 verbose unbuild node_modules/.staging/async-ca2bd274
+877 verbose unbuild node_modules/.staging/custombox-38740c17
+878 silly gunzTarPerm extractEntry package.json
+879 silly gunzTarPerm modified mode [ 'package.json', 438, 436 ]
+880 silly gunzTarPerm extractEntry package.json
+881 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+882 silly gunzTarPerm extractEntry package.json
+883 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+884 silly gunzTarPerm extractEntry package.json
+885 silly gunzTarPerm modified mode [ 'package.json', 438, 436 ]
+886 silly gunzTarPerm extractEntry package.json
+887 silly gunzTarPerm modified mode [ 'package.json', 438, 436 ]
+888 silly gunzTarPerm extractEntry package.json
+889 silly gunzTarPerm modified mode [ 'package.json', 438, 436 ]
+890 silly gentlyRm /home/ubuntu/aluxtrip/node_modules/.staging/async-ca2bd274 is being purged from base /home/ubuntu/aluxtrip
+891 verbose gentlyRm don't care about contents; nuking /home/ubuntu/aluxtrip/node_modules/.staging/async-ca2bd274
+892 silly gentlyRm /home/ubuntu/aluxtrip/node_modules/.staging/custombox-38740c17 is being purged from base /home/ubuntu/aluxtrip
+893 verbose gentlyRm don't care about contents; nuking /home/ubuntu/aluxtrip/node_modules/.staging/custombox-38740c17
+894 verbose tar unpack /home/ubuntu/.npm/async/2.1.4/package.tgz
+895 verbose tar unpacking to /home/ubuntu/aluxtrip/node_modules/.staging/async-ca2bd274
+896 silly gentlyRm /home/ubuntu/aluxtrip/node_modules/.staging/async-ca2bd274 is being purged
+897 verbose gentlyRm don't care about contents; nuking /home/ubuntu/aluxtrip/node_modules/.staging/async-ca2bd274
+898 verbose tar unpack /home/ubuntu/.npm/custombox/4.0.0/package.tgz
+899 verbose tar unpacking to /home/ubuntu/aluxtrip/node_modules/.staging/custombox-38740c17
+900 silly gentlyRm /home/ubuntu/aluxtrip/node_modules/.staging/custombox-38740c17 is being purged
+901 verbose gentlyRm don't care about contents; nuking /home/ubuntu/aluxtrip/node_modules/.staging/custombox-38740c17
+902 silly gunzTarPerm extractEntry package.json
+903 silly gunzTarPerm modified mode [ 'package.json', 438, 436 ]
+904 silly gunzTarPerm modes [ '775', '664' ]
+905 silly gunzTarPerm extractEntry package.json
+906 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+907 silly gunzTarPerm modes [ '775', '664' ]
+908 silly gunzTarPerm extractEntry package.json
+909 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+910 silly gunzTarPerm extractEntry .travis.yml
+911 silly gunzTarPerm modified mode [ '.travis.yml', 420, 436 ]
+912 silly gunzTarPerm extractEntry test/parse.js
+913 silly gunzTarPerm modified mode [ 'test/parse.js', 420, 436 ]
+914 silly gunzTarPerm extractEntry README.md
+915 silly gunzTarPerm modified mode [ 'README.md', 438, 436 ]
+916 silly gunzTarPerm extractEntry LICENSE
+917 silly gunzTarPerm modified mode [ 'LICENSE', 438, 436 ]
+918 silly gunzTarPerm extractEntry LICENSE
+919 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+920 silly gunzTarPerm extractEntry lib/authenticator.js
+921 silly gunzTarPerm modified mode [ 'lib/authenticator.js', 420, 436 ]
+922 silly gunzTarPerm extractEntry README.md
+923 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+924 silly gunzTarPerm extractEntry LICENSE
+925 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+926 silly gunzTarPerm extractEntry README.md
+927 silly gunzTarPerm modified mode [ 'README.md', 438, 436 ]
+928 silly gunzTarPerm extractEntry LICENSE
+929 silly gunzTarPerm modified mode [ 'LICENSE', 438, 436 ]
+930 silly gunzTarPerm extractEntry .npmignore
+931 silly gunzTarPerm modified mode [ '.npmignore', 438, 436 ]
+932 silly gunzTarPerm extractEntry README.md
+933 silly gunzTarPerm modified mode [ 'README.md', 438, 436 ]
+934 silly gunzTarPerm extractEntry README.md
+935 silly gunzTarPerm modified mode [ 'README.md', 438, 436 ]
+936 silly gunzTarPerm extractEntry LICENSE
+937 silly gunzTarPerm modified mode [ 'LICENSE', 438, 436 ]
+938 silly gunzTarPerm extractEntry index.js
+939 silly gunzTarPerm modified mode [ 'index.js', 438, 436 ]
+940 silly gunzTarPerm extractEntry HISTORY.md
+941 silly gunzTarPerm modified mode [ 'HISTORY.md', 438, 436 ]
+942 silly gunzTarPerm extractEntry session/cookie.js
+943 silly gunzTarPerm modified mode [ 'session/cookie.js', 438, 436 ]
+944 silly gunzTarPerm extractEntry session/memory.js
+945 silly gunzTarPerm modified mode [ 'session/memory.js', 438, 436 ]
+946 silly gunzTarPerm extractEntry session/session.js
+947 silly gunzTarPerm modified mode [ 'session/session.js', 438, 436 ]
+948 silly gunzTarPerm extractEntry session/store.js
+949 silly gunzTarPerm modified mode [ 'session/store.js', 438, 436 ]
+950 silly gunzTarPerm extractEntry package.json
+951 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+952 silly gunzTarPerm extractEntry .npmignore
+953 silly gunzTarPerm modified mode [ '.npmignore', 438, 436 ]
+954 silly gunzTarPerm extractEntry README.md
+955 silly gunzTarPerm modified mode [ 'README.md', 438, 436 ]
+956 silly gunzTarPerm extractEntry .npmignore
+957 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+958 silly gunzTarPerm extractEntry README.md
+959 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+960 silly gunzTarPerm extractEntry README.md
+961 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+962 silly gunzTarPerm extractEntry LICENSE
+963 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+964 silly gentlyRm /home/ubuntu/aluxtrip/node_modules/.staging/connect-multiparty-c9a8b49c/node_modules is being purged
+965 verbose gentlyRm don't care about contents; nuking /home/ubuntu/aluxtrip/node_modules/.staging/connect-multiparty-c9a8b49c/node_modules
+966 verbose unbuild node_modules/.staging/mongoose-4c3a5032
+967 silly gunzTarPerm extractEntry .npmignore
+968 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+969 silly gunzTarPerm extractEntry README.md
+970 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+971 silly gunzTarPerm extractEntry package.json
+972 silly gunzTarPerm extractEntry package.json
+973 silly gentlyRm /home/ubuntu/aluxtrip/node_modules/.staging/mongoose-4c3a5032 is being purged from base /home/ubuntu/aluxtrip
+974 verbose gentlyRm don't care about contents; nuking /home/ubuntu/aluxtrip/node_modules/.staging/mongoose-4c3a5032
+975 verbose tar unpack /home/ubuntu/.npm/mongoose/4.7.1/package.tgz
+976 verbose tar unpacking to /home/ubuntu/aluxtrip/node_modules/.staging/mongoose-4c3a5032
+977 silly gentlyRm /home/ubuntu/aluxtrip/node_modules/.staging/mongoose-4c3a5032 is being purged
+978 verbose gentlyRm don't care about contents; nuking /home/ubuntu/aluxtrip/node_modules/.staging/mongoose-4c3a5032
+979 silly gunzTarPerm extractEntry test/stringify.js
+980 silly gunzTarPerm modified mode [ 'test/stringify.js', 420, 436 ]
+981 silly gunzTarPerm extractEntry test/utils.js
+982 silly gunzTarPerm modified mode [ 'test/utils.js', 420, 436 ]
+983 silly gunzTarPerm modes [ '775', '664' ]
+984 silly gunzTarPerm extractEntry index.js
+985 silly gunzTarPerm modified mode [ 'index.js', 438, 436 ]
+986 silly gunzTarPerm extractEntry HISTORY.md
+987 silly gunzTarPerm modified mode [ 'HISTORY.md', 438, 436 ]
+988 silly gunzTarPerm extractEntry lib/index.js
+989 silly gunzTarPerm modified mode [ 'lib/index.js', 420, 436 ]
+990 silly gunzTarPerm extractEntry lib/index.js
+991 silly gunzTarPerm modified mode [ 'lib/index.js', 420, 436 ]
+992 silly gunzTarPerm extractEntry lib/strategy.js
+993 silly gunzTarPerm modified mode [ 'lib/strategy.js', 420, 436 ]
+994 silly gunzTarPerm extractEntry index.js
+995 silly gunzTarPerm modified mode [ 'index.js', 438, 436 ]
+996 silly gunzTarPerm extractEntry HISTORY.md
+997 silly gunzTarPerm modified mode [ 'HISTORY.md', 438, 436 ]
+998 silly gunzTarPerm extractEntry LICENSE
+999 silly gunzTarPerm modified mode [ 'LICENSE', 438, 436 ]
+1000 silly gunzTarPerm extractEntry bCrypt.js
+1001 silly gunzTarPerm modified mode [ 'bCrypt.js', 438, 436 ]
+1002 silly gunzTarPerm extractEntry README.md
+1003 silly gunzTarPerm extractEntry LICENSE
+1004 silly gunzTarPerm extractEntry .npmignore
+1005 silly gunzTarPerm extractEntry README.md
+1006 silly gunzTarPerm extractEntry LICENSE
+1007 silly gunzTarPerm modified mode [ 'LICENSE', 438, 436 ]
+1008 silly gunzTarPerm extractEntry LICENSE
+1009 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+1010 silly gunzTarPerm extractEntry .travis.yml
+1011 silly gunzTarPerm modified mode [ '.travis.yml', 420, 436 ]
+1012 silly gunzTarPerm extractEntry lib/flash.js
+1013 silly gunzTarPerm modified mode [ 'lib/flash.js', 420, 436 ]
+1014 silly gentlyRm /home/ubuntu/aluxtrip/node_modules/.staging/multiparty-1892b4c5/node_modules is being purged
+1015 verbose gentlyRm don't care about contents; nuking /home/ubuntu/aluxtrip/node_modules/.staging/multiparty-1892b4c5/node_modules
+1016 silly gunzTarPerm extractEntry package.json
+1017 silly gunzTarPerm extractEntry LICENSE
+1018 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+1019 silly gunzTarPerm extractEntry index.js
+1020 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+1021 silly gunzTarPerm extractEntry lib/errors/authenticationerror.js
+1022 silly gunzTarPerm modified mode [ 'lib/errors/authenticationerror.js', 420, 436 ]
+1023 silly gunzTarPerm extractEntry lib/framework/connect.js
+1024 silly gunzTarPerm modified mode [ 'lib/framework/connect.js', 420, 436 ]
+1025 silly gunzTarPerm extractEntry lib/utils.js
+1026 silly gunzTarPerm modified mode [ 'lib/utils.js', 420, 436 ]
+1027 silly gunzTarPerm extractEntry test-async.js
+1028 silly gunzTarPerm modified mode [ 'test-async.js', 438, 436 ]
+1029 silly gunzTarPerm extractEntry .npmignore
+1030 silly gunzTarPerm extractEntry README.md
+1031 silly gunzTarPerm extractEntry eachSeries.js
+1032 silly gunzTarPerm extractEntry filterSeries.js
+1033 silly gunzTarPerm extractEntry Gruntfile.js
+1034 silly gunzTarPerm extractEntry karma.conf.js
+1035 silly gunzTarPerm extractEntry index.js
+1036 silly gunzTarPerm modified mode [ 'index.js', 438, 436 ]
+1037 silly gunzTarPerm extractEntry CONTRIBUTING.md
+1038 silly gunzTarPerm modified mode [ 'CONTRIBUTING.md', 438, 436 ]
+1039 silly gunzTarPerm extractEntry CHANGELOG.md
+1040 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 438, 436 ]
+1041 silly gunzTarPerm extractEntry index.js
+1042 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+1043 silly gunzTarPerm extractEntry HISTORY.md
+1044 silly gunzTarPerm modified mode [ 'HISTORY.md', 420, 436 ]
+1045 silly gunzTarPerm extractEntry .idea/.name
+1046 silly gunzTarPerm modified mode [ '.idea/.name', 420, 436 ]
+1047 silly gunzTarPerm extractEntry lib/index.js
+1048 silly gunzTarPerm modified mode [ 'lib/index.js', 420, 436 ]
+1049 silly gunzTarPerm extractEntry express-validator-2.21.0.tgz
+1050 silly gunzTarPerm modified mode [ 'express-validator-2.21.0.tgz', 438, 436 ]
+1051 silly gunzTarPerm extractEntry .nyc_output/25a540215f163765bef5aa521ad2851b.json
+1052 silly gunzTarPerm modified mode [ '.nyc_output/25a540215f163765bef5aa521ad2851b.json', 420, 436 ]
+1053 silly gunzTarPerm extractEntry .eslintrc.json
+1054 silly gunzTarPerm modified mode [ '.eslintrc.json', 420, 436 ]
+1055 silly gunzTarPerm extractEntry artifacts/coverage/lcov-report/prettify.js
+1056 silly gunzTarPerm modified mode [ 'artifacts/coverage/lcov-report/prettify.js', 420, 436 ]
+1057 silly gunzTarPerm extractEntry artifacts/coverage/lcov-report/sorter.js
+1058 silly gunzTarPerm modified mode [ 'artifacts/coverage/lcov-report/sorter.js', 420, 436 ]
+1059 silly gunzTarPerm extractEntry artifacts/coverage/lcov-report/base.css
+1060 silly gunzTarPerm modified mode [ 'artifacts/coverage/lcov-report/base.css', 420, 436 ]
+1061 silly gunzTarPerm extractEntry artifacts/coverage/lcov-report/express-busboy/index.html
+1062 silly gunzTarPerm modified mode [ 'artifacts/coverage/lcov-report/express-busboy/index.html',
+1062 silly gunzTarPerm   420,
+1062 silly gunzTarPerm   436 ]
+1063 silly gunzTarPerm extractEntry artifacts/coverage/lcov-report/express-busboy/index.js.html
+1064 silly gunzTarPerm modified mode [ 'artifacts/coverage/lcov-report/express-busboy/index.js.html',
+1064 silly gunzTarPerm   420,
+1064 silly gunzTarPerm   436 ]
+1065 silly gunzTarPerm extractEntry artifacts/coverage/lcov-report/express-busboy/tests/file-allow.js.html
+1066 silly gunzTarPerm modified mode [ 'artifacts/coverage/lcov-report/express-busboy/tests/file-allow.js.html',
+1066 silly gunzTarPerm   420,
+1066 silly gunzTarPerm   436 ]
+1067 silly gunzTarPerm extractEntry artifacts/coverage/lcov-report/express-busboy/tests/file.js.html
+1068 silly gunzTarPerm modified mode [ 'artifacts/coverage/lcov-report/express-busboy/tests/file.js.html',
+1068 silly gunzTarPerm   420,
+1068 silly gunzTarPerm   436 ]
+1069 silly gunzTarPerm extractEntry artifacts/coverage/lcov-report/express-busboy/tests/index.html
+1070 silly gunzTarPerm modified mode [ 'artifacts/coverage/lcov-report/express-busboy/tests/index.html',
+1070 silly gunzTarPerm   420,
+1070 silly gunzTarPerm   436 ]
+1071 silly gunzTarPerm extractEntry artifacts/coverage/lcov-report/express-busboy/tests/index.js.html
+1072 silly gunzTarPerm modified mode [ 'artifacts/coverage/lcov-report/express-busboy/tests/index.js.html',
+1072 silly gunzTarPerm   420,
+1072 silly gunzTarPerm   436 ]
+1073 silly gunzTarPerm extractEntry artifacts/coverage/lcov-report/express-busboy/tests/json-restrict.js.html
+1074 silly gunzTarPerm modified mode [ 'artifacts/coverage/lcov-report/express-busboy/tests/json-restrict.js.html',
+1074 silly gunzTarPerm   420,
+1074 silly gunzTarPerm   436 ]
+1075 silly gunzTarPerm extractEntry artifacts/coverage/lcov-report/express-busboy/tests/json.js.html
+1076 silly gunzTarPerm modified mode [ 'artifacts/coverage/lcov-report/express-busboy/tests/json.js.html',
+1076 silly gunzTarPerm   420,
+1076 silly gunzTarPerm   436 ]
+1077 silly gunzTarPerm extractEntry artifacts/coverage/lcov-report/index.html
+1078 silly gunzTarPerm modified mode [ 'artifacts/coverage/lcov-report/index.html', 420, 436 ]
+1079 silly gunzTarPerm extractEntry artifacts/coverage/lcov-report/prettify.css
+1080 silly gunzTarPerm modified mode [ 'artifacts/coverage/lcov-report/prettify.css', 420, 436 ]
+1081 silly gunzTarPerm extractEntry artifacts/coverage/lcov-report/sort-arrow-sprite.png
+1082 silly gunzTarPerm modified mode [ 'artifacts/coverage/lcov-report/sort-arrow-sprite.png',
+1082 silly gunzTarPerm   420,
+1082 silly gunzTarPerm   436 ]
+1083 silly gunzTarPerm extractEntry artifacts/coverage/lcov.info
+1084 silly gunzTarPerm modified mode [ 'artifacts/coverage/lcov.info', 420, 436 ]
+1085 silly gunzTarPerm extractEntry artifacts/test/xunit.xml
+1086 silly gunzTarPerm modified mode [ 'artifacts/test/xunit.xml', 493, 509 ]
+1087 silly gunzTarPerm extractEntry .istanbul.yml
+1088 silly gunzTarPerm modified mode [ '.istanbul.yml', 420, 436 ]
+1089 silly gunzTarPerm extractEntry .eslintignore
+1090 silly gunzTarPerm modified mode [ '.eslintignore', 420, 436 ]
+1091 silly gunzTarPerm extractEntry .idea/encodings.xml
+1092 silly gunzTarPerm modified mode [ '.idea/encodings.xml', 420, 436 ]
+1093 silly gunzTarPerm extractEntry bower.json
+1094 silly gunzTarPerm extractEntry .editorconfig
+1095 silly gunzTarPerm extractEntry test-sync.js
+1096 silly gunzTarPerm modified mode [ 'test-sync.js', 438, 436 ]
+1097 silly gunzTarPerm extractEntry .gitattributes
+1098 silly gunzTarPerm modified mode [ '.gitattributes', 438, 436 ]
+1099 silly gunzTarPerm extractEntry website.js
+1100 silly gunzTarPerm extractEntry forever.js
+1101 silly gunzTarPerm extractEntry eachOfSeries.js
+1102 silly gunzTarPerm extractEntry lib/http/request.js
+1103 silly gunzTarPerm modified mode [ 'lib/http/request.js', 420, 436 ]
+1104 silly gunzTarPerm extractEntry lib/middleware/authenticate.js
+1105 silly gunzTarPerm modified mode [ 'lib/middleware/authenticate.js', 420, 436 ]
+1106 silly gunzTarPerm extractEntry lib/express_validator.js
+1107 silly gunzTarPerm modified mode [ 'lib/express_validator.js', 438, 436 ]
+1108 silly gunzTarPerm extractEntry lib/utils.js
+1109 silly gunzTarPerm modified mode [ 'lib/utils.js', 438, 436 ]
+1110 silly gunzTarPerm extractEntry .idea/express-handlebars.iml
+1111 silly gunzTarPerm modified mode [ '.idea/express-handlebars.iml', 420, 436 ]
+1112 silly gunzTarPerm extractEntry .idea/jsLibraryMappings.xml
+1113 silly gunzTarPerm modified mode [ '.idea/jsLibraryMappings.xml', 420, 436 ]
+1114 silly gunzTarPerm extractEntry lib/middleware/initialize.js
+1115 silly gunzTarPerm modified mode [ 'lib/middleware/initialize.js', 420, 436 ]
+1116 silly gunzTarPerm extractEntry lib/strategies/session.js
+1117 silly gunzTarPerm modified mode [ 'lib/strategies/session.js', 420, 436 ]
+1118 silly gunzTarPerm extractEntry index.js
+1119 silly gunzTarPerm extractEntry static.js
+1120 silly gunzTarPerm extractEntry dist/custombox.legacy.min.js
+1121 silly gunzTarPerm extractEntry dist/custombox.min.js
+1122 silly gunzTarPerm extractEntry dist/custombox.min.css
+1123 silly gunzTarPerm extractEntry .travis.yml
+1124 silly gunzTarPerm extractEntry src/custombox.scss
+1125 silly gunzTarPerm extractEntry src/custombox.spec.ts
+1126 silly gunzTarPerm extractEntry src/custombox.ts
+1127 silly gunzTarPerm extractEntry tsconfig.json
+1128 silly gunzTarPerm extractEntry tslint.json
+1129 silly gunzTarPerm extractEntry filterLimit.js
+1130 silly gunzTarPerm extractEntry map.js
+1131 silly gunzTarPerm extractEntry .idea/libraries/express_handlebars_node_modules.xml
+1132 silly gunzTarPerm modified mode [ '.idea/libraries/express_handlebars_node_modules.xml',
+1132 silly gunzTarPerm   420,
+1132 silly gunzTarPerm   436 ]
+1133 silly gunzTarPerm extractEntry .idea/misc.xml
+1134 silly gunzTarPerm modified mode [ '.idea/misc.xml', 420, 436 ]
+1135 silly gunzTarPerm extractEntry History.md
+1136 silly gunzTarPerm extractEntry .eslintrc.yml
+1137 silly gunzTarPerm extractEntry mapLimit.js
+1138 silly gunzTarPerm extractEntry mapSeries.js
+1139 silly gunzTarPerm extractEntry .idea/modules.xml
+1140 silly gunzTarPerm modified mode [ '.idea/modules.xml', 420, 436 ]
+1141 silly gunzTarPerm extractEntry .idea/vcs.xml
+1142 silly gunzTarPerm modified mode [ '.idea/vcs.xml', 420, 436 ]
+1143 silly gunzTarPerm extractEntry .eslintignore
+1144 silly gunzTarPerm extractEntry examples/README.md
+1145 silly gunzTarPerm extractEntry mapValues.js
+1146 silly gunzTarPerm extractEntry filter.js
+1147 silly gentlyRm /home/ubuntu/aluxtrip/node_modules/.staging/csurf-567fa791/node_modules is being purged
+1148 verbose gentlyRm don't care about contents; nuking /home/ubuntu/aluxtrip/node_modules/.staging/csurf-567fa791/node_modules
+1149 silly gentlyRm /home/ubuntu/aluxtrip/node_modules/.staging/method-override-232215ae/node_modules is being purged
+1150 verbose gentlyRm don't care about contents; nuking /home/ubuntu/aluxtrip/node_modules/.staging/method-override-232215ae/node_modules
+1151 silly gunzTarPerm extractEntry .idea/workspace.xml
+1152 silly gunzTarPerm modified mode [ '.idea/workspace.xml', 420, 436 ]
+1153 silly gunzTarPerm extractEntry lib/express-handlebars.js
+1154 silly gunzTarPerm modified mode [ 'lib/express-handlebars.js', 420, 436 ]
+1155 silly gunzTarPerm extractEntry examples/doc-methods.js
+1156 silly gunzTarPerm extractEntry examples/statics/person.js
+1157 silly gunzTarPerm extractEntry mapValuesLimit.js
+1158 silly gunzTarPerm extractEntry everySeries.js
+1159 silly gentlyRm /home/ubuntu/aluxtrip/node_modules/.staging/passport-local-19ef14b0/node_modules is being purged
+1160 verbose gentlyRm don't care about contents; nuking /home/ubuntu/aluxtrip/node_modules/.staging/passport-local-19ef14b0/node_modules
+1161 silly gunzTarPerm extractEntry lib/utils.js
+1162 silly gunzTarPerm modified mode [ 'lib/utils.js', 420, 436 ]
+1163 silly gentlyRm /home/ubuntu/aluxtrip/node_modules/.staging/connect-flash-951a23e8/node_modules is being purged
+1164 verbose gentlyRm don't care about contents; nuking /home/ubuntu/aluxtrip/node_modules/.staging/connect-flash-951a23e8/node_modules
+1165 silly gunzTarPerm extractEntry examples/statics/statics.js
+1166 silly gunzTarPerm extractEntry examples/express/README.md
+1167 silly gunzTarPerm extractEntry examples/express/connection-sharing/package.json
+1168 silly gunzTarPerm extractEntry examples/express/connection-sharing/README.md
+1169 silly gunzTarPerm extractEntry mapValuesSeries.js
+1170 silly gunzTarPerm extractEntry everyLimit.js
+1171 silly gunzTarPerm extractEntry examples/express/connection-sharing/app.js
+1172 silly gunzTarPerm extractEntry examples/express/connection-sharing/modelA.js
+1173 silly gunzTarPerm extractEntry examples/express/connection-sharing/routes.js
+1174 silly gunzTarPerm extractEntry examples/geospatial/package.json
+1175 silly gunzTarPerm extractEntry memoize.js
+1176 silly gunzTarPerm extractEntry every.js
+1177 silly gunzTarPerm extractEntry examples/geospatial/geoJSONSchema.js
+1178 silly gentlyRm /home/ubuntu/aluxtrip/node_modules/.staging/bcrypt-nodejs-5459975a/node_modules is being purged
+1179 verbose gentlyRm don't care about contents; nuking /home/ubuntu/aluxtrip/node_modules/.staging/bcrypt-nodejs-5459975a/node_modules
+1180 silly gunzTarPerm extractEntry examples/geospatial/geoJSONexample.js
+1181 silly gunzTarPerm extractEntry examples/geospatial/geospatial.js
+1182 silly gunzTarPerm extractEntry nextTick.js
+1183 silly gunzTarPerm extractEntry ensureAsync.js
+1184 silly fetchAndShaCheck shasum 889ebeced8eaa2ff15ec1f273e4b07531cc43da0
+1185 silly gunzTarPerm extractEntry examples/geospatial/person.js
+1186 silly gunzTarPerm extractEntry examples/globalschemas/gs_example.js
+1187 silly gentlyRm /home/ubuntu/aluxtrip/node_modules/.staging/express-session-8eeab601/node_modules is being purged
+1188 verbose gentlyRm don't care about contents; nuking /home/ubuntu/aluxtrip/node_modules/.staging/express-session-8eeab601/node_modules
+1189 silly gentlyRm /home/ubuntu/aluxtrip/node_modules/.staging/qs-b89b942d/node_modules is being purged
+1190 verbose gentlyRm don't care about contents; nuking /home/ubuntu/aluxtrip/node_modules/.staging/qs-b89b942d/node_modules
+1191 silly gunzTarPerm extractEntry eachOfLimit.js
+1192 silly gunzTarPerm extractEntry unmemoize.js
+1193 silly gentlyRm /home/ubuntu/aluxtrip/node_modules/.staging/passport-1ac24daa/node_modules is being purged
+1194 verbose gentlyRm don't care about contents; nuking /home/ubuntu/aluxtrip/node_modules/.staging/passport-1ac24daa/node_modules
+1195 silly gunzTarPerm extractEntry examples/globalschemas/person.js
+1196 silly gunzTarPerm extractEntry examples/lean/package.json
+1197 silly gunzTarPerm extractEntry parallel.js
+1198 silly gunzTarPerm extractEntry eachOf.js
+1199 silly gentlyRm /home/ubuntu/aluxtrip/node_modules/.staging/express-validator-ea953fd8/node_modules is being purged
+1200 verbose gentlyRm don't care about contents; nuking /home/ubuntu/aluxtrip/node_modules/.staging/express-validator-ea953fd8/node_modules
+1201 silly gunzTarPerm extractEntry examples/lean/lean.js
+1202 silly gunzTarPerm extractEntry examples/lean/person.js
+1203 silly gunzTarPerm extractEntry parallelLimit.js
+1204 silly gunzTarPerm extractEntry eachLimit.js
+1205 silly gunzTarPerm extractEntry examples/aggregate/package.json
+1206 silly gunzTarPerm extractEntry examples/aggregate/aggregate.js
+1207 verbose addTmpTarball /tmp/npm-29914-6b59d1fb/registry.npmjs.org/bootstrap-datepicker/-/bootstrap-datepicker-1.6.4.tgz not in flight; adding
+1208 verbose addTmpTarball already have metadata; skipping unpack for bootstrap-datepicker@1.6.4
+1209 silly gunzTarPerm extractEntry priorityQueue.js
+1210 silly gunzTarPerm extractEntry each.js
+1211 silly gunzTarPerm extractEntry examples/aggregate/person.js
+1212 silly gunzTarPerm extractEntry examples/population/population-across-three-collections.js
+1213 silly gunzTarPerm extractEntry queue.js
+1214 silly gunzTarPerm extractEntry during.js
+1215 silly gunzTarPerm extractEntry examples/population/population-basic.js
+1216 silly gunzTarPerm extractEntry examples/population/population-of-existing-doc.js
+1217 silly gunzTarPerm extractEntry race.js
+1218 silly gunzTarPerm extractEntry doWhilst.js
+1219 silly gunzTarPerm extractEntry examples/population/population-of-multiple-existing-docs.js
+1220 silly gunzTarPerm extractEntry examples/population/population-options.js
+1221 silly gunzTarPerm extractEntry reduce.js
+1222 silly gunzTarPerm extractEntry doUntil.js
+1223 silly gunzTarPerm extractEntry examples/population/population-plain-objects.js
+1224 silly gunzTarPerm extractEntry examples/promises/package.json
+1225 silly gunzTarPerm extractEntry reduceRight.js
+1226 silly gunzTarPerm extractEntry doDuring.js
+1227 silly gentlyRm /home/ubuntu/aluxtrip/node_modules/.staging/express-handlebars-7452577e/node_modules is being purged
+1228 verbose gentlyRm don't care about contents; nuking /home/ubuntu/aluxtrip/node_modules/.staging/express-handlebars-7452577e/node_modules
+1229 silly gunzTarPerm extractEntry examples/promises/person.js
+1230 silly gunzTarPerm extractEntry examples/promises/promise.js
+1231 verbose unbuild node_modules/.staging/bootstrap-datepicker-d1ae690d
+1232 silly gentlyRm /home/ubuntu/aluxtrip/node_modules/.staging/bootstrap-datepicker-d1ae690d is being purged from base /home/ubuntu/aluxtrip
+1233 verbose gentlyRm don't care about contents; nuking /home/ubuntu/aluxtrip/node_modules/.staging/bootstrap-datepicker-d1ae690d
+1234 verbose tar unpack /home/ubuntu/.npm/bootstrap-datepicker/1.6.4/package.tgz
+1235 verbose tar unpacking to /home/ubuntu/aluxtrip/node_modules/.staging/bootstrap-datepicker-d1ae690d
+1236 silly gentlyRm /home/ubuntu/aluxtrip/node_modules/.staging/bootstrap-datepicker-d1ae690d is being purged
+1237 verbose gentlyRm don't care about contents; nuking /home/ubuntu/aluxtrip/node_modules/.staging/bootstrap-datepicker-d1ae690d
+1238 silly gunzTarPerm extractEntry reflect.js
+1239 silly gunzTarPerm extractEntry until.js
+1240 silly gunzTarPerm modes [ '775', '664' ]
+1241 silly gunzTarPerm extractEntry examples/querybuilder/package.json
+1242 silly gunzTarPerm extractEntry examples/querybuilder/person.js
+1243 silly gunzTarPerm extractEntry package.json
+1244 silly gunzTarPerm extractEntry reflectAll.js
+1245 silly gunzTarPerm extractEntry dir.js
+1246 silly gunzTarPerm extractEntry .npmignore
+1247 silly gunzTarPerm extractEntry README.md
+1248 silly gunzTarPerm extractEntry examples/querybuilder/querybuilder.js
+1249 silly gunzTarPerm extractEntry examples/replicasets/package.json
+1250 silly gentlyRm /home/ubuntu/aluxtrip/node_modules/.staging/custombox-38740c17/node_modules is being purged
+1251 verbose gentlyRm don't care about contents; nuking /home/ubuntu/aluxtrip/node_modules/.staging/custombox-38740c17/node_modules
+1252 silly gunzTarPerm extractEntry reject.js
+1253 silly gunzTarPerm extractEntry detectSeries.js
+1254 silly gunzTarPerm extractEntry examples/replicasets/person.js
+1255 silly gunzTarPerm extractEntry examples/replicasets/replica-sets.js
+1256 silly gunzTarPerm extractEntry LICENSE
+1257 silly gunzTarPerm extractEntry Gruntfile.js
+1258 silly gunzTarPerm extractEntry examples/schema/schema.js
+1259 silly gunzTarPerm extractEntry examples/schema/storing-schemas-as-json/index.js
+1260 silly gunzTarPerm extractEntry rejectLimit.js
+1261 silly gunzTarPerm extractEntry detectLimit.js
+1262 silly gunzTarPerm extractEntry bower.json
+1263 silly gunzTarPerm extractEntry CONTRIBUTING.md
+1264 silly gunzTarPerm extractEntry rejectSeries.js
+1265 silly gunzTarPerm extractEntry detect.js
+1266 silly gunzTarPerm extractEntry examples/schema/storing-schemas-as-json/schema.json
+1267 silly gunzTarPerm extractEntry examples/mapreduce/package.json
+1268 silly gunzTarPerm extractEntry .editorconfig
+1269 silly gunzTarPerm extractEntry .travis.yml
+1270 silly gunzTarPerm extractEntry retry.js
+1271 silly gunzTarPerm extractEntry constant.js
+1272 silly gunzTarPerm extractEntry examples/mapreduce/mapreduce.js
+1273 silly gunzTarPerm extractEntry examples/mapreduce/person.js
+1274 silly gunzTarPerm extractEntry build/build.less
+1275 silly gunzTarPerm extractEntry build/build3.less
+1276 silly gunzTarPerm extractEntry retryable.js
+1277 silly gunzTarPerm extractEntry concatSeries.js
+1278 silly gunzTarPerm extractEntry .travis.yml
+1279 silly gunzTarPerm extractEntry lib/ES6Promise.js
+1280 silly gunzTarPerm extractEntry build/build_standalone.less
+1281 silly gunzTarPerm extractEntry build/build_standalone3.less
+1282 silly gunzTarPerm extractEntry composer.json
+1283 silly gunzTarPerm extractEntry dist/css/bootstrap-datepicker3.css
+1284 silly gunzTarPerm extractEntry seq.js
+1285 silly gunzTarPerm extractEntry concat.js
+1286 silly gunzTarPerm extractEntry lib/document_provider.js
+1287 silly gunzTarPerm extractEntry lib/document_provider.web.js
+1288 silly gunzTarPerm extractEntry lib/utils.js
+1289 silly gunzTarPerm extractEntry lib/statemachine.js
+1290 silly gunzTarPerm extractEntry dist/css/bootstrap-datepicker.css
+1291 silly gunzTarPerm extractEntry dist/css/bootstrap-datepicker.min.css
+1292 silly gunzTarPerm extractEntry series.js
+1293 silly gunzTarPerm extractEntry compose.js
+1294 silly gunzTarPerm extractEntry dist/css/bootstrap-datepicker.min.css.map
+1295 silly gunzTarPerm extractEntry dist/css/bootstrap-datepicker.standalone.css
+1296 silly gunzTarPerm extractEntry setImmediate.js
+1297 silly gunzTarPerm extractEntry cargo.js
+1298 silly gunzTarPerm extractEntry lib/document.js
+1299 silly gunzTarPerm extractEntry lib/index.js
+1300 silly gunzTarPerm extractEntry dist/css/bootstrap-datepicker.standalone.css.map
+1301 silly gunzTarPerm extractEntry dist/css/bootstrap-datepicker.standalone.min.css
+1302 silly gunzTarPerm extractEntry lib/aggregate.js
+1303 silly gunzTarPerm extractEntry lib/model.js
+1304 silly gunzTarPerm extractEntry some.js
+1305 silly gunzTarPerm extractEntry waterfall.js
+1306 silly gentlyRm /home/ubuntu/aluxtrip/node_modules/.staging/express-busboy-62585b05/node_modules is being purged
+1307 verbose gentlyRm don't care about contents; nuking /home/ubuntu/aluxtrip/node_modules/.staging/express-busboy-62585b05/node_modules
+1308 silly gunzTarPerm extractEntry dist/css/bootstrap-datepicker.standalone.min.css.map
+1309 silly gunzTarPerm extractEntry dist/css/bootstrap-datepicker.css.map
+1310 silly gunzTarPerm extractEntry someLimit.js
+1311 silly gunzTarPerm extractEntry autoInject.js
+1312 silly gunzTarPerm extractEntry lib/promise.js
+1313 silly gunzTarPerm extractEntry lib/promise_provider.js
+1314 silly gunzTarPerm extractEntry dist/css/bootstrap-datepicker3.css.map
+1315 silly gunzTarPerm extractEntry dist/css/bootstrap-datepicker3.min.css
+1316 silly gunzTarPerm extractEntry someSeries.js
+1317 silly gunzTarPerm extractEntry auto.js
+1318 silly gunzTarPerm extractEntry lib/connectionstate.js
+1319 silly gunzTarPerm extractEntry lib/query.js
+1320 silly gunzTarPerm extractEntry lib/connection.js
+1321 silly gunzTarPerm extractEntry dist/css/bootstrap-datepicker3.min.css.map
+1322 silly gunzTarPerm extractEntry dist/css/bootstrap-datepicker3.standalone.css
+1323 silly gunzTarPerm extractEntry lib/querycursor.js
+1324 silly gunzTarPerm extractEntry sortBy.js
+1325 silly gunzTarPerm extractEntry asyncify.js
+1326 silly gunzTarPerm extractEntry dist/css/bootstrap-datepicker3.standalone.css.map
+1327 silly gunzTarPerm extractEntry dist/css/bootstrap-datepicker3.standalone.min.css
+1328 silly gunzTarPerm extractEntry lib/collection.js
+1329 silly gunzTarPerm extractEntry lib/queryhelpers.js
+1330 silly gunzTarPerm extractEntry timeout.js
+1331 silly gunzTarPerm extractEntry applyEachSeries.js
+1332 silly gunzTarPerm extractEntry lib/cast.js
+1333 silly gunzTarPerm extractEntry lib/querystream.js
+1334 silly gunzTarPerm extractEntry dist/css/bootstrap-datepicker3.standalone.min.css.map
+1335 silly gunzTarPerm extractEntry dist/js/bootstrap-datepicker.js
+1336 silly gunzTarPerm extractEntry times.js
+1337 silly gunzTarPerm extractEntry applyEach.js
+1338 silly gunzTarPerm extractEntry dist/js/bootstrap-datepicker.min.js
+1339 silly gunzTarPerm extractEntry lib/browserDocument.js
+1340 silly gunzTarPerm extractEntry lib/schematype.js
+1341 silly gunzTarPerm extractEntry timesLimit.js
+1342 silly gunzTarPerm extractEntry apply.js
+1343 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.ar.min.js
+1344 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.it.min.js
+1345 silly gunzTarPerm extractEntry lib/browser.js
+1346 silly gunzTarPerm extractEntry lib/schema.js
+1347 silly gunzTarPerm extractEntry whilst.js
+1348 silly gunzTarPerm extractEntry timesSeries.js
+1349 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.ja.min.js
+1350 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.ka.min.js
+1351 silly gunzTarPerm extractEntry lib/error.js
+1352 silly gunzTarPerm extractEntry lib/virtualtype.js
+1353 silly gunzTarPerm extractEntry transform.js
+1354 silly gunzTarPerm extractEntry index.js
+1355 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.kh.min.js
+1356 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.it-CH.min.js
+1357 silly gunzTarPerm extractEntry lib/internal.js
+1358 silly gunzTarPerm extractEntry lib/schema/array.js
+1359 silly gunzTarPerm extractEntry log.js
+1360 silly gunzTarPerm extractEntry internal/DoublyLinkedList.js
+1361 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.ko.min.js
+1362 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.kr.min.js
+1363 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.lt.min.js
+1364 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.lv.min.js
+1365 silly gunzTarPerm extractEntry lib/schema/buffer.js
+1366 silly gunzTarPerm extractEntry lib/schema/date.js
+1367 silly gunzTarPerm extractEntry internal/doSeries.js
+1368 silly gunzTarPerm extractEntry internal/eachOfLimit.js
+1369 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.me.min.js
+1370 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.is.min.js
+1371 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.mk.min.js
+1372 silly gunzTarPerm extractEntry lib/schema/documentarray.js
+1373 silly gunzTarPerm extractEntry lib/schema/embedded.js
+1374 silly gunzTarPerm extractEntry internal/filter.js
+1375 silly gunzTarPerm extractEntry internal/findGetResult.js
+1376 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.id.min.js
+1377 silly gunzTarPerm extractEntry lib/schema/boolean.js
+1378 silly gunzTarPerm extractEntry lib/schema/mixed.js
+1379 silly gunzTarPerm extractEntry internal/doParallelLimit.js
+1380 silly gunzTarPerm extractEntry internal/initialParams.js
+1381 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.mn.min.js
+1382 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.hy.min.js
+1383 silly gunzTarPerm extractEntry lib/schema/number.js
+1384 silly gunzTarPerm extractEntry lib/schema/objectid.js
+1385 silly gunzTarPerm extractEntry internal/iterator.js
+1386 silly gunzTarPerm extractEntry internal/map.js
+1387 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.ms.min.js
+1388 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.hu.min.js
+1389 silly gunzTarPerm extractEntry lib/schema/string.js
+1390 silly gunzTarPerm extractEntry lib/schema/index.js
+1391 silly gunzTarPerm extractEntry internal/notId.js
+1392 silly gunzTarPerm extractEntry internal/once.js
+1393 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.nb.min.js
+1394 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.hr.min.js
+1395 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.nl-BE.min.js
+1396 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.he.min.js
+1397 silly gunzTarPerm extractEntry lib/schema/operators/bitwise.js
+1398 silly gunzTarPerm extractEntry lib/schema/operators/geospatial.js
+1399 silly gunzTarPerm extractEntry internal/doParallel.js
+1400 silly gunzTarPerm extractEntry internal/onlyOnce.js
+1401 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.nl.min.js
+1402 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.gl.min.js
+1403 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.no.min.js
+1404 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.fr.min.js
+1405 silly gunzTarPerm extractEntry lib/schema/operators/helpers.js
+1406 silly gunzTarPerm extractEntry lib/services/common.js
+1407 silly gunzTarPerm extractEntry internal/doLimit.js
+1408 silly gunzTarPerm extractEntry internal/parallel.js
+1409 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.pl.min.js
+1410 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.fr-CH.min.js
+1411 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.pt-BR.min.js
+1412 silly gunzTarPerm extractEntry lib/services/setDefaultsOnInsert.js
+1413 silly gunzTarPerm extractEntry lib/services/updateValidators.js
+1414 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.fo.min.js
+1415 silly gunzTarPerm extractEntry internal/createTester.js
+1416 silly gunzTarPerm extractEntry internal/queue.js
+1417 silly gunzTarPerm extractEntry lib/error/browserMissingSchema.js
+1418 silly gunzTarPerm extractEntry lib/error/disconnected.js
+1419 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.pt.min.js
+1420 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.fi.min.js
+1421 silly gunzTarPerm extractEntry internal/consoleFunc.js
+1422 silly gunzTarPerm extractEntry internal/reject.js
+1423 silly gunzTarPerm extractEntry lib/error/divergentArray.js
+1424 silly gunzTarPerm extractEntry lib/error/messages.js
+1425 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.ro.min.js
+1426 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.fa.min.js
+1427 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.rs-latin.min.js
+1428 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.eu.min.js
+1429 silly gunzTarPerm extractEntry internal/concat.js
+1430 silly gunzTarPerm extractEntry internal/rest.js
+1431 silly gunzTarPerm extractEntry lib/error/missingSchema.js
+1432 silly gunzTarPerm extractEntry lib/error/cast.js
+1433 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.rs.min.js
+1434 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.et.min.js
+1435 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.ru.min.js
+1436 silly gunzTarPerm extractEntry internal/breakLoop.js
+1437 silly gunzTarPerm extractEntry internal/setImmediate.js
+1438 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.es.min.js
+1439 silly gunzTarPerm extractEntry lib/error/overwriteModel.js
+1440 silly gunzTarPerm extractEntry lib/error/strict.js
+1441 silly gunzTarPerm extractEntry internal/applyEach.js
+1442 silly gunzTarPerm extractEntry internal/withoutIndex.js
+1443 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.sk.min.js
+1444 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.eo.min.js
+1445 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.sl.min.js
+1446 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.en-GB.min.js
+1447 silly gunzTarPerm extractEntry lib/error/validation.js
+1448 silly gunzTarPerm extractEntry lib/error/validator.js
+1449 silly gunzTarPerm extractEntry internal/getIterator.js
+1450 silly gunzTarPerm extractEntry dist/async.js
+1451 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.sq.min.js
+1452 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.en-AU.min.js
+1453 silly gunzTarPerm extractEntry lib/error/version.js
+1454 silly gunzTarPerm extractEntry lib/error/objectExpected.js
+1455 silly gunzTarPerm extractEntry dist/async.min.js
+1456 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.sr-latin.min.js
+1457 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.el.min.js
+1458 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.sr.min.js
+1459 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.de.min.js
+1460 silly gunzTarPerm extractEntry lib/types/array.js
+1461 silly gunzTarPerm extractEntry lib/types/buffer.js
+1462 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.sv.min.js
+1463 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.da.min.js
+1464 silly gunzTarPerm extractEntry bower.json
+1465 silly gunzTarPerm extractEntry CHANGELOG.md
+1466 silly gunzTarPerm extractEntry lib/types/documentarray.js
+1467 silly gunzTarPerm extractEntry lib/types/embedded.js
+1468 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.sw.min.js
+1469 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.cy.min.js
+1470 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.th.min.js
+1471 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.cs.min.js
+1472 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.tr.min.js
+1473 silly gunzTarPerm extractEntry lib/types/index.js
+1474 silly gunzTarPerm extractEntry lib/types/objectid.js
+1475 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.ca.min.js
+1476 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.uk.min.js
+1477 silly gunzTarPerm extractEntry lib/types/subdocument.js
+1478 silly gunzTarPerm extractEntry lib/drivers/index.js
+1479 silly gunzTarPerm extractEntry lib/drivers/index.web.js
+1480 silly gunzTarPerm extractEntry lib/drivers/SPEC.md
+1481 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.bs.min.js
+1482 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.vi.min.js
+1483 silly gunzTarPerm extractEntry lib/drivers/browser/ReadPreference.js
+1484 silly gunzTarPerm extractEntry lib/drivers/browser/binary.js
+1485 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.bg.min.js
+1486 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.zh-CN.min.js
+1487 silly gunzTarPerm extractEntry lib/drivers/browser/index.js
+1488 silly gunzTarPerm extractEntry lib/drivers/browser/objectid.js
+1489 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.az.min.js
+1490 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.zh-TW.min.js
+1491 silly gunzTarPerm extractEntry lib/drivers/node-mongodb-native/ReadPreference.js
+1492 silly gunzTarPerm extractEntry lib/drivers/node-mongodb-native/binary.js
+1493 silly gunzTarPerm extractEntry lib/drivers/node-mongodb-native/collection.js
+1494 silly gunzTarPerm extractEntry dist/locales/bootstrap-datepicker.kk.min.js
+1495 silly gunzTarPerm extractEntry docs/README.md
+1496 silly gunzTarPerm extractEntry lib/drivers/node-mongodb-native/connection.js
+1497 silly gunzTarPerm extractEntry docs/i18n.rst
+1498 silly gunzTarPerm extractEntry docs/_build/doctrees/environment.pickle
+1499 silly gunzTarPerm extractEntry lib/drivers/node-mongodb-native/index.js
+1500 silly gunzTarPerm extractEntry lib/drivers/node-mongodb-native/objectid.js
+1501 silly gunzTarPerm extractEntry docs/_build/doctrees/events.doctree
+1502 silly gunzTarPerm extractEntry docs/_build/doctrees/i18n.doctree
+1503 silly gunzTarPerm extractEntry release-items.md
+1504 silly gunzTarPerm extractEntry CONTRIBUTING.md
+1505 silly gunzTarPerm extractEntry docs/_build/doctrees/index.doctree
+1506 silly gunzTarPerm extractEntry docs/_build/doctrees/keyboard.doctree
+1507 silly gunzTarPerm extractEntry docs/_build/doctrees/markup.doctree
+1508 silly gunzTarPerm extractEntry docs/_build/doctrees/methods.doctree
+1509 silly gunzTarPerm extractEntry docs/_build/doctrees/options.doctree
+1510 silly gunzTarPerm extractEntry docs/_build/html/searchindex.js
+1511 silly gunzTarPerm extractEntry docs/_build/html/.buildinfo
+1512 silly gunzTarPerm extractEntry docs/_build/html/_sources/events.txt
+1513 silly gunzTarPerm extractEntry docs/_build/html/_sources/i18n.txt
+1514 silly gunzTarPerm extractEntry docs/_build/html/_sources/index.txt
+1515 silly gunzTarPerm extractEntry docs/_build/html/_sources/keyboard.txt
+1516 silly gunzTarPerm extractEntry docs/_build/html/_sources/markup.txt
+1517 silly gunzTarPerm extractEntry docs/_build/html/_sources/methods.txt
+1518 silly gunzTarPerm extractEntry docs/_build/html/_sources/options.txt
+1519 silly gunzTarPerm extractEntry docs/_build/html/_static/websupport.js
+1520 silly gunzTarPerm extractEntry docs/_build/html/_static/underscore.js
+1521 silly gunzTarPerm extractEntry docs/_build/html/_static/underscore-1.3.1.js
+1522 silly gunzTarPerm extractEntry docs/_build/html/_static/searchtools.js
+1523 silly gunzTarPerm extractEntry docs/_build/html/_static/jquery-1.11.1.js
+1524 silly gunzTarPerm extractEntry docs/_build/html/_static/doctools.js
+1525 silly gunzTarPerm extractEntry docs/_build/html/_static/jquery.js
+1526 silly gunzTarPerm extractEntry docs/_build/html/_static/plus.png
+1527 silly gunzTarPerm extractEntry docs/_build/html/_static/down-pressed.png
+1528 silly gunzTarPerm extractEntry docs/_build/html/_static/file.png
+1529 silly gunzTarPerm extractEntry docs/_build/html/_static/fonts/Inconsolata-Bold.ttf
+1530 silly gunzTarPerm extractEntry docs/_build/html/_static/fonts/Inconsolata-Regular.ttf
+1531 silly gunzTarPerm extractEntry docs/_build/html/_static/fonts/Lato-Bold.ttf
+1532 silly gunzTarPerm extractEntry docs/_build/html/_static/fonts/Lato-Regular.ttf
+1533 silly gunzTarPerm extractEntry docs/_build/html/_static/fonts/RobotoSlab-Bold.ttf
+1534 silly gunzTarPerm extractEntry docs/_build/html/_static/fonts/RobotoSlab-Regular.ttf
+1535 silly gunzTarPerm extractEntry docs/_build/html/_static/fonts/fontawesome-webfont.eot
+1536 silly gunzTarPerm extractEntry docs/_build/html/_static/fonts/fontawesome-webfont.svg
+1537 silly gunzTarPerm extractEntry docs/_build/html/_static/fonts/fontawesome-webfont.ttf
+1538 silly gunzTarPerm extractEntry docs/_build/html/_static/fonts/fontawesome-webfont.woff
+1539 silly gunzTarPerm extractEntry docs/_build/html/_static/css/badge_only.css
+1540 silly gunzTarPerm extractEntry docs/_build/html/_static/css/theme.css
+1541 silly gunzTarPerm extractEntry docs/_build/html/_static/basic.css
+1542 silly gunzTarPerm extractEntry docs/_build/html/_static/js/modernizr.min.js
+1543 silly gunzTarPerm extractEntry docs/_build/html/_static/js/theme.js
+1544 silly gunzTarPerm extractEntry docs/_build/html/_static/minus.png
+1545 silly gunzTarPerm extractEntry docs/_build/html/_static/down.png
+1546 silly gunzTarPerm extractEntry docs/_build/html/_static/pygments.css
+1547 silly gunzTarPerm extractEntry docs/_build/html/_static/screenshots/option_daysofweekdisabled.png
+1548 silly gunzTarPerm extractEntry docs/_build/html/_static/screenshots/demo_head.png
+1549 silly gunzTarPerm extractEntry docs/_build/html/_static/screenshots/markup_daterange.png
+1550 silly gunzTarPerm extractEntry docs/_build/html/_static/screenshots/markup_inline.png
+1551 silly gunzTarPerm extractEntry docs/_build/html/_static/screenshots/markup_input.png
+1552 silly gunzTarPerm extractEntry docs/_build/html/_static/screenshots/option_calendarweeks.png
+1553 silly gunzTarPerm extractEntry docs/_build/html/_static/screenshots/option_clearbtn.png
+1554 silly gunzTarPerm extractEntry docs/_build/html/_static/screenshots/markup_component.png
+1555 silly gunzTarPerm extractEntry docs/_build/html/_static/screenshots/option_enddate.png
+1556 silly gunzTarPerm extractEntry docs/_build/html/_static/screenshots/option_language.png
+1557 silly gunzTarPerm extractEntry docs/_build/html/_static/screenshots/option_multidate.png
+1558 silly gunzTarPerm extractEntry docs/_build/html/_static/screenshots/option_startdate.png
+1559 silly gunzTarPerm extractEntry docs/_build/html/_static/screenshots/option_todaybtn.png
+1560 silly gunzTarPerm extractEntry docs/_build/html/_static/screenshots/option_todayhighlight.png
+1561 silly gunzTarPerm extractEntry docs/_build/html/_static/screenshots/option_weekstart.png
+1562 silly gunzTarPerm extractEntry docs/_build/html/_static/comment.png
+1563 silly gunzTarPerm extractEntry docs/_build/html/_static/comment-close.png
+1564 silly gunzTarPerm extractEntry docs/_build/html/_static/comment-bright.png
+1565 silly gunzTarPerm extractEntry docs/_build/html/_static/up-pressed.png
+1566 silly gunzTarPerm extractEntry docs/_build/html/_static/up.png
+1567 silly gunzTarPerm extractEntry docs/_build/html/_static/ajax-loader.gif
+1568 silly gunzTarPerm extractEntry docs/_build/html/events.html
+1569 silly gunzTarPerm extractEntry docs/_build/html/genindex.html
+1570 silly gunzTarPerm extractEntry docs/_build/html/i18n.html
+1571 silly gunzTarPerm extractEntry docs/_build/html/_images/option_daysofweekdisabled.png
+1572 silly gunzTarPerm extractEntry docs/_build/html/_images/demo_head.png
+1573 silly gunzTarPerm extractEntry docs/_build/html/_images/markup_daterange.png
+1574 silly gunzTarPerm extractEntry docs/_build/html/_images/markup_inline.png
+1575 silly gunzTarPerm extractEntry docs/_build/html/_images/markup_input.png
+1576 silly gunzTarPerm extractEntry docs/_build/html/_images/option_calendarweeks.png
+1577 silly gunzTarPerm extractEntry docs/_build/html/_images/option_clearbtn.png
+1578 silly gunzTarPerm extractEntry docs/_build/html/_images/markup_component.png
+1579 silly gunzTarPerm extractEntry docs/_build/html/_images/option_enddate.png
+1580 silly gunzTarPerm extractEntry docs/_build/html/_images/option_language.png
+1581 silly gunzTarPerm extractEntry docs/_build/html/_images/option_multidate.png
+1582 silly gunzTarPerm extractEntry docs/_build/html/_images/option_startdate.png
+1583 silly gunzTarPerm extractEntry docs/_build/html/_images/option_todaybtn.png
+1584 silly gunzTarPerm extractEntry docs/_build/html/_images/option_todayhighlight.png
+1585 silly gunzTarPerm extractEntry docs/_build/html/_images/option_weekstart.png
+1586 silly gunzTarPerm extractEntry docs/_build/html/keyboard.html
+1587 silly gunzTarPerm extractEntry docs/_build/html/markup.html
+1588 silly gunzTarPerm extractEntry docs/_build/html/methods.html
+1589 silly gunzTarPerm extractEntry docs/_build/html/objects.inv
+1590 silly gunzTarPerm extractEntry docs/_build/html/options.html
+1591 silly gunzTarPerm extractEntry docs/_build/html/search.html
+1592 silly gentlyRm /home/ubuntu/aluxtrip/node_modules/.staging/async-ca2bd274/node_modules is being purged
+1593 verbose gentlyRm don't care about contents; nuking /home/ubuntu/aluxtrip/node_modules/.staging/async-ca2bd274/node_modules
+1594 silly gunzTarPerm extractEntry docs/_build/html/index.html
+1595 silly gunzTarPerm extractEntry docs/_screenshots/option_enddate.html
+1596 silly gunzTarPerm extractEntry docs/_screenshots/demo_head.html
+1597 silly gunzTarPerm extractEntry docs/_screenshots/markup_daterange.html
+1598 silly gunzTarPerm extractEntry docs/_screenshots/markup_inline.html
+1599 silly gunzTarPerm extractEntry docs/_screenshots/markup_input.html
+1600 silly gunzTarPerm extractEntry docs/_screenshots/option_calendarweeks.html
+1601 silly gunzTarPerm extractEntry docs/_screenshots/option_clearbtn.html
+1602 silly gunzTarPerm extractEntry docs/_screenshots/option_daysofweekdisabled.html
+1603 silly gunzTarPerm extractEntry docs/_screenshots/markup_component.html
+1604 silly gunzTarPerm extractEntry docs/_screenshots/option_language.html
+1605 silly gunzTarPerm extractEntry docs/_screenshots/option_multidate.html
+1606 silly gunzTarPerm extractEntry docs/_screenshots/option_startdate.html
+1607 silly gunzTarPerm extractEntry docs/_screenshots/option_todaybtn.html
+1608 silly gunzTarPerm extractEntry docs/_screenshots/option_todayhighlight.html
+1609 silly gunzTarPerm extractEntry docs/_screenshots/option_weekstart.html
+1610 silly gunzTarPerm extractEntry docs/_screenshots/script/common.js
+1611 silly gunzTarPerm extractEntry docs/_screenshots/script/debug.js
+1612 silly gunzTarPerm extractEntry docs/_screenshots/script/html-imports.min.js
+1613 silly gunzTarPerm extractEntry docs/_screenshots/script/screenshot.js
+1614 silly gunzTarPerm extractEntry docs/_screenshots/script/common.css
+1615 silly gunzTarPerm extractEntry docs/_static/screenshots/option_daysofweekdisabled.png
+1616 silly gunzTarPerm extractEntry docs/_static/screenshots/demo_head.png
+1617 silly gunzTarPerm extractEntry docs/_static/screenshots/markup_daterange.png
+1618 silly gunzTarPerm extractEntry docs/_static/screenshots/markup_inline.png
+1619 silly gunzTarPerm extractEntry docs/_static/screenshots/markup_input.png
+1620 silly gunzTarPerm extractEntry docs/_static/screenshots/option_calendarweeks.png
+1621 silly gunzTarPerm extractEntry docs/_static/screenshots/option_clearbtn.png
+1622 silly gunzTarPerm extractEntry docs/_static/screenshots/markup_component.png
+1623 silly gunzTarPerm extractEntry docs/_static/screenshots/option_enddate.png
+1624 silly gunzTarPerm extractEntry docs/_static/screenshots/option_language.png
+1625 silly gunzTarPerm extractEntry docs/_static/screenshots/option_multidate.png
+1626 silly gunzTarPerm extractEntry docs/_static/screenshots/option_startdate.png
+1627 silly gunzTarPerm extractEntry docs/_static/screenshots/option_todaybtn.png
+1628 silly gunzTarPerm extractEntry docs/_static/screenshots/option_todayhighlight.png
+1629 silly gunzTarPerm extractEntry docs/_static/screenshots/option_weekstart.png
+1630 silly gunzTarPerm extractEntry docs/conf.py
+1631 silly gunzTarPerm extractEntry docs/events.rst
+1632 silly gunzTarPerm extractEntry docs/Makefile
+1633 silly gunzTarPerm extractEntry docs/index.rst
+1634 silly gunzTarPerm extractEntry docs/keyboard.rst
+1635 silly gunzTarPerm extractEntry docs/make.bat
+1636 silly gunzTarPerm extractEntry docs/markup.rst
+1637 silly gunzTarPerm extractEntry docs/methods.rst
+1638 silly gunzTarPerm extractEntry docs/options.rst
+1639 silly gunzTarPerm extractEntry docs/requirements.txt
+1640 silly gunzTarPerm extractEntry grunt/.jshintrc
+1641 silly gunzTarPerm extractEntry js/bootstrap-datepicker.js
+1642 silly gunzTarPerm extractEntry js/.jscsrc
+1643 silly gunzTarPerm extractEntry js/.jshintrc
+1644 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.ar.js
+1645 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.it.js
+1646 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.ja.js
+1647 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.ka.js
+1648 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.kh.js
+1649 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.it-CH.js
+1650 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.ko.js
+1651 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.kr.js
+1652 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.lt.js
+1653 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.lv.js
+1654 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.me.js
+1655 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.is.js
+1656 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.mk.js
+1657 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.id.js
+1658 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.mn.js
+1659 silly gentlyRm /home/ubuntu/aluxtrip/node_modules/.staging/mongoose-4c3a5032/node_modules is being purged
+1660 verbose gentlyRm don't care about contents; nuking /home/ubuntu/aluxtrip/node_modules/.staging/mongoose-4c3a5032/node_modules
+1661 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.hy.js
+1662 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.ms.js
+1663 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.hu.js
+1664 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.nb.js
+1665 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.hr.js
+1666 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.nl-BE.js
+1667 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.he.js
+1668 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.nl.js
+1669 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.gl.js
+1670 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.no.js
+1671 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.fr.js
+1672 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.pl.js
+1673 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.fr-CH.js
+1674 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.pt-BR.js
+1675 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.fo.js
+1676 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.pt.js
+1677 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.fi.js
+1678 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.ro.js
+1679 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.fa.js
+1680 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.rs-latin.js
+1681 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.eu.js
+1682 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.rs.js
+1683 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.et.js
+1684 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.ru.js
+1685 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.es.js
+1686 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.sk.js
+1687 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.eo.js
+1688 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.sl.js
+1689 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.en-GB.js
+1690 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.sq.js
+1691 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.en-AU.js
+1692 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.sr-latin.js
+1693 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.el.js
+1694 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.sr.js
+1695 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.de.js
+1696 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.sv.js
+1697 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.da.js
+1698 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.sw.js
+1699 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.cy.js
+1700 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.th.js
+1701 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.cs.js
+1702 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.tr.js
+1703 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.ca.js
+1704 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.uk.js
+1705 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.bs.js
+1706 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.vi.js
+1707 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.bg.js
+1708 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.zh-CN.js
+1709 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.az.js
+1710 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.zh-TW.js
+1711 silly gunzTarPerm extractEntry js/locales/bootstrap-datepicker.kk.js
+1712 silly gunzTarPerm extractEntry less/.csslintrc
+1713 silly gunzTarPerm extractEntry less/datepicker.less
+1714 silly gunzTarPerm extractEntry less/datepicker3.less
+1715 silly gunzTarPerm extractEntry CHANGELOG.md
+1716 silly gunzTarPerm extractEntry tests/README.md
+1717 silly gunzTarPerm extractEntry tests/assets/coverage.js
+1718 silly gunzTarPerm extractEntry tests/assets/jquery-1.7.1.min.js
+1719 silly gunzTarPerm extractEntry tests/assets/mock.js
+1720 silly gunzTarPerm extractEntry tests/assets/qunit-logging.js
+1721 silly gunzTarPerm extractEntry tests/assets/qunit.js
+1722 silly gunzTarPerm extractEntry tests/assets/utils.js
+1723 silly gunzTarPerm extractEntry tests/assets/qunit.css
+1724 silly gunzTarPerm extractEntry tests/suites/calendar-weeks.js
+1725 silly gunzTarPerm extractEntry tests/suites/data-api.js
+1726 silly gunzTarPerm extractEntry tests/suites/events.js
+1727 silly gunzTarPerm extractEntry tests/suites/formats.js
+1728 silly gunzTarPerm extractEntry tests/suites/inline.js
+1729 silly gunzTarPerm extractEntry tests/suites/component.js
+1730 silly gunzTarPerm extractEntry tests/suites/methods.js
+1731 silly gunzTarPerm extractEntry tests/suites/methods_jquery.js
+1732 silly gunzTarPerm extractEntry tests/suites/options.js
+1733 silly gunzTarPerm extractEntry tests/suites/noconflict.js
+1734 silly gunzTarPerm extractEntry tests/suites/timezone.js
+1735 silly gunzTarPerm extractEntry tests/suites/mouse_navigation/2011.js
+1736 silly gunzTarPerm extractEntry tests/suites/mouse_navigation/2012.js
+1737 silly gunzTarPerm extractEntry tests/suites/mouse_navigation/all.js
+1738 silly gunzTarPerm extractEntry tests/suites/keyboard_navigation/2011.js
+1739 silly gunzTarPerm extractEntry tests/suites/keyboard_navigation/2012.js
+1740 silly gunzTarPerm extractEntry tests/suites/keyboard_navigation/all.js
+1741 silly gunzTarPerm extractEntry tests/tests.html
+1742 silly gunzTarPerm extractEntry tests/timezone.html
+1743 silly gentlyRm /home/ubuntu/aluxtrip/node_modules/.staging/bootstrap-datepicker-d1ae690d/node_modules is being purged
+1744 verbose gentlyRm don't care about contents; nuking /home/ubuntu/aluxtrip/node_modules/.staging/bootstrap-datepicker-d1ae690d/node_modules
+1745 silly doParallel preinstall 17
+1746 silly preinstall qs@4.0.0 /home/ubuntu/aluxtrip/node_modules/.staging/qs-b89b942d
+1747 info lifecycle qs@4.0.0~preinstall: qs@4.0.0
+1748 silly preinstall multiparty@4.1.3 /home/ubuntu/aluxtrip/node_modules/.staging/multiparty-1892b4c5
+1749 info lifecycle multiparty@4.1.3~preinstall: multiparty@4.1.3
+1750 silly preinstall async@2.1.4 /home/ubuntu/aluxtrip/node_modules/.staging/async-ca2bd274
+1751 info lifecycle async@2.1.4~preinstall: async@2.1.4
+1752 silly preinstall bcrypt-nodejs@0.0.3 /home/ubuntu/aluxtrip/node_modules/.staging/bcrypt-nodejs-5459975a
+1753 info lifecycle bcrypt-nodejs@0.0.3~preinstall: bcrypt-nodejs@0.0.3
+1754 silly preinstall bootstrap-datepicker@1.6.4 /home/ubuntu/aluxtrip/node_modules/.staging/bootstrap-datepicker-d1ae690d
+1755 info lifecycle bootstrap-datepicker@1.6.4~preinstall: bootstrap-datepicker@1.6.4
+1756 silly preinstall connect-flash@0.1.1 /home/ubuntu/aluxtrip/node_modules/.staging/connect-flash-951a23e8
+1757 info lifecycle connect-flash@0.1.1~preinstall: connect-flash@0.1.1
+1758 silly preinstall connect-multiparty@2.0.0 /home/ubuntu/aluxtrip/node_modules/.staging/connect-multiparty-c9a8b49c
+1759 info lifecycle connect-multiparty@2.0.0~preinstall: connect-multiparty@2.0.0
+1760 silly preinstall csurf@1.9.0 /home/ubuntu/aluxtrip/node_modules/.staging/csurf-567fa791
+1761 info lifecycle csurf@1.9.0~preinstall: csurf@1.9.0
+1762 silly preinstall custombox@4.0.0 /home/ubuntu/aluxtrip/node_modules/.staging/custombox-38740c17
+1763 info lifecycle custombox@4.0.0~preinstall: custombox@4.0.0
+1764 silly preinstall express-busboy@5.0.0 /home/ubuntu/aluxtrip/node_modules/.staging/express-busboy-62585b05
+1765 info lifecycle express-busboy@5.0.0~preinstall: express-busboy@5.0.0
+1766 silly preinstall express-handlebars@3.0.0 /home/ubuntu/aluxtrip/node_modules/.staging/express-handlebars-7452577e
+1767 info lifecycle express-handlebars@3.0.0~preinstall: express-handlebars@3.0.0
+1768 silly preinstall express-session@1.14.2 /home/ubuntu/aluxtrip/node_modules/.staging/express-session-8eeab601
+1769 info lifecycle express-session@1.14.2~preinstall: express-session@1.14.2
+1770 silly preinstall express-validator@3.0.0 /home/ubuntu/aluxtrip/node_modules/.staging/express-validator-ea953fd8
+1771 info lifecycle express-validator@3.0.0~preinstall: express-validator@3.0.0
+1772 silly preinstall method-override@2.3.7 /home/ubuntu/aluxtrip/node_modules/.staging/method-override-232215ae
+1773 info lifecycle method-override@2.3.7~preinstall: method-override@2.3.7
+1774 silly preinstall mongoose@4.7.1 /home/ubuntu/aluxtrip/node_modules/.staging/mongoose-4c3a5032
+1775 info lifecycle mongoose@4.7.1~preinstall: mongoose@4.7.1
+1776 silly preinstall passport@0.3.2 /home/ubuntu/aluxtrip/node_modules/.staging/passport-1ac24daa
+1777 info lifecycle passport@0.3.2~preinstall: passport@0.3.2
+1778 silly preinstall passport-local@1.0.0 /home/ubuntu/aluxtrip/node_modules/.staging/passport-local-19ef14b0
+1779 info lifecycle passport-local@1.0.0~preinstall: passport-local@1.0.0
+1780 silly lifecycle qs@4.0.0~preinstall: no script for preinstall, continuing
+1781 silly lifecycle multiparty@4.1.3~preinstall: no script for preinstall, continuing
+1782 silly lifecycle async@2.1.4~preinstall: no script for preinstall, continuing
+1783 silly lifecycle bcrypt-nodejs@0.0.3~preinstall: no script for preinstall, continuing
+1784 silly lifecycle bootstrap-datepicker@1.6.4~preinstall: no script for preinstall, continuing
+1785 silly lifecycle connect-flash@0.1.1~preinstall: no script for preinstall, continuing
+1786 silly lifecycle connect-multiparty@2.0.0~preinstall: no script for preinstall, continuing
+1787 silly lifecycle csurf@1.9.0~preinstall: no script for preinstall, continuing
+1788 silly lifecycle custombox@4.0.0~preinstall: no script for preinstall, continuing
+1789 silly lifecycle express-busboy@5.0.0~preinstall: no script for preinstall, continuing
+1790 silly lifecycle express-handlebars@3.0.0~preinstall: no script for preinstall, continuing
+1791 silly lifecycle express-session@1.14.2~preinstall: no script for preinstall, continuing
+1792 silly lifecycle express-validator@3.0.0~preinstall: no script for preinstall, continuing
+1793 silly lifecycle method-override@2.3.7~preinstall: no script for preinstall, continuing
+1794 silly lifecycle mongoose@4.7.1~preinstall: no script for preinstall, continuing
+1795 silly lifecycle passport@0.3.2~preinstall: no script for preinstall, continuing
+1796 silly lifecycle passport-local@1.0.0~preinstall: no script for preinstall, continuing
+1797 silly doReverseSerial remove 0
+1798 silly doSerial move 0
+1799 silly doSerial finalize 17
+1800 silly finalize /home/ubuntu/aluxtrip/node_modules/connect-multiparty/node_modules/qs
+1801 silly finalize /home/ubuntu/aluxtrip/node_modules/multiparty
+1802 silly finalize /home/ubuntu/aluxtrip/node_modules/async
+1803 silly finalize /home/ubuntu/aluxtrip/node_modules/bcrypt-nodejs
+1804 silly finalize /home/ubuntu/aluxtrip/node_modules/bootstrap-datepicker
+1805 silly finalize /home/ubuntu/aluxtrip/node_modules/connect-flash
+1806 silly finalize /home/ubuntu/aluxtrip/node_modules/connect-multiparty
+1807 verbose unlock done using /home/ubuntu/.npm/_locks/staging-e6564ebbf212e898.lock for /home/ubuntu/aluxtrip/node_modules/.staging
+1808 silly rollbackFailedOptional Starting
+1809 silly rollbackFailedOptional Finishing
+1810 silly runTopLevelLifecycles Starting
+1811 silly runTopLevelLifecycles Finishing
+1812 silly install printInstalled
+1813 warn optional Skipping failed optional dependency /chokidar/fsevents:
+1814 warn notsup Not compatible with your operating system or architecture: fsevents@1.1.1
+1815 verbose stack Error: ENOTEMPTY: directory not empty, rename '/home/ubuntu/aluxtrip/node_modules/connect-multiparty' -> '/home/ubuntu/aluxtrip/node_modules/.connect-multiparty.DELETE'
+1815 verbose stack     at moveAway (/usr/share/npm/lib/install/action/finalize.js:38:5)
+1815 verbose stack     at destStatted (/usr/share/npm/lib/install/action/finalize.js:27:7)
+1815 verbose stack     at FSReqWrap.oncomplete (fs.js:82:15)
+1815 verbose stack
+1815 verbose stack Error: ENOTEMPTY: directory not empty, rename '/home/ubuntu/aluxtrip/node_modules/connect-multiparty' -> '/home/ubuntu/aluxtrip/node_modules/.connect-multiparty.DELETE'
+1815 verbose stack     at Error (native)
+1816 verbose cwd /home/ubuntu/aluxtrip/routes
+1817 error Linux 4.4.0-64-generic
+1818 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install" "connect-multiparty" "--save"
+1819 error node v4.2.6
+1820 error npm  v3.5.2
+1821 error path /home/ubuntu/aluxtrip/node_modules/connect-multiparty
+1822 error code ENOTEMPTY
+1823 error errno -39
+1824 error syscall rename
+1825 error ENOTEMPTY: directory not empty, rename '/home/ubuntu/aluxtrip/node_modules/connect-multiparty' -> '/home/ubuntu/aluxtrip/node_modules/.connect-multiparty.DELETE'
+1826 error If you need help, you may report this error at:
+1826 error     <https://github.com/npm/npm/issues>
+1827 verbose exit [ -39, true ]

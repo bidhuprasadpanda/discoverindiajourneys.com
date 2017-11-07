@@ -1,0 +1,94 @@
+html.jPopup-active {
+	overflow-y: scroll;
+}
+#jPopup {
+	opacity: 0;
+	visibility: hidden;
+	position: fixed;
+	z-index:  111;
+	background-color: rgba(0,0,0,0.50);
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	transition: all 0.2s;
+}
+#jPopup .popup {
+	background-color: white;
+	width: 40%;
+	margin: auto;
+	padding: 0;
+	margin-top: 70px;
+	margin-top: 55px;
+}
+#jPopup .popup.maximize {
+	width: 100% !important;
+	margin-top: 0px !important;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+#jPopup .popup.maximize .jpop-footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 0 12px;
+}
+
+#jPopup .popup .jpop-head {
+	padding: 0px;
+	background-color: orange;
+	color: #fff;
+	font-weight: 300;
+	padding-top: 3px;
+	padding-bottom: 5px;
+}
+#jPopup .popup .jpop-head .jpop-head-title {
+	font-size: 20px;
+}
+#jPopup .popup .close {
+	position: relative;
+	right: 3%;
+	top: 11px;
+}
+#jPopup .popup .jpop-head .jpop-head-title {
+	margin: 10px;
+}
+
+#jPopup .popup .jpop-body {
+	padding: 12px;
+}
+#jPopup .popup  .jpop-footer {
+	padding: 4px;
+	padding-left: 8px;
+	background-color: #eee;
+	padding: 4px 12px;
+}
+#jPopup .popup .jpop-footer .btn-close {
+	background-color: orange;
+	color: white;
+	border-radius: 0;
+}
+.jPopup-active #jPopup {
+	visibility: visible;
+	opacity: 1;
+	transition: all 0.3s;
+}
+.jPopup-active #jPopup .popup {
+	margin-top: 80px;
+	transition: all 0.4s;
+}
+@media (min-width: 768px) {
+	#jPopup .popup.width-80 {
+		width: 80%;
+		transition: all 0.2s;
+	}
+}
+@media (max-width: 768px) {
+	#jPopup .popup {
+		width: 80%;
+		transition: all 0.2s;
+	}
+}

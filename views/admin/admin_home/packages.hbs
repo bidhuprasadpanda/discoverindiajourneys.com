@@ -1,0 +1,262 @@
+<div class="main" role="main">
+    <div id="content" class="content full" style="padding-top:10px;">
+        <div class="container">
+            <div class="row">
+                {{!--
+                <div class="col-md-12 provider_heading">
+                    <h2>All Package Providers</h2>
+                </div>--}}
+                <h2 class="decorated"><span>PACKAGES</span></h2>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                {{!-- Create Form--}}
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="create_package_button">
+                        <a href="/admin/admin_home/packages-new"> <button type="button" class="btn btn-default"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;Create New Package</button></a>
+                    </div>
+                </div>
+
+                {{!-- Create Form--}} {{!-- Edit Form--}}
+                <div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body Package_form_update">
+
+                                <form id="updatePackageForm">
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label for="continent">Continent List :</label>
+                                                <select id="continent_new_package_edit" name="Continent" class="form-control packages_continent_list_edit" required> 
+                                                             
+                                                </select>
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                            <div class="col-md-6 mt20">
+                                                <a type="button" class="btn btn-success" href="/admin/admin_home/continents-new">Add A New Continent</a>
+                                                <span><strong>(If country is not in the list)</strong></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label for="title">CountryName:</label>
+                                                <p class="form-control package_country_name selectPackageContinents edit" name='packageCountryName' required></p>
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                            <div class="col-md-6 mt20">
+                                                <a type="button" class="btn btn-success" href="/admin/admin_home/destination-new">Add A New Country</a>
+                                                <span><strong>(If Country is not in the list)</strong></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="name">Package Title</label>
+                                        <input type="text" id="package_name_edit" name="packagename"  class="form-control package_name_edit" >
+                                    </div>
+                                     <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label for="title">Categories (package Type):</label>
+                                                <p class="categories__list__edit">
+                                                    
+                                                </p>
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                            <div class="col-md-6 mt20">
+                                                <a type="button" class="btn btn-success" href="/admin/admin_home/categories">Add A New category</a>
+                                                <span><strong>(If category type is not in the list)</strong></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="description">Package description</label>
+                                        <textarea name="description" class="form-control package_description_edit" id="package_description_edit" cols="70" rows="5"></textarea>
+                                    </div>
+                                    <div id="form-step-1" role="form" data-toggle="validator">
+                                        <div class="form-group">
+                                            <div id='textboxesItineraryPackage' class="textboxesItineraryPackage">
+                                               
+                                            </div>
+                                            <input type='button' value='Add Room' id='addDay' class="add__itinerary__edit">
+                                            <input type='button' value='Remove Room' id='removeDay' class="remove__itinerary__edit">
+                                        </div>
+                                    </div>
+                                     <div class="form-group">
+                                        <div class="items package_includes_item">
+                                            <label for="package_includes">What's Included:</label>
+                                            <textarea class="form-control package_includes_edit" name="packageincludes" id="package_includes_edit" rows="5" placeholder="Write Package Inclusion Details..."></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                   <div class="form-group">
+                                        <div class="items package_excludes_item">
+                                            <label for="package_excludes">What's excluded:</label>
+                                            <textarea class="form-control package_excluded_edit" name="packageexcludes" id="package_excluded_edit" rows="5" placeholder="Write Package Exclusion Details..."></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="items package_childrenpolicy_item">
+                                            <label for="package_childrenpolicy">Children's Policy:</label>
+                                            <textarea class="form-control package_childrenpolicy_edit" name="packagechildrenpolicy" id="package_childrenpolicy_edit" rows="5" placeholder="Write Package children Policy Details..."></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="items package_cancellationpolicy_item">
+                                            <label for="package_cancellationpolicy">Cancellation Policy:</label>
+                                            <textarea class="form-control package_cancellationpolicy_edit" name="packagecancellationpolicy" id="package_cancellationpolicy_edit" rows="5" placeholder="Write Package Cancellation Policy Details..."></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="items package_termsconditions_item">
+                                            <label for="package_termsconditions">Terms &amp; Conditions:</label>
+                                            <textarea class="form-control package_termsconditions_edit" name="packagetermsconditions" id="package_termsconditions_edit" rows="5" placeholder="Write Package Terms &amp; Conditions Details..."></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <div id="images"></div>
+                                            <div class="form-group">
+                                                <div class="col-md-12">
+                                                    <div class="col-md-6 img_upload_btn">
+                                                        <form name="fileUpload" id="fileUpload" enctype="multipart/form-data" method="post"
+                                                            role="form" class="form-inline">
+                                                            <div class="form-group">
+                                                                <label>Choose image to upload: </label>
+                                                                <input name="uploadfile" type="file" id="myFile">
+                                                                <span style="color:red">Upload only image file (PNG, JPEG, GIF)</span>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input value="UPLOAD" type="button" class="btn btn-primary btn-upload">
+                                                                <span>(Click Here To Upload The Image)</span>
+                                                            </div>
+                                                            <div style="display:none;margin-top:10px;" class="progress">
+                                                                <div role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-striped active">0% </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div>
+                                                            <h3>List all uploaded files</h3>
+                                                        </div>
+                                                        <p id="msg"></p>
+                                                        <div id="files"  class="package_present_images" style="display: grid;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                    <input type="hidden" name="_csrf" value="{{ csrfToken }}">
+                                    <button type="submit" form="updatePackageForm" value="Submit" class="btn btn-primary updatePackagebtn" data-id=""><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;SAVE CHANGES</button>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default btn-package-close" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <!-- /.modal -->
+               
+               {{!-- Edit Form--}}
+
+                <div class="col-md-12">
+                    <section class="get">
+                        <div class="row">
+                            <h2 class="decorated textbox2">ALL PACKAGES</h2>
+                        </div>
+
+                       {{!-- <a href="/admin/admin_home/packages"><button type="button" class="btn btn-success">LOAD DATA&nbsp;<i class="fa fa-refresh" aria-hidden="true"></i></button></a>--}}
+
+                        <div> 
+                            <table class="table table-condensed table-hover table_package_details">
+                                 <thead>
+                                    <th>Package Name</th>
+                                    <th>Package Place Name(Or)State Name</th>
+                                    <th>Package Country(Or)Continent</th>
+                                    <th>Package Type</th>
+                                    <th></th>
+                                 </thead>
+                                 <tbody>
+                                     
+                                     {{#each items}}
+                                        <tr class="item package_form_details"> 
+                                            <td class="package_name" data-id="{{item._id}}">{{packagename}}</td>
+                                            {{#mixDestination}}
+                                            <td class="package_country_name">{{name}}</td>
+                                            {{/mixDestination}}
+
+                                            <td class="package_continent_id" style="display:none;">{{continentId}}</td>
+
+                                            {{#mixContinent}}
+                                            <td class="package_continent_name">{{name}}</td>
+                                            {{/mixContinent}}
+                                            
+                                            <td class="package_category_name" data-id="{{item._id}}">{{categories}}</td>
+                                            <td class="package_description_details" style="display:none;">{{packagedescription}}</td>
+                                            {{#each itinerary as |iti|}}
+                                            <td class="package_itinerary_title" style="display:none;">{{json iti.title}}</td>
+                                            <td class="package_itinerary_description" style="display:none;">{{json iti.description}}</td>
+                                            {{/each}}
+                                            
+                                            
+                                            {{#each this.images as |img|}}
+                                                <td style="display: none;" class="packages_images">{{img}}</td>
+                                            {{/each}}
+                                            <td class="package_include" style="display: none;">{{packageinclude}}</td>
+                                            <td class="package_exclude" style="display: none;">{{packageexclude}}</td>
+                                            <td class="package_childrenpolicy" style="display: none;">{{childrenpolicy}}</td>
+                                            <td class="package_cancelpolicy" style="display: none;">{{cancelpolicy}}</td>
+                                            <td class="package_terms" style="display: none;">{{terms}}</td>
+                                            <td class="tbl-package-btn-group">
+                                                 {{#if published}}
+                                                    <select class="btn btn-warning package_publish_status">
+                                                        <option value="true" data-id="{{this._id}}" selected>Published&nbsp;<i class="fa fa-check" aria-hidden="true"></i></option>
+                                                        <option value="false" data-id="{{this._id}}">Unpublished&nbsp;<i class="fa fa-times" aria-hidden="true"></i></option>
+                                                    </select>
+                                                {{else}}
+
+                                                    <select class="btn btn-success package_publish_status">
+                                                        <option value="true" data-id="{{this._id}}">Published&nbsp;<i class="fa fa-check" aria-hidden="true"></i></option>
+                                                        <option value="false" data-id="{{this._id}}" selected>Unpublished&nbsp;<i class="fa fa-times" aria-hidden="true"></i></option>
+                                                    </select>
+                                                {{/if}}
+                                                {{#if promote}}
+                                                    <select class="btn btn-info package_promote_status">
+                                                        <option value="true" data-id="{{this._id}}" selected>Promoted&nbsp;<i class="fa fa-check" aria-hidden="true"></i></option>
+                                                        <option value="false" data-id="{{this._id}}">Demoted&nbsp;<i class="fa fa-times" aria-hidden="true"></i></option>
+                                                    </select>
+                                                {{else}}
+
+                                                    <select class="btn btn-success package_promote_status">
+                                                        <option value="true" data-id="{{this._id}}">Promoted&nbsp;<i class="fa fa-check" aria-hidden="true"></i></option>
+                                                        <option value="false" data-id="{{this._id}}" selected>Demoted&nbsp;<i class="fa fa-times" aria-hidden="true"></i></option>
+                                                    </select>
+                                                {{/if}}
+
+                                                <button type="button" class="btn btn-warning get__package__details" data-id="{{this._id}}" data-toggle="modal" data-target="#myModal" data-backdrop="static" data-keyboard="false">Edit &nbsp;<i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+                                                <button type="button" class="btn btn-danger deletePackage" data-id="{{this._id}}">Delete&nbsp;<i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                                            </td>
+                                        </tr>
+                                     {{/each}}
+                                 </tbody>
+                            </table>
+
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

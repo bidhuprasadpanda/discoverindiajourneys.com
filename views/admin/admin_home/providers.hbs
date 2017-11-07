@@ -1,0 +1,217 @@
+<div class="main" role="main">
+    <div id="content" class="content full" style="padding-top:10px;">
+        <div class="container">
+            <div class="row">
+                {{!--
+                <div class="col-md-12 provider_heading">
+                    <h2>All Package Providers</h2>
+                </div>--}}
+                <h2 class="decorated"><span>All Package Providers</span></h2>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 ">
+                     
+                     {{#if errors}}
+                        <div class="alert alert-danger">
+                            {{# each errors}}
+                                <p><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>&nbsp;{{this}}</p>
+                            {{/each}}
+                        </div>
+                    {{/if}}
+                    {{#if error}}
+                        <div class="alert alert-danger">
+                                <p><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>&nbsp;Provider already exist!</p>
+                        </div>
+                    {{/if}}
+                    <form action="/admin/admin_home/providers" method="post">
+                        <div class="form-group">
+                            <label for="name">NAME</label>
+                            <input type="text" id="name" name="username" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">EMAIL ID</label>
+                            <input type="text" id="email" name="email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="mobile">Mobile Number</label>
+                            <input type="number" id="mobile" name="mobilenumber" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="workinghours">Working Hours</label>
+                            <input type="workinghours" id="workinghours" name="workinghours" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="address">ADDRESS</label>
+                            <textarea class="form-control" name="address" cols="50" rows="5" id="address"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="zipcode">ZIPCODE</label>
+                            <input type="number" id="zipcode" name="zipcode" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="city">CITY</label>
+                            <input type="text" id="city" name="city" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="state">STATE</label>
+                            <input type="text" id="state" name="state" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="country">COUNTRY</label>
+                            <input type="text" id="country" name="country" class="form-control">
+                        </div>
+                         <div class="form-group" id="password">
+                            <label for="providerpassword">Password</label>
+                            <input type="password" id="providerpassword" name="password" class="form-control">
+                        </div>
+                        <div class="form-group" id="repassword">
+                            <label for="providerpassword">Confirm Password</label>
+                            <input type="password" id="providerpasswordconfirm" name="repassword" class="form-control">
+                        </div>
+                        <input type="hidden" name="_csrf" value="{{ csrfToken }}" > 
+                         <button type="submit" value="Submit" class="btn btn-primary"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;SAVE PROVIDER</button>
+                    </form>
+                </div>
+
+                 {{!-- Edit Provider Modal Form--}}
+               <div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                        
+                        <div class="modal-body provider_form">
+                            {{#if errors}}
+                                <div class="alert alert-danger">
+                                    {{# each errors}}
+                                        <p><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>&nbsp;{{this}}</p>
+                                    {{/each}}
+                                </div>
+                            {{/if}}
+                            {{#if error}}
+                                <div class="alert alert-danger">
+                                        <p><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>&nbsp;Provider already exist!</p>
+                                </div>
+                            {{/if}}
+                           <form>
+                                    <div class="form-group">
+                                        <label for="name">NAME</label>
+                                        <input type="text" id="name" name="name" class="form-control provider_name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">EMAIL ID</label>
+                                        <input type="email" id="email" name="email" class="form-control provider_email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="mobile">Mobile Number</label>
+                                        <input type="text" id="mobile" name="mobile" class="form-control provider_mobile_modal">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="role">User Role</label>
+                                        <select name="roles" id="provider_roles" class="form-control provider_roles_modal">
+                                            
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="status">User Status</label>
+                                        <select name="roles" id="provider_status" class="form-control provider_status_modal">
+                                            
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="workinghours">Working Hours</label>
+                                        <input type="workinghours" id="workinghours" name="workinghours" class="form-control provider_workinghours">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="address">ADDRESS</label>
+                                        <textarea type="textarea" class="form-control provider_address" name="address" cols="50" rows="5" id="address"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="zipcode">ZIPCODE</label>
+                                        <input type="number" id="zipcode" name="zipcode" class="form-control provider_zipcode">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="city">CITY</label>
+                                        <input type="text" id="city" name="city" class="form-control provider_city">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="state">STATE</label>
+                                        <input type="text" id="state" name="state" class="form-control provider_state">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="country">COUNTRY</label>
+                                        <input type="text" id="country" name="country" class="form-control provider_country">
+                                    </div>
+                                    <input type="hidden" name="_csrf" value="{{ csrfToken }}" >
+                                    <button type="button" value="Submit" class="btn btn-primary updateProvider" data-id=""><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;SAVE CHANGES</button>
+                                    
+                         </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+                {{!-- Edit Provider Password Modal--}}
+                <div class="modal fade" tabindex="-1" role="dialog" id="myModal1">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                        
+                        <div class="modal-body provider_form">
+                          
+                           <form>
+                                    <div class="form-group">
+                                        <label for="password">Password</label>
+                                        <input type="password" id="providerPasswordUpdate" name="changedpassword" class="form-control providerPasswordUpdate" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password2">Confirm Password</label>
+                                        <input type="password" id="providerPasswordUpdateConfirm" name="rechangedpassword" class="form-control providerPasswordUpdateConfirm" required>
+                                    </div>
+                                    <input type="hidden" name="_csrf" value="{{ csrfToken }}" >
+                                    <button type="button" value="Submit" class="btn btn-primary updateProviderPassword" data-id=""><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;SAVE CHANGES</button>
+                         </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+
+
+                <div class="col-md-7">
+                     <section class="get">
+                                <h3>All Providers</h3>
+                                <div>
+                                    {{# each items }}
+                                        <article class="item provider_form">
+                                            <div>Name:<span class="provider_name"  data-id="{{this._id}}"> {{ this.username }}</span></div>
+                                            <div>Email:<span class="provider_email"  > {{ this.email }}</span></div>
+                                            <div>Telephones:<span class="provider_mobile"  > {{ this.mobile }}</span></div>
+                                            <div style="display: none;"><span class="provider_workinghours">{{this.workinghours}}</span></div>
+                                            <div style="display: none;"><span class="provider_roles">{{this.roles}}</span></div>
+                                            <div style="display: none;"><span class="provider_status">{{this.status}}</span></div>
+                                            <div style="display: none;"> <span class="provider_address">{{this.address}}</span></div>
+                                            <div style="display: none;"> <span class="provider_zipcode">{{this.zipcode}}</span></div>
+                                            <div style="display: none;"> <span class="provider_city">{{this.city}}</span></div>
+                                            <div style="display: none;"> <span class="provider_state">{{this.state}}</span></div>
+                                            <div>Country:<span class="provider_country"  > {{ this.country }}</span></div>
+                                            <form>
+                                                <button type="button" class="btn btn-primary get_provider_password" data-toggle="modal" data-target="#myModal1" data-backdrop="static" data-keyboard="false" data-toggle="tooltip" data-placement="top" data-original-title="Change Password" data-id="{{this._id}}">Change Password&nbsp;<i class="fa fa-key" aria-hidden="true"></i></button>
+                                                <button type="button" class="btn btn-warning get_provider" data-toggle="modal" data-target="#myModal" data-backdrop="static" data-keyboard="false" data-toggle="tooltip" data-placement="top" title="Edit Provider"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+                                                <button type="button" class="btn btn-danger deleteUser" data-id="{{this._id}}"><i class="fa fa-trash-o" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Delete Provider"></i></button>
+                                            </form>
+                                            
+                                        </article>
+                                    {{/each}}
+                                    
+                                </div>
+                     </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

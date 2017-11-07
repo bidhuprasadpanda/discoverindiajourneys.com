@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Smart Wizard - a JavaScript jQuery Step Wizard plugin</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- Optional Bootstrap theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- Include SmartWizard CSS -->
+    <link href="css/smart_wizard.css" rel="stylesheet" type="text/css" />
+
+    <!-- Optional SmartWizard theme -->
+    <link href="css/smart_wizard_theme_dots.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="container">
+        <br />
+        <div class="col-md-12">
+            <form action="#" id="myForm" role="form" data-toggle="validator" method="post" accept-charset="utf-8">
+
+                <!-- SmartWizard html -->
+                <div id="smartwizard">
+                    <ul>
+                        <li><a href="#step-1">Step 1<br /><small>Email Address</small></a></li>
+                        <li><a href="#step-2">Step 2<br /><small>Name</small></a></li>
+                        <li><a href="#step-3">Step 3<br /><small>Address</small></a></li>
+                        <!--<li><a href="#step-4">Step 4<br /><small>Terms and Conditions</small></a></li>-->
+                    </ul>
+
+                    <div>
+                        <div id="step-1">
+                            <h2>STEP 1: INQUIRY DETAILS</h2>
+                            <div class="col-md-8">
+                                <div id="form-step-0" role="form" data-toggle="validator">
+                                    <div class="form-group">
+                                                    <label class="col-md-12" for="exampleInputEmail1">Period of Travel<span class="require-field">**</span>:</label>
+                                                    
+                                                    <div class="col-md-6">
+                                                        <div class="datepicker_from_date">
+                                                        <input type="text" class="form-control dpd1" id="dpd1" name="fromDate" data-date-format="dd-mm-yyyy" value="Checkin Date" readonly="" placeholder=""><span class="add-on"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                                                        </div>
+                                                        <div class="help-block with-errors"></div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="datepicker_to_date" style="display:none;">
+                                                        <input type="text" class="form-control dpd2" id="dpd2" name="toDate" data-date-format="dd-mm-yyyy" value="Checkout Date" readonly="readonly"><span class="add-on"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-md-12" for="numberofrooms">Rooms:</label>
+                                                    <div class="col-md-6">
+                                                        <select name="numberofrooms" class="form-control" id="numberOfRoomsInInquiry">
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="roomAccomodationSelectedParent" id="roomAccomodationSelectedParent">
+                                                        <div class="roomsAccomodationSeleted" id="roomsAccomodationSeleted">
+                                                           
+                                                            <label class="col-md-12" for="roomAccomodation">Rooms:1</label>
+                                                                <div class="col-md-12">
+                                                                    <div class="col-md-2">
+                                                                        <label for="adults">Adults:</label>
+                                                                        <select class="form-control" id="numberOfAdults" name="adults[]">
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                        </select>
+                                                                    </div>
+                                                                     <div class="col-md-2 ">
+                                                                        <label for="child">Children:</label>
+                                                                        <select class="form-control numberOfChildren" id="numberOfChildren" name="child[]">
+                                                                            <option value="0">0</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="col-md-2 1st_child" style="display: block;">
+                                                                        <label for="childage">Child 1 Age:</label>
+                                                                        <select class="form-control" id="firstChildAge" name="firstChildAge[]">
+                                                                           <option value="0">Select Age</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="col-md-2 2nd_child" style="display: none;">
+                                                                        <label for="childage">Child 2 Age:</label>
+                                                                        <select class="form-control" id="secondChildAge" name="secondChildAge[]">
+                                                                           <option value="0">Select Age</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="col-md-3 form-check form-check-inline">
+                                                                        <label class="form-check-label">
+                                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="" name="extrabed[]"> Extra Bed
+                                                                        </label>
+                                                                    </div>
+                                                                    <input type="hidden" name="room[]" value="room1" class="currentPackageName">                                                                    
+                                                                </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-md-12" for="remark">Remarks:</label>
+                                                    <div class="col-md-12">
+                                                        <textarea class="form-control" id="remarkTextArea" rows="3" name="remark" placeholder=""></textarea>
+                                                        <div class="help-block with-errors"></div>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <h3 class="pesonalDetailsHeading">Personal Details:</h3>
+                                                <div class="form-group">
+                                                    <div class="col-md-6">
+                                                        <label class="col-md-12 control-label" for="firstName">First Name<span class="require-field">**</span>:</label>
+                                                        <input type="text" class="form-control firstNamePackageDetails" id="firstNamePackageDetails" placeholder="first name" name="firstname" data-error="Fill This Field" required="">
+                                                        <div class="help-block with-errors"></div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label class="col-md-12 control-label" for="lastName">Last Name<span class="require-field">**</span>:</label>
+                                                        <input type="text" class="form-control" id="lastNamePackageDetails" placeholder="last name" name="lastname" data-error="Fill This Field" required="">
+                                                        <div class="help-block with-errors"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group has-error has-danger">
+                                                    <div class="col-md-6">
+                                                        <label class="col-md-12" for="email">E-mail<span class="require-field">**</span>:</label>
+                                                        <input type="email" class="form-control" id="emailPackageDetails" placeholder="email" name="emailid" data-error="That email address is invalid" required="">
+                                                        <div class="help-block with-errors"><ul class="list-unstyled"><li>That email address is invalid</li></ul></div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label class="col-md-12" for="country">Country<span class="require-field">**</span>:</label>
+                                                         <select id="country" name="country" class="form-control user_country" required=""><option value="-1">Select Country</option><option value="Afghanistan">Afghanistan</option><option value="Albania">Albania</option><option value="Algeria">Algeria</option><option value="American Samoa">American Samoa</option><option value="Angola">Angola</option><option value="Anguilla">Anguilla</option><option value="Antartica">Antartica</option><option value="Antigua and Barbuda">Antigua and Barbuda</option><option value="Argentina">Argentina</option><option value="Armenia">Armenia</option><option value="Aruba">Aruba</option><option value="Ashmore and Cartier Island">Ashmore and Cartier Island</option><option value="Australia">Australia</option><option value="Austria">Austria</option><option value="Azerbaijan">Azerbaijan</option><option value="Bahamas">Bahamas</option><option value="Bahrain">Bahrain</option><option value="Bangladesh">Bangladesh</option><option value="Barbados">Barbados</option><option value="Belarus">Belarus</option><option value="Belgium">Belgium</option><option value="Belize">Belize</option><option value="Benin">Benin</option><option value="Bermuda">Bermuda</option><option value="Bhutan">Bhutan</option><option value="Bolivia">Bolivia</option><option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option><option value="Botswana">Botswana</option><option value="Brazil">Brazil</option><option value="British Virgin Islands">British Virgin Islands</option><option value="Brunei">Brunei</option><option value="Bulgaria">Bulgaria</option><option value="Burkina Faso">Burkina Faso</option><option value="Burma">Burma</option><option value="Burundi">Burundi</option><option value="Cambodia">Cambodia</option><option value="Cameroon">Cameroon</option><option value="Canada">Canada</option><option value="Cape Verde">Cape Verde</option><option value="Cayman Islands">Cayman Islands</option><option value="Central African Republic">Central African Republic</option><option value="Chad">Chad</option><option value="Chile">Chile</option><option value="China">China</option><option value="Christmas Island">Christmas Island</option><option value="Clipperton Island">Clipperton Island</option><option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option><option value="Colombia">Colombia</option><option value="Comoros">Comoros</option><option value="Congo, Democratic Republic of the">Congo, Democratic Republic of the</option><option value="Congo, Republic of the">Congo, Republic of the</option><option value="Cook Islands">Cook Islands</option><option value="Costa Rica">Costa Rica</option><option value="Cote d'Ivoire">Cote d'Ivoire</option><option value="Croatia">Croatia</option><option value="Cuba">Cuba</option><option value="Cyprus">Cyprus</option><option value="Czeck Republic">Czeck Republic</option><option value="Denmark">Denmark</option><option value="Djibouti">Djibouti</option><option value="Dominica">Dominica</option><option value="Dominican Republic">Dominican Republic</option><option value="Ecuador">Ecuador</option><option value="Egypt">Egypt</option><option value="El Salvador">El Salvador</option><option value="Equatorial Guinea">Equatorial Guinea</option><option value="Eritrea">Eritrea</option><option value="Estonia">Estonia</option><option value="Ethiopia">Ethiopia</option><option value="Europa Island">Europa Island</option><option value="Falkland Islands (Islas Malvinas)">Falkland Islands (Islas Malvinas)</option><option value="Faroe Islands">Faroe Islands</option><option value="Fiji">Fiji</option><option value="Finland">Finland</option><option value="France">France</option><option value="French Guiana">French Guiana</option><option value="French Polynesia">French Polynesia</option><option value="French Southern and Antarctic Lands">French Southern and Antarctic Lands</option><option value="Gabon">Gabon</option><option value="Gambia, The">Gambia, The</option><option value="Gaza Strip">Gaza Strip</option><option value="Georgia">Georgia</option><option value="Germany">Germany</option><option value="Ghana">Ghana</option><option value="Gibraltar">Gibraltar</option><option value="Glorioso Islands">Glorioso Islands</option><option value="Greece">Greece</option><option value="Greenland">Greenland</option><option value="Grenada">Grenada</option><option value="Guadeloupe">Guadeloupe</option><option value="Guam">Guam</option><option value="Guatemala">Guatemala</option><option value="Guernsey">Guernsey</option><option value="Guinea">Guinea</option><option value="Guinea-Bissau">Guinea-Bissau</option><option value="Guyana">Guyana</option><option value="Haiti">Haiti</option><option value="Heard Island and McDonald Islands">Heard Island and McDonald Islands</option><option value="Holy See (Vatican City)">Holy See (Vatican City)</option><option value="Honduras">Honduras</option><option value="Hong Kong">Hong Kong</option><option value="Howland Island">Howland Island</option><option value="Hungary">Hungary</option><option value="Iceland">Iceland</option><option value="India">India</option><option value="Indonesia">Indonesia</option><option value="Iran">Iran</option><option value="Iraq">Iraq</option><option value="Ireland">Ireland</option><option value="Ireland, Northern">Ireland, Northern</option><option value="Israel">Israel</option><option value="Italy">Italy</option><option value="Jamaica">Jamaica</option><option value="Jan Mayen">Jan Mayen</option><option value="Japan">Japan</option><option value="Jarvis Island">Jarvis Island</option><option value="Jersey">Jersey</option><option value="Johnston Atoll">Johnston Atoll</option><option value="Jordan">Jordan</option><option value="Juan de Nova Island">Juan de Nova Island</option><option value="Kazakhstan">Kazakhstan</option><option value="Kenya">Kenya</option><option value="Kiribati">Kiribati</option><option value="Korea, North">Korea, North</option><option value="Korea, South">Korea, South</option><option value="Kuwait">Kuwait</option><option value="Kyrgyzstan">Kyrgyzstan</option><option value="Laos">Laos</option><option value="Latvia">Latvia</option><option value="Lebanon">Lebanon</option><option value="Lesotho">Lesotho</option><option value="Liberia">Liberia</option><option value="Libya">Libya</option><option value="Liechtenstein">Liechtenstein</option><option value="Lithuania">Lithuania</option><option value="Luxembourg">Luxembourg</option><option value="Macau">Macau</option><option value="Macedonia, Former Yugoslav Republic of">Macedonia, Former Yugoslav Republic of</option><option value="Madagascar">Madagascar</option><option value="Malawi">Malawi</option><option value="Malaysia">Malaysia</option><option value="Maldives">Maldives</option><option value="Mali">Mali</option><option value="Malta">Malta</option><option value="Man, Isle of">Man, Isle of</option><option value="Marshall Islands">Marshall Islands</option><option value="Martinique">Martinique</option><option value="Mauritania">Mauritania</option><option value="Mauritius">Mauritius</option><option value="Mayotte">Mayotte</option><option value="Mexico">Mexico</option><option value="Micronesia, Federated States of">Micronesia, Federated States of</option><option value="Midway Islands">Midway Islands</option><option value="Moldova">Moldova</option><option value="Monaco">Monaco</option><option value="Mongolia">Mongolia</option><option value="Montserrat">Montserrat</option><option value="Morocco">Morocco</option><option value="Mozambique">Mozambique</option><option value="Namibia">Namibia</option><option value="Nauru">Nauru</option><option value="Nepal">Nepal</option><option value="Netherlands">Netherlands</option><option value="Netherlands Antilles">Netherlands Antilles</option><option value="New Caledonia">New Caledonia</option><option value="New Zealand">New Zealand</option><option value="Nicaragua">Nicaragua</option><option value="Niger">Niger</option><option value="Nigeria">Nigeria</option><option value="Niue">Niue</option><option value="Norfolk Island">Norfolk Island</option><option value="Northern Mariana Islands">Northern Mariana Islands</option><option value="Norway">Norway</option><option value="Oman">Oman</option><option value="Pakistan">Pakistan</option><option value="Palau">Palau</option><option value="Panama">Panama</option><option value="Papua New Guinea">Papua New Guinea</option><option value="Paraguay">Paraguay</option><option value="Peru">Peru</option><option value="Philippines">Philippines</option><option value="Pitcaim Islands">Pitcaim Islands</option><option value="Poland">Poland</option><option value="Portugal">Portugal</option><option value="Puerto Rico">Puerto Rico</option><option value="Qatar">Qatar</option><option value="Reunion">Reunion</option><option value="Romainia">Romainia</option><option value="Russia">Russia</option><option value="Rwanda">Rwanda</option><option value="Saint Helena">Saint Helena</option><option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option><option value="Saint Lucia">Saint Lucia</option><option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option><option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option><option value="Samoa">Samoa</option><option value="San Marino">San Marino</option><option value="Sao Tome and Principe">Sao Tome and Principe</option><option value="Saudi Arabia">Saudi Arabia</option><option value="Scotland">Scotland</option><option value="Senegal">Senegal</option><option value="Seychelles">Seychelles</option><option value="Sierra Leone">Sierra Leone</option><option value="Singapore">Singapore</option><option value="Slovakia">Slovakia</option><option value="Slovenia">Slovenia</option><option value="Solomon Islands">Solomon Islands</option><option value="Somalia">Somalia</option><option value="South Africa">South Africa</option><option value="South Georgia and South Sandwich Islands">South Georgia and South Sandwich Islands</option><option value="Spain">Spain</option><option value="Spratly Islands">Spratly Islands</option><option value="Sri Lanka">Sri Lanka</option><option value="Sudan">Sudan</option><option value="Suriname">Suriname</option><option value="Svalbard">Svalbard</option><option value="Swaziland">Swaziland</option><option value="Sweden">Sweden</option><option value="Switzerland">Switzerland</option><option value="Syria">Syria</option><option value="Taiwan">Taiwan</option><option value="Tajikistan">Tajikistan</option><option value="Tanzania">Tanzania</option><option value="Thailand">Thailand</option><option value="Tobago">Tobago</option><option value="Toga">Toga</option><option value="Tokelau">Tokelau</option><option value="Tonga">Tonga</option><option value="Trinidad">Trinidad</option><option value="Tunisia">Tunisia</option><option value="Turkey">Turkey</option><option value="Turkmenistan">Turkmenistan</option><option value="Tuvalu">Tuvalu</option><option value="Uganda">Uganda</option><option value="Ukraine">Ukraine</option><option value="United Arab Emirates">United Arab Emirates</option><option value="United Kingdom">United Kingdom</option><option value="Uruguay">Uruguay</option><option value="USA">USA</option><option value="Uzbekistan">Uzbekistan</option><option value="Vanuatu">Vanuatu</option><option value="Venezuela">Venezuela</option><option value="Vietnam">Vietnam</option><option value="Virgin Islands">Virgin Islands</option><option value="Wales">Wales</option><option value="Wallis and Futuna">Wallis and Futuna</option><option value="West Bank">West Bank</option><option value="Western Sahara">Western Sahara</option><option value="Yemen">Yemen</option><option value="Yugoslavia">Yugoslavia</option><option value="Zambia">Zambia</option><option value="Zimbabwe">Zimbabwe</option></select> 
+                                                         <div class="help-block with-errors"><ul class="list-unstyled"><li>That email address is invalid</li></ul></div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-md-6">
+                                                        <label class="col-md-12" for="telephone">Telephone<span class="require-field">**</span>: <small>(optional)</small></label>
+                                                        <input type="text" class="form-control" id="numberPackageDetails" placeholder="telephone" name="telephone" data-error="Enter Your Mobile Number" required="">
+                                                        <div class="help-block with-errors"></div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label class="col-md-12" for="promocode">Promo code:</label>
+                                                        <input type="text" class="form-control" id="promocodePackageDetails" placeholder="promo code" name="promocode">
+                                                    </div>
+                                                </div>
+                                                 <input type="hidden" name="packageName" value="Bang 3N" class="currentPackageName">
+                                                 <input type="hidden" name="inquiryType" value="packageinquiry">
+                                                 <input type="hidden" name="inquiryStatus" value="New">
+                                                 <input type="hidden" name="packageCountryName" value="Thailand">
+                                                 <input type="hidden" name="packageUserId" value="5878757859bd1e1adaef4268">
+                                                 <!--<textarea class="inquiryTextArea" name="packageModifyHotel" rows="3"></textarea>
+                                                 <textarea class="inquiryTextArea" name="packageModifyDuration" rows="3"></textarea>
+                                                 <textarea class="inquiryTextArea" name="packageAddServices" rows="3"></textarea>-->
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <h3>Cancellation Policy</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                        <div id="step-2">
+                            <h2>STEP 2 : Inquiry Pre-confirmation</h2>
+                            <div id="form-step-1" role="form" data-toggle="validator">
+                                <div class="form-group">
+                                         <h3 class="pesonalDetailsHeadingInquiry">Request Details</h3>
+                                            <table class="table table-condensed table-hover pre-table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Date</td>
+                                                        <td class="currenttime">current data and time</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Package Name</td>
+                                                        <td class="currentPackageName">Package name</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                            <h3 class="pesonalDetailsHeadingInquiry">Personal Details</h3>
+                                            <table class="table table-condensed table-hover pre-table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>First Name</td>
+                                                        <td class="packageUserFirstName">firstname</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Last Name</td>
+                                                        <td class="packageUserLastName">lastname</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>E-mail</td>
+                                                        <td class="packageUserEmailId">email@email.com</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Telephone</td>
+                                                        <td class="packageUserNumber">packageusernumber</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Promo Code</td>
+                                                        <td class="packageUserPackageCode">packagecode</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                            <h3 class="pesonalDetailsHeadingInquiry">Booking Details</h3>
+                                            <table class="table table-responsive table-condensed table-hover pre-table pre-table-bookingdetails">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Period of Travel</td>
+                                                        <td>
+                                                            <table class="table table-condensed table-hover">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>From Date</td>
+                                                                        <td class="inquiry_fromdate">Checkin Date</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>To Date</td>
+                                                                        <td class="inquiry_todate">Checkout Date</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Rooms Quantity</td>
+                                                        <td class="packageTotalRooms">1</td>
+                                                    </tr>
+                                                    
+                                                    <tr class="preconfirm_accomodation"><td> Room1 </td><td><table class="table table-striped "><tbody><tr><td>Number Of Adults:</td><td>1</td></tr><tr><td>Number Of Children:</td><td>0</td></tr><tr><td>1st Child Age:</td><td>0</td></tr><tr><td>2nd child Age:</td><td>0</td></tr><tr><td>Extrabed:</td><td>No</td></tr></tbody></table></td></tr><tr>
+                                                        <td>Remarks</td>
+                                                        <td class="packageRemarks">Remarks</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        <div class="col-md-12 text-center btn-group">
+                                            <a href="#"><button type="button" class="btn btn-default">EDIT DETAILS</button></a>
+                                           <a href="/"><button type="button" class="btn btn-default">CANCEL INQUIRY</button></a>
+                                        </div>
+                                        <input type="hidden" id="packageModifyHotelResult">
+                                        <input type="hidden" id="packageModifyLetgth">
+                                        <input type="hidden" id="packageModifyServices">
+                                        <div class="notifications"></div>
+
+                               
+                                </div>
+                            </div>
+                        </div>
+                        <div id="step-3">
+                            <h2 class="text-center">Finish!</h2>
+                            <div id="form-step-2" role="form" data-toggle="validator">
+                                <div class="form-group">
+
+                                        <div class="text-center finish">
+                                            <p class="inquiry_details_section">We are pleased to confirm your order no :<span class="client_side_inquiry_id"></span></p>
+                                            <h3>YOUR ENQUIRY HAS BEEN SUBMITTED!</h3>
+                                            <p>Our reservation team will get back to you within 24 hours! Request summary has been sent to your email address. Thank you!</p>
+                                            <div class="text-center">
+                                               <a href="#"> <button type="button" class="btn btn-default">HOME</button></a>
+                                                <button type="button" class="btn btn-default">SUGGEST ME MORE</button>
+                                            </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--<div id="step-4" class="">
+                            <h2>Terms and Conditions</h2>
+                            <p>
+                                Terms and conditions: Keep your smile :)
+                            </p>
+                            <div id="form-step-3" role="form" data-toggle="validator">
+                                <div class="form-group">
+                                    <label for="terms">I agree with the T&C</label>
+                                    <input type="checkbox" id="terms" data-error="Please accept the Terms and Conditions" required>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+
+
+                        </div>-->
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- Include jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include jQuery Validator plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.5/validator.min.js"></script>
+
+
+    <!-- Include SmartWizard JavaScript source -->
+    <script type="text/javascript" src="js/jquery.smartWizard.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            // Toolbar extra buttons
+            var btnFinish = $('<button></button>').text('Finish')
+                .addClass('btn btn-info')
+                .on('click', function() {
+                    if (!$(this).hasClass('disabled')) {
+                        var elmForm = $("#myForm");
+                        if (elmForm) {
+                            elmForm.validator('validate');
+                            var elmErr = elmForm.find('.has-error');
+                            if (elmErr && elmErr.length > 0) {
+                                alert('Oops we still have error in the form');
+                                return false;
+                            } else {
+                                alert('Great! we are ready to submit form');
+                                elmForm.submit();
+                                return false;
+                            }
+                        }
+                    }
+                });
+            var btnCancel = $('<button></button>').text('Cancel')
+                .addClass('btn btn-danger')
+                .on('click', function() {
+                    $('#smartwizard').smartWizard("reset");
+                    $('#myForm').find("input, textarea").val("");
+                });
+
+
+
+            // Smart Wizard
+            $('#smartwizard').smartWizard({
+                selected: 0,
+                theme: 'dots',
+                transitionEffect: 'fade',
+                toolbarSettings: {
+                    toolbarPosition: 'bottom',
+                    toolbarExtraButtons: [btnFinish, btnCancel]
+                },
+                anchorSettings: {
+                    markDoneStep: true, // add done css
+                    markAllPreviousStepsAsDone: true, // When a step selected by url hash, all previous steps are marked done
+                    removeDoneStepOnNavigateBack: true, // While navigate back done step after active step will be cleared
+                    enableAnchorOnDoneStep: true // Enable/Disable the done steps navigation
+                }
+            });
+
+            $("#smartwizard").on("leaveStep", function(e, anchorObject, stepNumber, stepDirection) {
+                var elmForm = $("#form-step-" + stepNumber);
+                // stepDirection === 'forward' :- this condition allows to do the form validation 
+                // only on forward navigation, that makes easy navigation on backwards still do the validation when going next
+                if (stepDirection === 'forward' && elmForm) {
+                    elmForm.validator('validate');
+                    var elmErr = elmForm.children('.has-error');
+                    if (elmErr && elmErr.length > 0) {
+                        // Form validation failed
+                        return false;
+                    }
+                }
+                return true;
+            });
+
+            $("#smartwizard").on("showStep", function(e, anchorObject, stepNumber, stepDirection) {
+                // Enable finish button only on last step
+                if (stepNumber == 3) {
+                    $('.btn-finish').removeClass('disabled');
+                } else {
+                    $('.btn-finish').addClass('disabled');
+                }
+            });
+
+        });
+
+    </script>
+</body>
+
+</html>

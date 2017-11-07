@@ -1,0 +1,295 @@
+<!-- Start Content -->
+        <div class="main" role="main">
+            <div id="content" class="content full">
+                <div class="container">
+
+                    <!--Main 12-->
+                    <div class="col-md-12">
+                        <form action="#" id="myForm" class="pacinquiryForm" role="form" data-toggle="validator" method="post" accept-charset="utf-8">
+                            <h2 class="inquiryPackageName">{{items.name}}</h2>
+                            <!-- SmartWizard html -->
+                            <div id="smartwizard">
+                                <ul>
+                                    <li><a href="#step-1"><small>Package Details</small></a></li>
+                                    <li><a href="#step-2"><small>Inquiry Details</small></a></li>
+                                    <li><a href="#step-3"><small>Inquiry confirmation</small></a></li>
+                                    <li><a href="#step-4"><small>Finish!</small></a></li>
+                                </ul>
+
+                                <div>
+                                    {{!--<div id="step-1"></div>--}}
+                                    <div id="step-2" class="step2_inquiry">
+                                       <h2 class="bookInqSteps">STEP 2: INQUIRY DETAILS</h2>
+                                       <span class="package_duration_inquiry" data-id="{{items.numberofdays}}" style="display:none;">{{items.numberofdays}}</span>
+                                        <div class="col-md-8">
+                                            <form id="packageInquiryForm" method="post" data-toggle="validator">
+                                            <fieldset class="field1 current package-inquiry-fieldset">
+                                                <div class="form-group">
+                                                    <label class="col-md-12" for="exampleInputEmail1">Period of Travel<span class="require-field">**</span>:</label>
+                                                    
+                                                    <div class="col-md-6">
+                                                        <div class="datepicker_from_date">
+                                                        <input type="text" class="form-control dpd1" id="dpd1" name="fromDate" data-date-format="dd-mm-yyyy" value="Checkin Date" readonly/><span class="add-on"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                                                        </div>
+                                                        <div class="help-block with-errors"></div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="datepicker_to_date" style="display:none;">
+                                                        <input type="text" class="form-control dpd2" id="dpd2" name="toDate" data-date-format="dd-mm-yyyy" value="Checkout Date" readonly/><span class="add-on"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-md-12" for="numberofrooms">Rooms:</label>
+                                                    <div class="col-md-6">
+                                                        <select name="numberofrooms" class="form-control" id="numberOfRoomsInInquiry">
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="roomAccomodationSelectedParent" id="roomAccomodationSelectedParent">
+                                                        <div class="roomsAccomodationSeleted" id="roomsAccomodationSeleted">
+                                                           
+                                                            <label class="col-md-12" for="roomAccomodation">Rooms:1</label>
+                                                                <div class="col-md-12">
+                                                                    <div class="col-md-2">
+                                                                        <label for="adults">Adults:</label>
+                                                                        <select class="form-control" id="numberOfAdults" name="adults[]">
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                        </select>
+                                                                    </div>
+                                                                     <div class="col-md-2 ">
+                                                                        <label for="child">Children:</label>
+                                                                        <select class="form-control numberOfChildren" id="numberOfChildren" name="child[]">
+                                                                            <option value="0">0</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="col-md-2 1st_child">
+                                                                        <label for="childage">Child 1 Age:</label>
+                                                                        <select class="form-control" id="firstChildAge" name="firstChildAge[]">
+                                                                           <option value="0">Select Age</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="col-md-2 2nd_child">
+                                                                        <label for="childage">Child 2 Age:</label>
+                                                                        <select class="form-control" id="secondChildAge" name="secondChildAge[]">
+                                                                           <option value="0">Select Age</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="col-md-3 form-check form-check-inline">
+                                                                        <label class="form-check-label">
+                                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="" name="extrabed[]"> Extra Bed
+                                                                        </label>
+                                                                    </div>
+                                                                    <input type="hidden" name="room[]" value="room1" class="currentPackageName">                                                                    
+                                                                </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-md-12" for="remark">Remarks:</label>
+                                                    <div class="col-md-12">
+                                                        <textarea class="form-control" id="remarkTextArea" rows="3" name="remark"></textarea>
+                                                        <div class="help-block with-errors"></div>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <h3 class="pesonalDetailsHeading">Personal Details:</h3>
+                                                <div class="form-group">
+                                                    <div class="col-md-6">
+                                                        <label class="col-md-12 control-label" for="firstName" >First Name<span class="require-field">**</span>:</label>
+                                                        <input type="text" class="form-control firstNamePackageDetails" id="firstNamePackageDetails"  placeholder="first name" name="firstname" data-error="Fill This Field" required>
+                                                        <div class="help-block with-errors"></div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label class="col-md-12 control-label" for="lastName" >Last Name<span class="require-field">**</span>:</label>
+                                                        <input type="text" class="form-control" id="lastNamePackageDetails"  placeholder="last name" name="lastname" data-error="Fill This Field" required>
+                                                        <div class="help-block with-errors"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-md-6">
+                                                        <label class="col-md-12" for="email">E-mail<span class="require-field">**</span>:</label>
+                                                        <input type="email" class="form-control" id="emailPackageDetails"  placeholder="email" name="emailid" data-error="That email address is invalid" required>
+                                                        <div class="help-block with-errors"></div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label class="col-md-12" for="country">Country<span class="require-field">**</span>:</label>
+                                                         <select id="country" name ="country" class="form-control user_country"  required></select> 
+                                                         <div class="help-block with-errors"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-md-6">
+                                                        <label class="col-md-12" for="telephone">Telephone<span class="require-field">**</span>: <small>(optional)</small></label>
+                                                        <input type="text" class="form-control" id="numberPackageDetails"  placeholder="telephone" name="telephone" data-error="Enter Your Mobile Number" required>
+                                                        <div class="help-block with-errors"></div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label class="col-md-12" for="promocode">Promo code:</label>
+                                                        <input type="text" class="form-control" id="promocodePackageDetails"  placeholder="promo code" name="promocode">
+                                                    </div>
+                                                </div>
+                                                 <input type="hidden" name="packageName" value="{{items.name}}" class="currentPackageName">
+                                                 <input type="hidden" name="inquiryType" value="packageinquiry">
+                                                 <input type="hidden" name="inquiryStatus" value="New">
+                                                 <input type="hidden" name="packageCountryName" value="{{items.countryname}}">
+                                                 <input type="hidden" name="packageUserId" value="{{items.userID}}">
+                                                 <textarea class="inquiryTextArea"   name="packageModifyHotel" rows="3"></textarea>
+                                                 <textarea class="inquiryTextArea"  name="packageModifyDuration" rows="3"></textarea>
+                                                 <textarea class="inquiryTextArea" name="packageAddServices" rows="3"></textarea>
+                                             </fieldset>
+                                            </form>
+                                           {{!-- <div class="important_message">
+                                                <p><b>NOTE:</b><span>**Submit This Form In The Next Step</span></p>
+                                            </div>--}}
+                                            
+                                        </div>
+
+                                       
+                                        <div class="col-md-4">
+                                            <h3>Cancellation Policy</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                        </div>
+
+                                    </div>
+
+                                    <div id="step-3">
+                                        <h2 class="bookInqSteps">STEP 3 : Inquiry Pre-confirmation</h2>
+                                         <h3 class="pesonalDetailsHeadingInquiry">Request Details</h3>
+                                            <table class="table table-condensed table-hover pre-table" >
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Date</td>
+                                                        <td class="currenttime"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Package Name</td>
+                                                        <td class="currentPackageName"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                            <h3 class="pesonalDetailsHeadingInquiry">Personal Details</h3>
+                                            <table class="table table-condensed table-hover pre-table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>First Name</td>
+                                                        <td class="packageUserFirstName"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Last Name</td>
+                                                        <td class="packageUserLastName"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>E-mail</td>
+                                                        <td class="packageUserEmailId"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Telephone</td>
+                                                        <td class="packageUserNumber"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Promo Code</td>
+                                                        <td class="packageUserPackageCode"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                            <h3 class="pesonalDetailsHeadingInquiry">Booking Details</h3>
+                                            <table class="table table-responsive table-condensed table-hover pre-table pre-table-bookingdetails">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Period of Travel</td>
+                                                        <td>
+                                                            <table class="table table-condensed table-hover">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>From Date</td>
+                                                                        <td class="inquiry_fromdate"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>To Date</td>
+                                                                        <td class="inquiry_todate"></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Rooms Quantity</td>
+                                                        <td class="packageTotalRooms"></td>
+                                                    </tr>
+                                                    
+                                                    <tr>
+                                                        <td>Remarks</td>
+                                                        <td class="packageRemarks"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        <div class="col-md-12 text-center btn-group">
+                                            <a href="/inquiry/package/{{items.name}}/country/{{items.countryname}}#step-2"><button type="button" class="btn btn-default">EDIT DETAILS</button></a>
+                                           <a href="/"><button type="button" class="btn btn-default">CANCEL INQUIRY</button></a>
+                                        </div>
+                                        <input type="hidden" id="packageModifyHotelResult">
+                                        <input type="hidden" id="packageModifyLetgth">
+                                        <input type="hidden" id="packageModifyServices">
+                                        {{!--<div class="important_message">
+                                            <p><b>NOTE:</b><span>**Click Finish To Submit This Form</span></p>
+                                        </div>--}}
+                                        <div class="notifications"></div>
+                                    </div>
+                                    <div id="step-4" class="">
+                                        <h2 style="text-align: center">Finish!</h2>
+                                        <div class="text-center finish">
+                                            <p class="inquiry_details_section">We are pleased to confirm your order no :<span class="client_side_inquiry_id"></span></p>
+                                            <h3>YOUR ENQUIRY HAS BEEN SUBMITTED!</h3>
+                                            <p>Our reservation team will get back to you within 24 hours! Request summary has been sent to your email address. Thank you!</p>
+                                            <div class="text-center">
+                                               <a href="/"> <button type="button" class="btn btn-default">HOME</button></a>
+                                                <button type="button" class="btn btn-default">SUGGEST ME MORE</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>

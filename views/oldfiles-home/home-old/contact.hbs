@@ -1,0 +1,41 @@
+<div class="hero-slider flexslider clearfix" data-autoplay="yes" data-pagination="yes" data-arrows="yes" data-style="fade"
+    data-pause="yes">
+    <ul class="slides">
+        <li class="parallax" style="background-image:url('slide2.jpg');">
+
+            <div class="slider-text">
+                <span class="slider-icon"><img src="../images/icon-slider-1.png" alt="Slider Icon 1" ></span>
+                <br>
+
+                <h2 class="slider-caption slider-caption-3">Contact Us</h2>
+
+                <span class="slider-caption-sub slider-caption-sub-3"><img src="../images/icon-slider-4.png" alt="Slider Icon 4">{{item.quote}} <img src="../images/icon-slider-3.png" alt="Slider Icon 3"></span>
+                <br>
+                <span class="slider-icon"><img src="../images/icon-slider-2.png" alt="Slider Icon 2" id="slide_img"></span>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="container m20">
+    <div class="row">
+        <h2 class="decorated"><span>Contact Us</span></h2>
+        <div class="col-md-6">
+            <label for="country">COUNTRY&nbsp;<span class="extra_note">(Select Country Name For The Contact Details)</span></label>
+            <select id="contactpage_dest_List" name="country" class="form-control contactpage_dest_List">
+                <option value="default">Select Country Name</option> 
+                    {{#each items}}
+                        <option value="{{this._id}}">{{this.country}}</option>
+                    {{/each}}     
+            </select>
+        </div>
+        <div class="col-md-6"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Address</h2>
+            <address class="contactdetails_incontactpage">
+
+            </address>
+        </div>
+    </div>
+</div>

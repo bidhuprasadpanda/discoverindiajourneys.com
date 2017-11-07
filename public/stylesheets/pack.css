@@ -1,0 +1,125 @@
+.package-h3 {
+    font-weight: 600;
+    word-wrap: normal;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 25px;
+    color: #4496d2;
+    text-align: center;
+}
+
+.night-info {
+    font-size: 15px;
+    color: #fff;
+    margin-top: 0px;
+}
+
+.night-info span {
+    font-size: 30px
+}
+
+.ico-back {
+    background: #1f2f3d;
+    height: 35px;
+}
+
+.pack-icon img {
+    width: 30px;
+    height: 30px;
+    margin-top: 3px;
+}
+
+.list-stylez ul {
+    padding-left: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.list-stylez ul li {
+    margin-bottom: 10px;
+    list-style-type: disc;
+}
+
+.para-content {
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000
+}
+
+.para-content h2 {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.para-content p {
+    color: #fff;
+    font-size: 20px;
+}
+
+.main-con p {
+    font-size: 15px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.nav-tabs {
+    padding-top: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.nav-tabs li a {
+    padding: 10px 30px;
+}
+
+.tab-content {
+    background: #f5f5f5;
+    padding: 20px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*Tabs related*/
+
+.itinerary h4 {
+    letter-spacing: normal;
+    text-transform: capitalize;
+}
+
+.itinerary p {
+    text-align: justify;
+}
+
+
+/*some info related*/
+
+.some-info {
+    padding: 20px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.some-info blockquote em {
+    display: block;
+}
+
+.some-info blockquote {
+    float: right;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.experience-snap {
+    font-size: 30px;
+}
+
+.experience-snap h4 {
+    letter-spacing: normal;
+    margin: 0px;
+}
+
+.experience-snap p {
+    font-style: italic;
+    font-size: 13px;
+}

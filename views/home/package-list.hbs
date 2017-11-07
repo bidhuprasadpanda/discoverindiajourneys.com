@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Dream Destinationz</title>
+
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta name="keywords" content="" />
+    <meta name="description" content="">
+    <meta name="author" content="Bidhu Prasad Panda">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- /GOOGLE FONTS -->
+    {{!-- <link rel="stylesheet" href="css/styles.css">
+    <script src="js/modernizr.js"></script>
+    <script src="js/jquery.min.js"></script> --}}
+</head>
+
+<body>
+{{!-- {{json items}} --}}
+{{#each items.destination as |item|}}
+    <div class="global-wrap">
+        
+        <div class="bg-holder-content">
+            <div class="fotorama" data-autoplay="5000" data-transition="crossfade" data-loop="true" data-nav="true" data-arrows="true" data-stopautoplayontouch="false" data-nav="thumbs">
+                {{#each item.images as |img|}}
+                <img src="{{img}}">
+                {{/each}}
+            </div>
+             <h2 class="lh1em float-text-package-list">{{item.name}}</h2>
+            <p class="lh1em text-lg float-text2-package-list"><strong>&nbsp;{{item.quote}}</strong></p>
+
+            <p class="hidden__place__idfield" value="{{item._id}}" hidden>{{item._id}}</p>
+        </div>
+        
+
+        <div class="container" id="package-list-container">
+            <div class="gap"></div>
+
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="about-package">
+                        <h3>About package</h3>
+                        <p>{{item.about}}</p>
+                    </div>
+                </div>
+                <div class="col-md-4 package text-center">
+                    <div class="text-center button__grp__inquire">
+                        <a href="#" type="button" class="btn btn-default inquire_package"><i class="fa fa-info" aria-hidden="true"></i> &nbsp;INQUIRE NOW</a>
+                        <a href="#" type="button" class="btn btn-default modify_package"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp;MODIFY THIS PACKAGE</a>
+                    </div>
+                    <div class="gap"></div>
+                    <div class="map mt20">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d17989816.173030354!2d78.88451083693482!3d22.230406742137237!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1505890133504" width="100%" height="300px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                    <!--<h3 class="package-h3">TAGS</h3>
+                    <div>
+                        <ul class="tags">
+                            <li><a href="#" class="tag">Adventure</a></li>
+                            <li><a href="#" class="tag">Cultural</a></li>
+                            <li><a href="#" class="tag">Beach</a></li>
+                        </ul>
+                    </div>-->
+                </div>
+            </div>
+            {{/each}}
+            <!--<div class="gap"></div>-->
+            
+            <div class="col-md-12">
+                <div class="row">
+                    <h3 class="packages">Packages</h3>
+                    <div class="row row-wrap packagelist__place__page">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="gap"></div>
+        </div>
+    </div>
+</body>
+
+</html>

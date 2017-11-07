@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Dream Destinationz</title>
+
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta name="keywords" content="Template, html, premium, themeforest" />
+    <meta name="description" content="Traveler - Premium template for travel companies">
+    <meta name="author" content="Tsoy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    {{!-- {{json items}} --}} {{#each items.destination as |item|}}
+    <div class="global-wrap">
+        <div class="container">
+            <p class="hidden__package__idfield" value="{{item._id}}" hidden>{{item._id}}</p>
+
+            <div class="booking-item-details">
+                <header class="booking-item-header">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h2 class="lh1em pd_text">{{item.packagename}}</h2>
+                        </div>
+                        {{!--
+                        <div class="col-md-4">
+                            <p class="booking-item-header-price">{{item.itinerary.length}}Days</p>
+                        </div> --}}
+                    </div>
+                </header>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="tabbable booking-details-tabbable">
+                            <ul class="nav nav-tabs" id="myTab">
+                                <li class="active"><a href="#tab-1" data-toggle="tab"><i class="fa fa-camera"></i>Photos</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="tab-1">
+                                    <div class="fotorama" data-allowfullscreen="true" data-nav="thumbs">
+                                        {{#each item.images as |img|}}
+                                        <img src="{{img}}" alt="Image Alternative text" title="hotel PORTO BAY SERRA GOLF living room" />                                        {{/each}}
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="google-map-tab">
+                                    <div id="map-canvas" style="width:100%; height:500px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="booking-item-meta">
+                            <h3 class="lh1em mt40 itinerary-text">{{item.packagename}}</h3>
+
+                            <div class="booking-item-rating">
+                                <p>{{item.packagedescription}}</p>
+                            </div>
+                        </div>
+
+                        <a class="btn btn-default" data-toggle="modal" data-target="#terms" data-backdrop="static" data-keyboard="false">TERMS &amp; CONDITIONS</a>
+                        <h3 class="package-h3">TAGS</h3>
+                        <div>
+                            <ul class="tags">
+                                {{#each item.categories as |category|}}
+                                <li><a href="#" class="tag">{{category}}</a></li>
+                                {{/each}}
+                            </ul>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="terms" role="dialog">
+                            <div class="modal-dialog">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">GENERAL TERMS AND CONDITIONS</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>
+                                            {{breaklines item.terms}}
+                                        </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal Ends-->
+                    </div>
+                </div>
+                {{#each this.mixWithDestination as |desc|}}
+                <p class="hidden__packagedestination__idfield" value="{{desc._id}}" hidden>{{desc._id}}</p>
+                {{/each}} {{/each}}
+
+                <div class="gap"></div>
+                <h3 class="itinerary-text">PROGRAM'S ITINERARY</h3>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="gap gap-small"></div>
+                        <ul class="booking-list package__itinerary__details">
+
+                        </ul>
+                        <!--Image Modal starts-->
+                        <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                        <img src="" class="imagepreview" style="width: 100%;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Image Modal Ends-->
+                    </div>
+                    <div class="col-md-4">
+
+                        <div class="text-center inquiry_btn_section mt30">
+                            {{#each items.destination as |item|}} {{#mixWithDestination}}
+                            <a href="/inquiry/package/{{item.packagename}}/country/{{name}}/days/{{../this.itinerary.length}}" type="button" class="btn btn-default inquire_package"><i class="fa fa-info" aria-hidden="true"></i> &nbsp;INQUIRE NOW</a>                            {{!-- <a href="#" type="button" class="btn btn-default modify_package"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp;MODIFY THIS PACKAGE</a>                            --}} {{/mixWithDestination}} {{/each}}
+                        </div>
+                        <div class="gap"></div>
+                        <div class="map mt20">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d17989816.173030354!2d78.88451083693482!3d22.230406742137237!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1505890133504"
+                                width="100%" height="300px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                        <div class="gap gap-small"></div>
+                        <div class="inclusions">
+                            {{!-- Check package__details.js for js code --}}
+                            <h3 class="package-h3">INCLUSIONS</h3>
+                            <ul class="inclusions__packages">
+
+                            </ul>
+                        </div>
+                        <div class="exclusions">
+                            <h3 class="package-h3">EXCLUSIONS</h3>
+                            <ul class="exclusions__packages">
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <h3 class="package-h3">SIMILAR PACKAGES</h3>
+                    <div class="col-md-12 similar__packages__list">
+
+                        <div class="col-md-4">
+                            <div class="thumb">
+                                <header class="thumb-header">
+                                    <a class="hover-img" href="#">
+                                        <img src="img/destinations/bengaluru.jpg" alt="Image Alternative text">
+                                    </a>
+                                </header>
+                                <div class="thumb-caption">
+                                    <div class="price-wrap">
+                                        <div class="price">
+                                            <span><a href="">View Details</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="information">
+                                        <div class="type">
+                                            Stays
+                                        </div>
+                                        <div class="destination">
+                                            <h4>Cultural Capital of Karnataka.</h4>
+                                        </div>
+                                        <div class="options">
+                                            7 nights - All inclusive
+                                            <span>Starts from - 12/09/2017</span>
+                                        </div>
+                                    </div>
+                                    <div class="button-wrap">
+                                        <a href="#" class="button--primary">
+                                        Enquire Now
+                                    </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="gap gap-small"></div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+<div class="row">
+    {{#each fileList}}
+        <div style="width: 210px;float: left;">
+            <a href="./files/"+value, target="_blank">
+                <img src="./files/"+value, alt="" , height="200", width="200">
+                <span>{{value}}</span>
+                <a href="javascript:void(0)", file-value, id="delete">Delete</a>
+            </a>
+        </div>
+    {{/each}} 
+</div>

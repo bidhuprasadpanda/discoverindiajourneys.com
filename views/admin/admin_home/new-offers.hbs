@@ -1,0 +1,109 @@
+<div class="main" role="main">
+    <div id="content" class="content full" style="padding-top:10px;">
+        <div class="container">
+            <div class="row">
+                {{!--
+                <div class="col-md-12 provider_heading">
+                    <h2>All Package Providers</h2>
+                </div>--}}
+                <h2 class="decorated"><span>Add New Offer</span></h2>
+
+            </div>
+        </div>
+        
+        {{!--{{Offers}}--}}
+        <div class="container">
+                 {{!-- Creating New Offers--}}
+            <div class="row">
+                {{!-- Create Form--}}
+                <div class="col-md-12">
+                    
+                     {{#if errors}}
+                        <div class="alert alert-danger">
+                            {{# each errors}}
+                                <p><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>&nbsp;{{this}}</p>
+                            {{/each}}
+                        </div>
+                    {{/if}}
+                    {{#if error}}
+                        <div class="alert alert-danger">
+                                <p><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>&nbsp;Offer Already Present!!</p>
+                        </div>
+                    {{/if}}
+                    <form id="offer_new_create" action="/admin/admin_home/new-offers" method="post">
+                        <div class="form-group">
+                             <label for="name">Offer Title</label>
+                             <input type="text" id="offer_name" name="offername" class="form-control place_name" >
+                        </div>
+                        <div class="form-group">
+                            <label for="offertype">Type Of Offer</label>
+                            <select name="offertype" id="offer_type_home">
+                                <option value="">Select Offer Type</option>
+                                <option value="normal">Normal</option>
+                                <option value="special">Last Minut Deal</option>
+                            </select>
+                        </div>
+                        {{!-- Check the script in custom.js --}}
+                        <div class="form-group">
+                            <label for="offerdescription">Offer Description</label>
+                            <textarea name="offerdescription" class="form-control offer_description" id="offer_description" cols="70" rows="5" onKeyDown="limitText(this.form.offerdescription,this.form.offerdetails,100);" 
+                            onKeyUp="limitText(this.form.offerdescription,this.form.offerdetails,100);"></textarea>
+                            <font size="2">(Maximum characters: 100)<br>
+                            You have <input readonly type="text" name="offerdetails" size="3" value="100"> characters left.</font>
+                        </div>
+                       
+                        <div class="form-group">
+                            <label for="offercode">Code:</label>
+                            <input name="offercode" class="form-control offer__code" id="offer__code" maxlength="50"> 
+                        </div>
+                      
+                        <div class="form-group">
+                            <div class="row">
+                                <div id="images"></div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-6 img_upload_btn">
+                                                <form name="fileUpload" id="fileUpload" action="/admin/admin_home/fileUpload" enctype="multipart/form-data" method="post" role="form" class="form-inline">
+                                                     <div class="form-group">
+                                                        <label>Choose image to upload: </label>
+                                                        <input name="uploadfile" type="file" id="myFile">
+                                                        <span style="color:red">Upload only image file (PNG, JPEG, GIF)</span>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input value="UPLOAD" type="button" class="btn btn-primary btn-upload">
+                                                        <span>(Click Here To Upload The Image)</span>
+                                                    </div>
+                                                        <div style="display:none;margin-top:10px;" class="progress">
+                                                            <div role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-striped active">0% </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div>
+                                                        <h3>List all uploaded files</h3>
+                                                    </div>
+                                                        <p id="msg"></p>
+                                                        <div id="files"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                            </div>
+                        </div>
+                         <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-12 submit_button_group">
+                                    <input type="hidden" name="_csrf" value="{{ csrfToken }}" >
+                                    <input type="submit" value="Submit" form="offer_new_create" class="btn btn-info">
+                                </div>
+                            </div>
+                         </div>
+                    </form>
+                </div>
+               {{!-- Edit Form--}}
+              
+            </div>
+           
+        </div>
+    </div>
+</div>
+

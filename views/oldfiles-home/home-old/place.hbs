@@ -1,0 +1,104 @@
+
+<!-- Start Hero Slider -->
+<div class="hero-slider flexslider clearfix" data-autoplay="yes" data-pagination="yes" data-arrows="yes" data-style="fade"
+    data-pause="yes">
+    <ul class="slides">
+        {{#each items}}
+        <li class="parallax" style="background-image:url({{this.images.[0]}});">
+
+            <div class="slider-text">
+                <span class="slider-icon"><img src="/images/icon-slider-1.png" alt="Slider Icon 1" ></span>
+                <br> {{#mixWithPlaceDestination}}
+                <h2 class="slider-caption slider-caption-3">{{name}}</h2>
+                <span class="slider-caption-sub slider-caption-sub-3">
+                            <img src="/images/icon-slider-4.png" alt="Slider Icon 4">{{quote}} <img src="/images/icon-slider-3.png" alt="Slider Icon 3"></span>                {{/mixWithPlaceDestination}}
+                <br>
+                <span class="slider-icon"><img src="/images/icon-slider-2.png" alt="Slider Icon 2" id="slide_img"></span>
+            </div>
+        </li>
+        {{/each}}
+    </ul>
+</div>
+<!-- End Hero Slider -->
+
+<!--Main Content Starts-->
+{{!--
+<div class="mt50">
+    <div class="container">
+        <div class="col-md-12">
+            <div class="grid-item pack-item">
+                <div class="main-con">
+                    <blockquote>
+
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>--}}
+<!--Main Content Ends-->
+
+
+
+<!-- Start Content -->
+<div class="main" role="main">
+    <div id="content" class="content full">
+        <div class="container">
+            {{#each items}}
+            <div class="col-md-8" style="background:#f5f5f5;">
+                <h2 class="special_heading">{{this.placename}}</h2>
+
+                <blockquote>
+                    {{this.description}}
+                </blockquote>
+                <h3 class="sub-heading">HOW TO GET THERE</h3>
+                <p>{{list this.howtogetthere}}</p>
+                <h3 class="sub-heading">WHEN TO GO</h3>
+                <p>{{list this.whentogo}}</p>
+                <h3 class="sub-heading">HIGHLIGHTS</h3>
+                <p>{{list this.highlights}}</p>
+
+                <div class="slider_place">
+                    <div class="fotorama" data-autoplay="3000" data-allowfullscreen="true" data-hash="true" data-fit="cover" data-transition="crossfade"
+                        data-navposition="bottom" data-loop="true" data-nav="thumbs" data-arrows="true" data-stopautoplayontouch="false">
+                        {{#each this.images as |image|}}
+                        <img src="{{image}}"> {{/each}}
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+            <div class="col-md-4">
+                <h2 class="special_heading text-center">Map</h2>
+                <div class="mapheight">
+                     <div id="mapPlace"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            {{#each items}}
+            <h2 class="special_heading text-center">PACKAGE TOURS IN <span class="special">{{this.placename}}</span></h2>
+            {{/each}}
+
+            <div class="place_details_hidden">
+                {{#each items}}
+                <span class="placepage_id_hidden" value="{{this._id}}" style="display: none;">
+                                            {{this._id}}</span>
+                <span class="placecountry_id_hidden" value="{{this.countryId}}" style="display: none;">
+                                            {{this.countryId}}</span> 
+                 <span class="placepage_maplat_hidden" value="{{this.map.latitude}}" style="display: none;">
+                                            {{this.map.latitude}}</span> 
+                  <span class="placepage_maplong_hidden" value="{{this.map.longitude}}" style="display: none;">
+                                            {{this.map.longitude}}</span> 
+
+                <span class="placepage_placename_hidden" value="{{this.placename}}" style="display: none;">
+                                            {{this.placename}}</span>   
+                <span class="placepage_placedescription_hidden" value="{{this.description}}" style="display: none;">
+                                            {{this.description}}</span>                      
+                {{/each}}
+            </div>
+            <div class="row place_package_div">
+                
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,277 @@
+
+
+ <!-- Start Hero Slider -->
+        <div class="hero-slider flexslider clearfix">
+            <ul class="">
+                {{#each items.packagedetails as |item|}}
+                <li class="parallax package-section" style="background-image:url({{this.images.[0]}});height:450px;">
+                    <h3>{{this.packagename}}</h3>
+                    <div class="banner-price">
+                        <p>from/per person &nbsp;<span>$
+                         {{#item.mixWithOccupancies}}
+                            {{#roomoccupancyprice}}
+                                 {{#with options}}
+                                    {{this.1.priceperadult}}</span></p><a href="#price-details">Price Details</a>
+                                {{/with}}
+                             {{/roomoccupancyprice}}
+                        {{/item.mixWithOccupancies}}
+                    </div>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+<!-- End Hero Slider -->
+
+<!-- Start Content -->
+        <div class="main" role="main">
+            <div id="content" class="content full">
+                <div class="container">
+                    <!--Main 8-->
+                    <div class="col-md-8 col-sm-8">
+
+                        <!--Contents starts-->
+                        <div class="row" style="background:#f5f5f5;">
+                            <div class="col-md-12">
+                                <h3 class="package-h3">PACKAGE DESCRIPTION</h3>
+                                    {{#each items.packagedetails}}
+                                    {{{breaklines this.packagedescription}}}
+                                    {{/each}}
+                            </div>
+                        </div>
+                         
+                        <div class="row mt30" style="background:#f5f5f5;">
+                            <div class="col-md-12">
+                                <div class="package-h3">PROGRAM'S ITINERARY</div>
+                                <div class="itine itinerary_div">
+                                   
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="myModal1" class="modal animated bounceInDown in" role="dialog" data-easein="flipBounceYIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title package-hotel-name"></h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="package-hotel-description"></p>
+                                        <div class="package-image-div">
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div id="myModal2" class="modal fade" role="dialog">
+                            <div class="modal-dialog">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Hotel Name 2 - Room Type</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                        <img src="../images/pack-icons/icon1" alt="" width="32.5%" height="auto">
+                                        <img src="../images/pack-icons/icon2" alt="" width="32.5%" height="auto">
+                                        <img src="../images/pack-icons/icon4" alt="" width="32.5%" height="auto">
+                                        <img src="../images/pack-icons/icon5" alt="" width="32.5%" height="auto">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--Some Info Starts-->
+                        
+                        <div class="row mt30" id="price-details" style="background:#f5f5f5;">
+                            <div class="col-md-12 some-info">
+                                <h3 class="package-h3">PRICE DETAILS</h3>
+                                <div class="table-responsive borderless package_price_details">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th><strong>Description</strong></th>
+                                                <th><strong>02 Persons</strong></th>
+                                                <th><strong>Single Supplement</strong></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!--Some Info Ends-->
+                            
+                        <!--Inclusions Starts-->
+                        {{#each items.packagedetails as |packdetails|}}
+                        <div class="row mt30" style="background:#f5f5f5;">
+                            <div class="col-md-6 some-info">
+                                <h3 class="package-h3">INCLUSIONS</h3>
+                                <div class="list-stylez">
+                                  {{{list packdetails.packageinclude}}}
+                                      
+                                </div>
+                            </div>
+                            <div class="col-md-6 some-info">
+                                <h3 class="package-h3">EXCLUSIONS</h3>
+                                <div class="list-stylez">
+                                    {{{list packdetails.packageexclude}}}
+                                </div>
+                            </div>
+                        </div>
+                        {{/each}}
+                        <!--Inclusions Ends-->
+                        <div class="row mt30" style="background:#f5f5f5;">
+                            <div class="col-md-12 some-info text-center">
+                                <a href="#" class="btn btn-default" data-toggle="modal" data-target="#terms">TERMS &amp; CONDITIONS</a>
+                            </div>
+                        </div>
+                        <div id="terms" class="modal fade" role="dialog">
+                            <div class="modal-dialog">
+                                <!-- Modal content-->
+                                {{#each items.packagedetails}}
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">TERMS &amp;amp; CONDITIONS</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="list-stylez">
+                                            {{{list this.terms}}}
+                                        </div>
+                                    </div>
+                                </div>
+                                {{/each}}
+                            </div>
+                        </div>
+                        
+                        <div class="row mt30">
+                            <div class="col-md-12 some-info text-center btn-group-inquiry">
+                                {{#each items.destination as |item|}}
+                                {{#mixWithDestination}}
+                                <a href="/inquiry/package/{{item.packagename}}/country/{{name}}/days/{{../this.itinerary.length}}/userid/{{../this.user_id}}#step-2" type="button" class="btn btn-default inquire_package"><i class="fa fa-info" aria-hidden="true"></i> &nbsp;INQUIRE NOW</a>
+                                <a href="/inquiry-modify-package/package/{{item.packagename}}/country/{{name}}/days/{{../this.itinerary.length}}/userid/{{../this.user_id}}#step-2" type="button" class="btn btn-default modify_package"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp;MODIFY THIS PACKAGE</a>
+                                {{/mixWithDestination}}
+                                {{/each}}
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--Main 4-->
+                    <div class="col-md-4 col-sm-4">
+
+                        <!--Package Details Starts-->
+                        <div class="grid-item pack-item">
+                            <div class="text-center">
+                                {{#each items.destination as |item|}}
+                                {{#mixWithDestination}}
+                                <a href="/inquiry/package/{{item.packagename}}/country/{{name}}/days/{{../this.itinerary.length}}/userid/{{../this.user_id}}#step-2" type="button" class="btn btn-default inquire_package"><i class="fa fa-info" aria-hidden="true"></i> &nbsp;INQUIRE NOW</a>
+                                <a href="/inquiry-modify-package/package/{{item.packagename}}/country/{{name}}/days/{{../this.itinerary.length}}/userid/{{../this.user_id}}#step-2" type="button" class="btn btn-default modify_package"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp;MODIFY THIS PACKAGE</a>
+                                {{/mixWithDestination}}
+                                {{/each}}
+                            </div>
+            
+                            <!--Maps Section-->
+                            <div class="mapwidth m20">
+                                <div id="map"></div>
+                                {{#each items.places as |map|}}
+                                    <span class="map_package_placename"
+                                          value="{{map._id.placeName}}" style="display: none;">
+                                        {{map._id.placeName}}</span>
+                                    <span class="map_package_latitude"
+                                          data-id="{{map._id.latitude}}" style="display: none;">
+                                        {{map._id.latitude}}</span>
+                                    <span class="map_package_longitude"
+                                          data-id="{{map._id.longitude}}" style="display: none;">
+                                        {{map._id.longitude}}</span>
+
+                                {{/each}}
+                            </div>   
+
+                            <!--Maps Section Ends-->
+
+                            <!--Tags Section-->
+                            <h3 class="package-h3">TAGS</h3>
+                            <div>
+                                <ul class="tags">
+                                    {{#each items.packagedetails}}
+                                        {{#each this.categories as |category|}}
+                                            <li><a href="#" class="tag">{{category}}</a></li>
+                                        {{/each}}
+                                    {{/each}}
+                                </ul>
+                            </div>
+                            <!--Tags Section Ends-->
+
+                            <!--More Package Section Starts-->
+                            <h3 class="package-h3 ">MORE PACKAGES</h3>
+                            <div class="package_details_hidden">
+                                {{#each items.packagedetails as |package|}}
+                                    <span class="package_id_hidden"
+                                          value="{{package._id}}" style="display: none;">
+                                        {{package._id}}</span>
+                                    <span class="country_id_hidden"
+                                          value="{{package.countryId}}" style="display: none;">
+                                        {{package.countryId}}</span>
+                                {{/each}}
+                            </div>
+
+
+                            {{#each items.packages as |item|}}
+
+                            <div class="grid-item pack-item">
+                                <div class="grid-item-inner">
+                                    <div class="media-box"><a href="/package/{{this._id}}/countryid/{{this.countryId}}" data-id="{{this._id}}"><img src="{{item.images.[1]}}" alt=""></a></div>
+                                    <div class="grid-content home_package_detail">
+                                        <h3><a href="/package/{{this._id}}/countryid/{{this.countryId}}" class="home_special_package" data-id="{{this._id}}">{{this.packagename}}</a></h3>
+                                        <!--<p class="hotel-iten">Honolulu - 3 || Kauai - 2</p>-->
+                                        <div class="price_list">
+                                            <p class="marg-top">
+                                                 <sup class="ng-binding">$</sup>
+                                                {{#item.mixWithOccupancies}}
+                                                    {{#roomoccupancyprice}}
+                                                        {{#with options}}
+                                                            <span class="room-avg-price ng-binding">{{this.[1].priceperadult}}</span>
+                                                        {{/with}}
+                                                    {{/roomoccupancyprice}}
+                                                {{/item.mixWithOccupancies}}
+                                                <span class="avg-night">Per Person</span>
+                                            </p>
+                                        </div>
+                                        <!--<div class="text-center">
+                                            <p class="btn btn-primary btn_1"><a href="#">VIEW NOW</a></p>
+                                        </div>-->
+                                    </div>
+                                </div>
+                                <div class="ico-back">
+                                    <div class="col-md-8 col-xs-8 pack-icon">
+                                        <img src="/images/pack-icons/icon1.svg" alt="">
+                                        <img src="/images/pack-icons/icon2.svg" alt="">
+                                        <img src="/images/pack-icons/icon3.svg" alt="">
+                                        <img src="/images/pack-icons/icon4.svg" alt="">
+                                    </div>
+                                    <div class="col-md-4 col-xs-4 night-info">
+                                        <span>{{item.itinerary.length}}</span> Days
+                                    </div>
+                                </div>
+                            </div>
+                            {{/each}}
+
+                        </div>
+                        <!--Package Details Ends-->
+
+                    </div>
+
+                </div>
+            </div>
+        </div>

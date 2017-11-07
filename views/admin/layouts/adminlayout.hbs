@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/bootstrap.css' />
+    <link rel='stylesheet' href='/stylesheets/smart_wizard.css' />
+    <link rel='stylesheet' href='/stylesheets/smart_wizard_theme_dots.css' />
+    <link href="/plugins/mediaelement/mediaelementplayer.css" rel="stylesheet" type="text/css">
+    <!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="css/ie8.css" media="screen" /><![endif]-->
+    <!-- Color Style -->
+    <link class="alt" href="/colors/color1.css" rel="stylesheet" type="text/css">
+    <link class="alt" href="/stylesheets/custom.css" rel="stylesheet" type="text/css">
+    <link href="/style-switcher/css/style-switcher.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/datepicker.css">
+    
+   {{!-- <link rel="stylesheet" href="/stylesheets/bootstrap-datetimepicker.min.css">--}}
+    <script src="https://use.fontawesome.com/6c79e8fb11.js"></script>
+
+
+  </head>
+  <body>
+   <div class="body header-style2">
+        <div class="toprow">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                         <nav class="top-menus">
+                            <ul>
+                                <li>
+                                    <a href="#"><i class="fa fa-facebook-square"></i></a>
+                                    <span class="border_nav-right">|</span>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-twitter-square"></i></a>
+                                    <span class="border_nav-right">|</span>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                                    <span class="border_nav-right">|</span>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-google-plus-square"></i></a>
+                                    <span class="border_nav-right">|</span>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-linkedin-square"></i></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-md-8 col-sm-12 col-xs-12">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="/"><i class="fa fa-share" aria-hidden="true"></i>&nbsp;Go TO Website</a></li>
+                            <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-user-circle-o" aria-hidden="true">&nbsp;</i>Admin Management<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                
+                                {{# if login}}
+                                     <li><a href="#"><i class="fa fa-address-card-o" aria-hidden="true"></i>&nbsp;{{user.username}}</a></li>
+                                     {{!--<li><a href="/user/profile"><i class="fa fa-user-md" aria-hidden="true"></i>&nbsp;User Profile</a></li>--}}
+                                     <li><a href="/user/logout"><i class="fa fa-sign-out" aria-hidden="true"></i>&nbsp;Logout</a></li>
+                               {{else}}
+                                    <li><a href="/user/signup"><i class="fa fa-user-plus" aria-hidden="true"></i>&nbsp;Sign Up</a></li>
+                                    <li><a href="/user/signin"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;Sign In</a></li>
+                                {{/if}}
+                                
+                            </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Start Site Header -->
+        <header class="site-header">
+
+            <div class="topbar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-xs-8">
+                            <h1 class="logo">
+                                <a href="/admin"><img src="/images/logo.jpg" alt="Logo"></a>
+                            </h1>
+                        </div>
+                        <div class="col-md-8 col-sm-6 col-xs-4 top_address" style="text-align: right;">
+
+                            <div class="top_com_add">
+                                <p>For Help Contact to:</p>
+                                <p class="mobile_num"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;test@axisrooms.com</p>
+                                
+                            </div>
+
+                            <a href="#" class="visible-sm visible-xs menu-toggle"><i class="fa fa-bars"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="user-hidden-in-adminlayout" hidden>{{user._id}}</span>
+            <div class="main-menu-wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <nav class="navigation test-menu">
+                                <ul class="sf-menu admin-layout">
+                                   {{!-- <li><a href="/admin"><i class="fa fa-home" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li><a href="/admin/admin_home/providers">Providers</a> </li>
+                                    <li><a href="/admin/admin_home/destination">Country</a> </li>
+                                    <li><a href="/admin/admin_home/places">Places</a></li>
+                                    <li><a href="/admin/admin_home/categories">Categories</a></li>
+                                    <li><a href="/admin/admin_home/accomodation">Accommodations</a></li>
+                                    <li><a href="/admin/admin_home/packages">Packages</a></li>
+                                    <li><a href="/admin/admin_home/inquiries">Reservations</a> </li>--}}
+                                    {{!--<li><a href="#">Allocations</a></li>--}}
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- End Site Header --> 
+    
+  
+      {{{body}}}
+  
+    
+  </body>
+
+
+        <footer class="site-footer-bottom admin">
+            <div class="container">
+                <div class="row">
+                    <div class="copyrights-col-left col-md-6 col-sm-6">
+                        <p>&copy; 2017 <a href="http://www.dreamdestinationz.com/">dreamdestinationz.com</a> | All Rights Reserved</p>
+                    </div>
+                    <div class="copyrights-col-right col-md-6 col-sm-6">
+                        <div class="powered footer-bottom">
+                            <p>Powered By <a href="http://www.axisrooms.com/" target="_blank"> Axisrooms travel distribution solutions pvt. ltd</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+       
+
+    <!-- Style Switcher Start -->
+   {{!-- <div class="styleswitcher visible-lg visible-md">
+        <div class="arrow-box"><a class="switch-button"><span class="fa fa-cogs fa-lg"></span></a> </div>
+
+        <h4>Layout</h4>
+        <ul class="layouts">
+            <li class="wide-layout"><a href="#" title="Wide">Wide</a></li>
+            <li class="boxed-layout"><a href="#" title="Boxed">Boxed</a></li>
+        </ul>--}}
+
+
+    <a id="back-to-top" style="display: inline;"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <script src="/javascripts/jquery-2.0.0.min.js"></script>
+    <!-- Jquery Library Call -->
+    <!-- Include jQuery Validator plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.5/validator.min.js"></script>
+    <script src="/plugins/prettyphoto/js/prettyphoto.js"></script>
+    <!-- PrettyPhoto Plugin -->
+    <script src="/javascripts/helper-plugins.js"></script>
+    <!-- Plugins -->
+    <script src="/javascripts/bootstrap.js"></script>
+    <!-- UI -->
+    <script src="/javascripts/waypoints.js"></script>
+    <!-- Waypoints -->
+    <script src="/plugins/mediaelement/mediaelement-and-player.min.js"></script>
+    <!-- MediaElements -->
+    <script src="/javascripts/init.js"></script>
+    <!-- All Scripts -->
+    <script src="/plugins/flexslider/js/jquery.flexslider.js"></script>
+    <!-- FlexSlider -->
+    <script src="/plugins/countdown/js/jquery.countdown.min.js"></script>
+    <!-- Jquery Timer -->
+    <script src="/style-switcher/js/jquery_cookie.js"></script>
+    <script src="/style-switcher/js/script.js"></script>
+    <!-- Style Switcher Start -->
+    <script src="/javascripts/masonry.pkgd.min.js"></script>
+
+    <script src="/javascripts/modernizr.js"></script>
+    <script src="/javascripts/main.js"></script>
+    <script src="/javascripts/continent.main.js"></script>
+    <script src="/javascripts/package.main.js"></script>
+    <script src="/javascripts/countries.js"></script>
+    <script src="/javascripts/custom.js"></script>
+    <script src="/javascripts/custom-home.js"></script>
+    <script src="/javascripts/fileupload.js"></script>
+    <script src="/javascripts/jquery.smartWizard.js"></script>
+    <script type="text/javascript" src="/javascripts/helper.js"></script>  
+    <script type="text/javascript" src="/javascripts/bootstrap-datepicker.js"> </script>
+    <script type="text/javascript" src="/js/notify.js"></script>
+  <script type="text/javascript" src="/javascripts/bootstrap-datetimepicker.min.js"></script>
+
+   
+   
+
+</html>
